@@ -20,13 +20,14 @@
     <Cultures>ru-RU</Cultures>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Files.wxs" />
     <Compile Include="Product.wxs" />
+    <Compile Include="Shortcuts.wxs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ext\IIsExtension_ru-ru.wxl" />
     <EmbeddedResource Include="ext\SqlExtension_ru-ru.wxl" />
     <EmbeddedResource Include="ext\UtilExtension_ru-ru.wxl" />
-    <EmbeddedResource Include="WixUI_ru-ru.wxl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ext\" />
@@ -36,6 +37,10 @@
       <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
       <Name>WixUIExtension</Name>
     </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.rtf" />
+    <Content Include="Variables.wxi" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" Condition=" '$(WixTargetsPath)' != '' " />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets" Condition=" '$(WixTargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets') " />

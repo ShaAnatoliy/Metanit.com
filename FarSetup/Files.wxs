@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <Fragment>
+    <DirectoryRef Id="INSTALLLOCATION" FileSource='C:\FarManX64\' >
+      <Component Id="ProductComponent" Guid="e00841e6-d0b2-4619-a05c-b514a96f0110"
+                 DiskId='1' >
+        <File Id='Far' Name='Far.exe'/>
+        <File Id='lpeg' Name='lpeg.dll'/>
+        <File Id='lua5x1' Name='lua5.1.dll'/>
+        <File Id='lua51' Name='lua51.dll'/>
+        <File Id='luafar3' Name='luafar3.dll'/>
+      </Component>
+    </DirectoryRef>
+	</Fragment>
+
+</Wix>

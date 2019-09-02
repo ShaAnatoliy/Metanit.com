@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Variables.wxi?>
+  
+	<Fragment>
+    
+    <Directory Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcutFar" Guid="3b422277-391d-448e-9d33-b8f5c346af52">
+
+        <Shortcut Id="ShortcutFar"
+          Name="Far"
+          Description="$(var.ProductName)"
+          Target="[INSTALLLOCATION]Far.exe"
+          WorkingDirectory="INSTALLLOCATION"/>
+
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.ProductName)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+
+      </Component>
+    </Directory>
+    
+	</Fragment>
+</Wix>
