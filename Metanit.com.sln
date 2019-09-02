@@ -12,20 +12,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLscripts", "SQLscripts", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvc5App", "FirstMvc5App\FirstMvc5App.csproj", "{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FarSetup", "FarSetup\FarSetup.wixproj", "{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8DA0E821-E130-481A-B06D-00B673035D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8DA0E821-E130-481A-B06D-00B673035D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA0E821-E130-481A-B06D-00B673035D94}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8DA0E821-E130-481A-B06D-00B673035D94}.Debug|x86.Build.0 = Debug|Any CPU
 		{8DA0E821-E130-481A-B06D-00B673035D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DA0E821-E130-481A-B06D-00B673035D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA0E821-E130-481A-B06D-00B673035D94}.Release|x86.ActiveCfg = Release|Any CPU
+		{8DA0E821-E130-481A-B06D-00B673035D94}.Release|x86.Build.0 = Release|Any CPU
 		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Debug|x86.Build.0 = Debug|Any CPU
 		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Release|x86.ActiveCfg = Release|Any CPU
+		{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}.Release|x86.Build.0 = Release|Any CPU
+		{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}.Debug|x86.ActiveCfg = Debug|x86
+		{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}.Debug|x86.Build.0 = Debug|x86
+		{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}.Release|Any CPU.ActiveCfg = Release|x86
+		{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}.Release|x86.ActiveCfg = Release|x86
+		{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
