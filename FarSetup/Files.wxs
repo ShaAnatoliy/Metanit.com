@@ -9,7 +9,8 @@
     Помимо <DirectoryRef> существуют ссылки <FeatureRef>,<ComponentRef> и другие
     -->
     <DirectoryRef Id="INSTALLLOCATION" FileSource='C:\FarManX64\' >
-      <Component Id="ProductComponent" Guid="e00841e6-d0b2-4619-a05c-b514a96f0110"
+      <Component Id="ProductComponent" 
+                 Guid="c53860e9-bd21-45b3-a6b6-a9a49a0adc38"
                  DiskId='1' >
         <File Id='Far' Name='Far.exe'/>
         <File Id='lpeg' Name='lpeg.dll'/>

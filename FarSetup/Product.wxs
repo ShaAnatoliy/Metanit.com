@@ -28,7 +28,7 @@
 
 
     <Feature Id="ProductFeature" Title="$(var.ProductName)" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentRef Id="ProductComponent" />
 			<ComponentRef Id="ApplicationShortcutFar" />
 		</Feature>
 

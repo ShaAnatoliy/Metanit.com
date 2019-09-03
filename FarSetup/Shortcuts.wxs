@@ -5,7 +5,7 @@
 	<Fragment>
     <!-- Ярлыки в меню Пуск -->
     <DirectoryRef Id="ApplicationProgramsFolder">
-      <Component Id="ApplicationShortcutFar" Guid="3b422277-391d-448e-9d33-b8f5c346af52">
+      <Component Id="ApplicationShortcutFar" Guid="115b7508-2012-4955-acde-50cefc0e0149">
 
         <Shortcut Id="ShortcutFar"
           Name="Far"
