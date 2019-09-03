@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
+  <!-- <Fragment> содержит внутри фрагмент кода, который будет включен в проект при сборке. -->
   <Fragment>
+    <!-- 
+    <DirectoryRef> ссылка на раздел Directory. Позволяет вынести, например, описание компонентов за пределы ключа <Directory>. 
+    Ключи вида <*Ref> упрощают процесс разделения проекта на фрагменты. 
+    Помимо <DirectoryRef> существуют ссылки <FeatureRef>,<ComponentRef> и другие
+    -->
     <DirectoryRef Id="INSTALLLOCATION" FileSource='C:\FarManX64\' >
       <Component Id="ProductComponent" Guid="e00841e6-d0b2-4619-a05c-b514a96f0110"
                  DiskId='1' >

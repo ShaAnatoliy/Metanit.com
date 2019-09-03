@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>5333336c-bfd1-4477-81ed-aa2b6f4b0f94</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>FarSetup</OutputName>
+    <OutputName>Install development tools</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
