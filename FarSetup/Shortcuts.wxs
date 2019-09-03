@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
   <?include Variables.wxi?>
   
 	<Fragment>
     <!-- Ярлыки в меню Пуск -->
     <DirectoryRef Id="ApplicationProgramsFolder">
-      <Component Id="ApplicationShortcutFar" Guid="115b7508-2012-4955-acde-50cefc0e0149">
+      <Component Id="ApplicationShortcutFar" Guid="{115B7508-2012-4955-ACDE-50CEFC0E0149}">
 
         <Shortcut Id="ShortcutFar"
           Name="Far"

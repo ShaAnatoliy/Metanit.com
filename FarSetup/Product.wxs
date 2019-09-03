@@ -20,7 +20,9 @@
 
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="INSTALLLOCATION" Name="$(var.ProductName)"/>
+        <Directory Id="INSTALLLOCATION" Name="$(var.ProductName)" >
+          <Directory Id="FarDestDir" Name="$(var.FarDestPath)"/>
+        </Directory>
       </Directory>
       <Directory Id="ProgramMenuFolder">
         <Directory Id="ApplicationProgramsFolder" Name="$(var.ProductName)" />
@@ -29,12 +31,12 @@
 
 
     <Feature Id="ProductFeature" Title="$(var.ProductName)" Level="1">
-			<ComponentRef Id="ProductComponent" />
+      <ComponentRef Id="BinFilesForFar" />
 			<ComponentRef Id="ApplicationShortcutFar" />
 		</Feature>
 
 		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
-		  <WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="License.rtf"/>
+		<WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="License.rtf"/>
 		<UIRef Id="WixUI_InstallDir"/>
 
 	</Product>
