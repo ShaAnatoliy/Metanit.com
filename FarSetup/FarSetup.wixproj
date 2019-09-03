@@ -6,13 +6,14 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>5333336c-bfd1-4477-81ed-aa2b6f4b0f94</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>Install development tools</OutputName>
+    <OutputName>DevToolzz</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <DefineConstants>Debug</DefineConstants>
+    <Cultures>ru-RU</Cultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>

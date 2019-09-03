@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
-  <?define ProductName="InstForFar" ?>
-  <?define ProductVersion="1.0.0.0" ?>
+  <?define ProductName="DevToolzz" ?>
+  <?define ProductVersion="1.0.0.1" ?>
   <?define ProductCode="79e9cf0d-37a6-402f-a46e-53e88c406a33"?>
   <?define UpgradeCode="91feb7bf-6f67-4a3f-b0b9-dc4403e8e16c"?>
   <?define Manufacturer="AnatolyiiSh"?>

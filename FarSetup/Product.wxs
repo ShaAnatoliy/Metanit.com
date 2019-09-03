@@ -4,12 +4,13 @@
 
   <?include Variables.wxi?>
   
-	<Product Id="$(var.ProductCode)" Name="$(var.ProductName)" Language="1049" 
+	<Product Id="$(var.ProductCode)" Name="$(var.ProductName)" Language="1049" Codepage="1251" 
            Version="$(var.ProductVersion)" 
            Manufacturer="$(var.Manufacturer)" 
            UpgradeCode="$(var.UpgradeCode)">
 
-    <Package Id="*" 
+    <Package Id="*" Keywords='Installer' Description='Установщик полезных инструментов'
+             Manufacturer="$(var.Manufacturer)" Languages="1049" SummaryCodepage="1251"
              InstallerVersion="200" Compressed="yes" 
              InstallScope="perMachine" AdminImage="yes" />
 
