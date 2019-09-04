@@ -36,7 +36,8 @@
 
     <Feature Id="ProductFeature" Title="$(var.ProductName)" Level="1">
       <ComponentRef Id="ReadmeComponent" />
-			<ComponentRef Id="ApplicationShortcutFar" />
+      <ComponentGroupRef Id="Far3Manager" />
+      <ComponentRef Id="ApplicationShortcutFar" />
 		</Feature>
 
 		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />

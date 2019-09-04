@@ -21,6 +21,7 @@
     <Cultures>ru-RU</Cultures>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Far3Manager.wxs" />
     <Compile Include="Files.wxs" />
     <Compile Include="Product.wxs" />
     <Compile Include="Shortcuts.wxs" />
