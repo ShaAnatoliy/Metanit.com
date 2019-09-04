@@ -8,7 +8,7 @@
     <DirectoryRef Id="ApplicationProgramsFolder">
       <Component Id="ApplicationShortcutFar" Guid="{115B7508-2012-4955-ACDE-50CEFC0E0149}">
 
-        <Shortcut Id="ShortcutFar"
+        <Shortcut Id="ShortcutReadMe"
           Name="ReadMe"
           Description="$(var.ProductName)"
           Target="[FarDestDir]\content.txt"
@@ -17,6 +17,13 @@
         <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
         <RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.ProductName)" 
                        Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+
+        <Shortcut Id="ShortcutFar3"
+          Name="Far 3"
+          Description="$(var.ProductName)"
+          Target="[FarDestDir]\Far.exe"
+          WorkingDirectory="FarDestDir"/>
+
       </Component>
     </DirectoryRef>
     

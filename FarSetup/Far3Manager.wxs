@@ -1,58 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <Fragment>
-    <DirectoryRef Id="FarDestDir">
-      <Directory Id="dirF43951089984DB38BA858885B1579450" Name="FarManX64" />
-    </DirectoryRef>
-  </Fragment>
-  <Fragment>
     <ComponentGroup Id="Far3Manager">
-      <Component Win64="yes" Id="cmpBDE0D6EDBF6EE4978110ED9DE6CAA544" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpBDE0D6EDBF6EE4978110ED9DE6CAA544" Directory="FarDestDir" Guid="*">
         <File Id="fil463573A91A1112942D2499703FBECEB4" KeyPath="yes"  Source="C:\FarManX64\2019-05-30-12-10-27-SO.GetObjects.xml" />
       </Component>
-      <Component Win64="yes" Id="cmpCA9B998FD34DFB6F5167F6E9296E5C32" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpCA9B998FD34DFB6F5167F6E9296E5C32" Directory="FarDestDir" Guid="*">
         <File Id="fil93742302A6A7387B480B3A0CDD2542D5" KeyPath="yes" Source="C:\FarManX64\changelog" />
       </Component>
-      <Component Win64="yes" Id="cmp38636782CEEDF303270CE465E00E95AE" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmp38636782CEEDF303270CE465E00E95AE" Directory="FarDestDir" Guid="*">
         <File Id="fil1AF8000D284283784A2A3FB4DDF732E6" KeyPath="yes" Source="C:\FarManX64\changelog_eng" />
       </Component>
-      <Component Win64="yes" Id="cmpFC1E0A9C329E8ED91968F2E8952A1DE5" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpFC1E0A9C329E8ED91968F2E8952A1DE5" Directory="FarDestDir" Guid="*">
         <File Id="fil9B075C2BC534AF1B2A16249326DFC7E6" KeyPath="yes" Source="C:\FarManX64\Far.exe" />
       </Component>
-      <Component Win64="yes" Id="cmpCB42D7D07DF0DF52D51D2D7B8E2BCF0E" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpCB42D7D07DF0DF52D51D2D7B8E2BCF0E" Directory="FarDestDir" Guid="*">
         <File Id="fil47CB46770415C68260B978407FE36BF3" KeyPath="yes" Source="C:\FarManX64\Far.exe.example.ini" />
       </Component>
-      <Component Win64="yes" Id="cmpD5A842ADAFDF5EDBA6423F9AB64F8D50" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpD5A842ADAFDF5EDBA6423F9AB64F8D50" Directory="FarDestDir" Guid="*">
         <File Id="filC5BE5CE94657E77650D2C06452A9D6F9" KeyPath="yes" Source="C:\FarManX64\FarEng.hlf" />
       </Component>
-      <Component Win64="yes" Id="cmp42A7D01AF57DD0184E31968EB598A7A7" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmp42A7D01AF57DD0184E31968EB598A7A7" Directory="FarDestDir" Guid="*">
         <File Id="fil9A0621FBD4F8AD0B7506D6CEE07DD5A1" KeyPath="yes" Source="C:\FarManX64\FarEng.lng" />
       </Component>
-      <Component Win64="yes" Id="cmpE5AACA94DE79E4D3983F25043D6AE0FE" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpE5AACA94DE79E4D3983F25043D6AE0FE" Directory="FarDestDir" Guid="*">
         <File Id="fil150D3B7DA6B18598AA8806DF6D83A895" KeyPath="yes" Source="C:\FarManX64\FarRus.hlf" />
       </Component>
-      <Component Win64="yes" Id="cmp1508C6E2FC369055E7F2258624528CF3" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmp1508C6E2FC369055E7F2258624528CF3" Directory="FarDestDir" Guid="*">
         <File Id="filE0C2CB4F35F7AB5F52D335FF8268F0DF" KeyPath="yes" Source="C:\FarManX64\FarRus.lng" />
       </Component>
-      <Component Win64="yes" Id="cmp4E5B8113B6599676C4508FAC962A9E3F" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmp4E5B8113B6599676C4508FAC962A9E3F" Directory="FarDestDir" Guid="*">
         <File Id="fil2F593FC6354B6751DB04135948FEE3B4" KeyPath="yes" Source="C:\FarManX64\File_id.diz" />
       </Component>
-      <Component Win64="yes" Id="cmp48BF476E55D64B05DCAB3B82DF37CF88" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmp48BF476E55D64B05DCAB3B82DF37CF88" Directory="FarDestDir" Guid="*">
         <File Id="fil456D7B57F25EB1805831982D2C9D12A5" KeyPath="yes" Source="C:\FarManX64\lpeg.dll" />
       </Component>
-      <Component Win64="yes" Id="cmpE395CE2E9C9C460DF1002ACFF5BE896D" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpE395CE2E9C9C460DF1002ACFF5BE896D" Directory="FarDestDir" Guid="*">
         <File Id="filE0F688C4089DFA2C423A67E4DA9AD7BD" KeyPath="yes" Source="C:\FarManX64\lua5.1.dll" />
       </Component>
-      <Component Win64="yes" Id="cmpB1CCC3C83B078463C6E0C414C270FCA9" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpB1CCC3C83B078463C6E0C414C270FCA9" Directory="FarDestDir" Guid="*">
         <File Id="fil128456A257386DBD52BEF0DB5107BAA2" KeyPath="yes" Source="C:\FarManX64\lua51.dll" />
       </Component>
-      <Component Win64="yes" Id="cmp41B14D83FA0B6E7325D28B7336D8F2F6" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmp41B14D83FA0B6E7325D28B7336D8F2F6" Directory="FarDestDir" Guid="*">
         <File Id="filC1908A752C95DE32F8841E7CCF2BEC56" KeyPath="yes" Source="C:\FarManX64\luafar3.dll" />
       </Component>
-      <Component Win64="yes" Id="cmpAAE6D52AC3FFB82BCA58A94770A601C2" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmpAAE6D52AC3FFB82BCA58A94770A601C2" Directory="FarDestDir" Guid="*">
         <File Id="filB81576A3D452C78CB2191E45096C14F7" KeyPath="yes" Source="C:\FarManX64\RestoreOldPluginSettings.cmd" />
       </Component>
-      <Component Win64="yes" Id="cmp44A804F15DE0056AA37A6E8E6E894B94" Directory="dirF43951089984DB38BA858885B1579450" Guid="*">
+      <Component Win64="yes" Id="cmp44A804F15DE0056AA37A6E8E6E894B94" Directory="FarDestDir" Guid="*">
         <File Id="fil385974A6BA78104A3CC15E7AFE5D2C32" KeyPath="yes" Source="C:\FarManX64\SaveOldPluginSettings.cmd" />
       </Component>
       <Component Win64="yes" Id="cmp9E08B6C71373C40EC0234CE8070D00E9" Directory="dir0330D5C9EDA3A5257F00B17AEB90B740" Guid="*">
@@ -1390,7 +1385,7 @@
     </ComponentGroup>
   </Fragment>
   <Fragment>
-    <DirectoryRef Id="dirF43951089984DB38BA858885B1579450">
+    <DirectoryRef Id="FarDestDir">
       <Directory Id="dir0330D5C9EDA3A5257F00B17AEB90B740" Name="Addons" />
     </DirectoryRef>
   </Fragment>
@@ -1410,7 +1405,7 @@
     </DirectoryRef>
   </Fragment>
   <Fragment>
-    <DirectoryRef Id="dirF43951089984DB38BA858885B1579450">
+    <DirectoryRef Id="FarDestDir">
       <Directory Id="dir2A70538F17341B8C5908E75FCD1F839D" Name="Plugins" />
     </DirectoryRef>
   </Fragment>
@@ -1545,7 +1540,7 @@
     </DirectoryRef>
   </Fragment>
   <Fragment>
-    <DirectoryRef Id="dirF43951089984DB38BA858885B1579450">
+    <DirectoryRef Id="FarDestDir">
       <Directory Id="dirB47316072D21DC6FED227816F98BEFF8" Name="Encyclopedia" />
     </DirectoryRef>
   </Fragment>
@@ -1565,7 +1560,7 @@
     </DirectoryRef>
   </Fragment>
   <Fragment>
-    <DirectoryRef Id="dirF43951089984DB38BA858885B1579450">
+    <DirectoryRef Id="FarDestDir">
       <Directory Id="dirBCF97B73F4BD6671942F76100F9A99CE" Name="Documentation" />
     </DirectoryRef>
   </Fragment>
