@@ -11,15 +11,19 @@
 
     <Package Id="*" Keywords='Installer' Description='Установщик полезных инструментов'
              Manufacturer="$(var.Manufacturer)" Languages="1049" SummaryCodepage="1251"
-             InstallerVersion="200" Compressed="yes" 
-             InstallScope="perMachine" AdminImage="yes" />
+             InstallerVersion="300" Compressed="yes" 
+             InstallScope="perMachine" AdminImage="yes" Platform="x64" />
 
 		<Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
 
-		<MajorUpgrade DowngradeErrorMessage="A newer version of [$(var.ProductName)] is already installed." />
+		<!--<MajorUpgrade DowngradeErrorMessage="A newer version of [$(var.ProductName)] is already installed." />-->
+    <MajorUpgrade
+      AllowSameVersionUpgrades="no"
+      DowngradeErrorMessage="Can't downgrade."
+      Schedule="afterInstallInitialize" />
 
     <Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="ProgramFilesFolder">
+      <Directory Id="ProgramFiles64Folder">
         <Directory Id="INSTALLLOCATION" Name="$(var.ProductName)" >
           <Directory Id="FarDestDir" Name="$(var.FarDestPath)"/>
         </Directory>
@@ -31,7 +35,7 @@
 
 
     <Feature Id="ProductFeature" Title="$(var.ProductName)" Level="1">
-      <ComponentRef Id="BinFilesForFar" />
+      <ComponentRef Id="ReadmeComponent" />
 			<ComponentRef Id="ApplicationShortcutFar" />
 		</Feature>
 

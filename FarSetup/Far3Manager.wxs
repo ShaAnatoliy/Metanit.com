@@ -1,0 +1,1632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="FarManager3">
+      <Directory Id="dir74995D48E200D6FEF38AEE89F8FD7C42" Name="FarManX64" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="Far3Manager">
+      <Component Id="cmp381FCB449CFB36A0D7B85037F5954019" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filC01054DBCB4F3AE0189C79BC4F1839F0" KeyPath="yes" Source="SourceDir\2019-05-30-12-10-27-SO.GetObjects.xml" />
+      </Component>
+      <Component Id="cmp9BF2EBA6349F4B92E4DAAF7515420C1A" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil70AC51B52A8E326820C12410FF67346C" KeyPath="yes" Source="SourceDir\changelog" />
+      </Component>
+      <Component Id="cmp5B3CC73AE39C92026C1290B35636E628" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filA4BA85D8E2D81C34B4EB859E314A3A8D" KeyPath="yes" Source="SourceDir\changelog_eng" />
+      </Component>
+      <Component Id="cmp7D0EC2F617218F2B856C06010C4A81E2" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filFF1DDFC5B1C8EE25BC2B2F1F01C2FEAE" KeyPath="yes" Source="SourceDir\Far.exe" />
+      </Component>
+      <Component Id="cmp5420B2BFAF39B4639B3EB047F5F2F48D" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil65351696ED3CC483F0A7062C66C97150" KeyPath="yes" Source="SourceDir\Far.exe.example.ini" />
+      </Component>
+      <Component Id="cmp762EB2915D8329F3F5442CD95D3DAC92" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil90BA626B601E100F4F7E3D98EE8DAB08" KeyPath="yes" Source="SourceDir\FarEng.hlf" />
+      </Component>
+      <Component Id="cmp93B78877B5985C659D74E339B75EF96A" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil3A6A3DAAF000CECC5F6994029D5598A4" KeyPath="yes" Source="SourceDir\FarEng.lng" />
+      </Component>
+      <Component Id="cmp0AED182FB0F7B5F70D52846F361FABD6" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filBBA22D99144560BB371575CA31A65D2F" KeyPath="yes" Source="SourceDir\FarRus.hlf" />
+      </Component>
+      <Component Id="cmp82425F4D0C3BDD2FCA3ED16B9830A3BF" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filDEE6CF6B75E7DE53119F352B9863B382" KeyPath="yes" Source="SourceDir\FarRus.lng" />
+      </Component>
+      <Component Id="cmp92E91F836A615F9B86169C079AE6EB9A" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filB52BB858376122E52E672F625E9D575B" KeyPath="yes" Source="SourceDir\File_id.diz" />
+      </Component>
+      <Component Id="cmp6A06355E9871A156FA43662EE86CA182" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filB07CE0B27300F9BEF5A0FB353F4E614B" KeyPath="yes" Source="SourceDir\lpeg.dll" />
+      </Component>
+      <Component Id="cmp414C570A707B26ED0612F3D23285087C" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil83D63D4AC0C0B7DB4A35B723F1B23B0F" KeyPath="yes" Source="SourceDir\lua5.1.dll" />
+      </Component>
+      <Component Id="cmpBAA7911096B42753BE7B7DEB71227765" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil56688FCDE041B22DD4A4588FCFC0E871" KeyPath="yes" Source="SourceDir\lua51.dll" />
+      </Component>
+      <Component Id="cmpCF64DBEE26017004EC9383EAEBCDA7A6" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="filDDC55BE5000F281673D1F6A7E2E3ED3F" KeyPath="yes" Source="SourceDir\luafar3.dll" />
+      </Component>
+      <Component Id="cmp8D60B72D884686DE75B2F7F48872BABE" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil5ADF996B9AB62A7D098DD211A780FEF6" KeyPath="yes" Source="SourceDir\RestoreOldPluginSettings.cmd" />
+      </Component>
+      <Component Id="cmp3F21CE6B83ADDC343197BFEFFC958F71" Directory="dir74995D48E200D6FEF38AEE89F8FD7C42" Guid="*">
+        <File Id="fil25253CD8B22AA0DC480D2E4B3EF83E96" KeyPath="yes" Source="SourceDir\SaveOldPluginSettings.cmd" />
+      </Component>
+      <Component Id="cmpC551DD2E7D625B5EA41F2536DF56FE96" Directory="dir9CB2366CC42F4EF009BB6926B784CCE6" Guid="*">
+        <File Id="filD62F3DDA6922A118731ACCB804EF4FFF" KeyPath="yes" Source="SourceDir\Addons\Descript.ion" />
+      </Component>
+      <Component Id="cmp14DBA46E9AAC925CADF7D8B810EB393F" Directory="dir9CB2366CC42F4EF009BB6926B784CCE6" Guid="*">
+        <File Id="fil3AF7281CA3A825D619A9DB25AC8076D3" KeyPath="yes" Source="SourceDir\Addons\README.TXT" />
+      </Component>
+      <Component Id="cmp5BDBAD2EB172A0D9A78D3A6B9B56DFF5" Directory="dir7C65DEADD6DF5CEF4D4D50C6845BB669" Guid="*">
+        <File Id="fil7CB41F89A7EEF1161745FDF97208BE2D" KeyPath="yes" Source="SourceDir\Addons\Colors\Descript.ion" />
+      </Component>
+      <Component Id="cmpFF7CAB94971C45033D0D0C191153E294" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil0A1E8966C6EB05458CD53910B1DCE15E" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\black_from_Fonarev.farconfig" />
+      </Component>
+      <Component Id="cmpDE434C47072B7582C080003A1809C676" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil95DA63476D0115CDEC9F272FE7C64118" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\black_from_july.farconfig" />
+      </Component>
+      <Component Id="cmp90C1E1B954AA88CA3D5C9E18B94EFE33" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil475EAD7B17D8F8361C804B11B6E17245" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\black_from_Myodov.farconfig" />
+      </Component>
+      <Component Id="cmp1355044C0E33B869B68D999DB40E6EC0" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil000820B4389915D375BF5D3A1F78B9E5" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\Colors_from_admin_essp_ru.farconfig" />
+      </Component>
+      <Component Id="cmp1B6AFCDF486C7C625375FC19D2E69B97" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="filAD346D46780CF9145016A33364FEB7C1" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\Colors_from_Gernichenko.farconfig" />
+      </Component>
+      <Component Id="cmp89390232E614CA352254C3260690EE6E" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil92AF57B8901BA401FBA531D1CE957C20" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\Colors_from_Sadovoj.farconfig" />
+      </Component>
+      <Component Id="cmpDDA6BAF9E8690307D3F16FC8ED63947F" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="filFB695C2011E96CC510BA8CB29B73184B" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\Descript.ion" />
+      </Component>
+      <Component Id="cmp657BE792A1A2323E556CDD5A47422530" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil76120510CBDD4968FCE327A8E030E4D8" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\dn_like.farconfig" />
+      </Component>
+      <Component Id="cmpF3B2E2CCD23979E2D43BC0FA3FB5B4D4" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil04AC9AE98609163FE489111AA778CB53" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\FARColors242.farconfig" />
+      </Component>
+      <Component Id="cmpDD331EC8FBA39B9E38274D107069E26A" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="filEC8837A3F1A4284ED9C8ABEC11F689F7" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\GreenMile.farconfig" />
+      </Component>
+      <Component Id="cmp7A67FF56BFA9CB4DE5BB267D72B14FFD" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil78315BE957E615502336A8F7879FAA78" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\hell.farconfig" />
+      </Component>
+      <Component Id="cmp725BBAC9056E30FAE83D23028A4EE16D" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil222EF79ECBED5BE3BC237153B45FEFF0" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\nc5pal2.farconfig" />
+      </Component>
+      <Component Id="cmp4267B1B67F1F4E89C3716280C6221835" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="filC410E6F2949086AC5AE990C27CD68084" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\Rodion_Doroshkevich.farconfig" />
+      </Component>
+      <Component Id="cmpF58BDA5CB152F8C9235B5D8670611E6F" Directory="dir621FB4437CEF28EC28A95102C179EA4F" Guid="*">
+        <File Id="fil316DD107D5E3EB3D13D71169BDB7C345" KeyPath="yes" Source="SourceDir\Addons\Colors\Custom Highlighting\VaxColors.farconfig" />
+      </Component>
+      <Component Id="cmp42A8693B99249C93837B291FB9F095C0" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil9A250C63E5715DD41C9A97E15DDB3514" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\black_from_Fonarev.farconfig" />
+      </Component>
+      <Component Id="cmp9390EC4A80EA2E672250AD04A1228336" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="filA9F2A63A29B2804A8817A80961383D57" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\black_from_july.farconfig" />
+      </Component>
+      <Component Id="cmp8AE4F556B22FDD71EEA512EED30DBEE9" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="filE7900D98F629BB9E18CA2812DDE15E49" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\black_from_Myodov.farconfig" />
+      </Component>
+      <Component Id="cmp4766904E6087498FC99D1DE70ACDB556" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="filF96DF33E4C5312A1E7E330E8073C66ED" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\Colors_from_admin_essp_ru.farconfig" />
+      </Component>
+      <Component Id="cmp007A81B8BA0999C12A9A9B8D06BCD981" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil4F119A93C4D0457DED8E7A86B4C4DF44" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\Colors_from_Gernichenko.farconfig" />
+      </Component>
+      <Component Id="cmpE145A492E6871DA2ECFBCF7970C64D1E" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="filA7622CA10E7DF249AC58382EA9370031" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\Colors_from_Sadovoj.farconfig" />
+      </Component>
+      <Component Id="cmp40FBF77B1A309BA6A7DEF36B5C1F2B84" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="filECFA98C109B751C5FA00146DB42F0301" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\Descript.ion" />
+      </Component>
+      <Component Id="cmp004A422B3F38B840582B297BFC20103B" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil201870C18EFBB33FFF71986A5198758E" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\dn_like.farconfig" />
+      </Component>
+      <Component Id="cmp7969C9173D00F957829721A94D834A58" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="filDDF905517E25E1DE6F0AEA00394619B7" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\FARColors242.farconfig" />
+      </Component>
+      <Component Id="cmp739BCADF829C2433CFF66CAD021A0828" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil28915A0BAA1FEDF94A77D10337DCF5DA" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\GreenMile.farconfig" />
+      </Component>
+      <Component Id="cmpCE6764BFCB98542D15526F94415D119E" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil90C08B885422BED8C7E74CC708C6870A" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\hell.farconfig" />
+      </Component>
+      <Component Id="cmp6E6DA140E15895BFE704269B046730A9" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil750F496DE8F2A39627B586B6338F71ED" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\nc5pal2.farconfig" />
+      </Component>
+      <Component Id="cmpD203C6B3A92F28458F3A292D28FF1366" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil07D63AA56A7DC57554F579FA1A5065B4" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\Rodion_Doroshkevich.farconfig" />
+      </Component>
+      <Component Id="cmpF3B09583ECB855581275EB10942997B7" Directory="dirC7C84296A79D031961AEAD79466BFDBD" Guid="*">
+        <File Id="fil5A6D8BB97EB3198897071F8C7E730D47" KeyPath="yes" Source="SourceDir\Addons\Colors\Default Highlighting\VaxColors.farconfig" />
+      </Component>
+      <Component Id="cmp08754652CD2684747611ED005772F1CB" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filF0A3392042C9F9487D021306BD3F6DCC" KeyPath="yes" Source="SourceDir\Addons\Macros\AltMenu.lua" />
+      </Component>
+      <Component Id="cmp9D0418825629BF3AA1169E2EAF95C61E" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil80DD3C812C723FDD3BF41857B3BE4679" KeyPath="yes" Source="SourceDir\Addons\Macros\AltScreens.lua" />
+      </Component>
+      <Component Id="cmp53320E41E91DFEFC42F62CC79E59B73C" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil13A0F177E42333B797B53C04E4E9B813" KeyPath="yes" Source="SourceDir\Addons\Macros\AltSearch.lua" />
+      </Component>
+      <Component Id="cmpB35841F37031753E2D4CD58F2DF9F322" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil0256C7484EF6A639D5C35B4A6084D7EB" KeyPath="yes" Source="SourceDir\Addons\Macros\AltX.lua" />
+      </Component>
+      <Component Id="cmp825697966F70A849F31D8A60CA48F5CF" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filF167CD2E7B4002E429304CD5049EE7BC" KeyPath="yes" Source="SourceDir\Addons\Macros\CtrlDel.lua" />
+      </Component>
+      <Component Id="cmpA40225FEF4C45550471203D557239972" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil43DDDF3B53788B23EC9C9C4F4D400D11" KeyPath="yes" Source="SourceDir\Addons\Macros\CtrlF10.lua" />
+      </Component>
+      <Component Id="cmp648EE4E2C1E1EF71BC4B07AD0818507D" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil6F2BBA87EF58C88669B8837D99DF5B59" KeyPath="yes" Source="SourceDir\Addons\Macros\Descript.ion" />
+      </Component>
+      <Component Id="cmp5265A265B3D4ED48778C1E7D4A6009B8" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil3F026616543A071E9B192FCD27B86E0B" KeyPath="yes" Source="SourceDir\Addons\Macros\Dialog.AltDown.lua" />
+      </Component>
+      <Component Id="cmp3DCBF1290DF9729A322DCDDDD6339EB6" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil743A1D3F3C7E575C61A759725CF5E0EC" KeyPath="yes" Source="SourceDir\Addons\Macros\Edit.Notepad.lua" />
+      </Component>
+      <Component Id="cmp299F3BBD523C29B8185DDA9D57E5213F" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filF3CEFD7807C9000546CD2F15073A508E" KeyPath="yes" Source="SourceDir\Addons\Macros\Edit.OpenURL.lua" />
+      </Component>
+      <Component Id="cmpC1063AC39DD254FE333C37EF33DE5BA3" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil7AB91F087929569BFC1D3D9FE74ADE64" KeyPath="yes" Source="SourceDir\Addons\Macros\Edit.SaveAndExit.lua" />
+      </Component>
+      <Component Id="cmp015FE3ED98E13F00AAACA6343DD561D3" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil467616BD8051DC0021D78BD5FE480771" KeyPath="yes" Source="SourceDir\Addons\Macros\Edit.SaveFile.lua" />
+      </Component>
+      <Component Id="cmp5AD7185B372E584DA352FFC30D8F6221" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filD1BDA398DE19B0315EFDF40562F4FDED" KeyPath="yes" Source="SourceDir\Addons\Macros\Editor.ColorWord.moon" />
+      </Component>
+      <Component Id="cmp89CF27037355473B32E863C338817D92" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil9532AA6A9CC543DAFADB9F1169DBDE51" KeyPath="yes" Source="SourceDir\Addons\Macros\F3.lua" />
+      </Component>
+      <Component Id="cmpED28B379EA44B5881893C55235C63ABD" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil29590CFC99CAF5326727879001C7A8BA" KeyPath="yes" Source="SourceDir\Addons\Macros\F9DeactivateMenu.lua" />
+      </Component>
+      <Component Id="cmp9F015DF0CE98CAB11C204FAC2FDA6A31" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil9C6C929F89B2EC781302E984943DB2A5" KeyPath="yes" Source="SourceDir\Addons\Macros\F9Table.lua" />
+      </Component>
+      <Component Id="cmpF03460D73862007B7C7D77F0542996CE" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filBC318C49E475A3A5C546C4F4B7DC3A4B" KeyPath="yes" Source="SourceDir\Addons\Macros\OpeningLastFile.lua" />
+      </Component>
+      <Component Id="cmp9E955CD0B9058B72ABB25B2419F348EA" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil5CC05CCAFBE6C99F5FE2859E85ACBA23" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.AltBS.lua" />
+      </Component>
+      <Component Id="cmpAF78D1B8DC829438C8A0B91205BFAECD" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filB6EE18DA32A9CAB8FEE923F1CFF2A918" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.Apps.lua" />
+      </Component>
+      <Component Id="cmp561FD67275EEADB48BD458E24C5D454A" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil431CBD54558FA2CB77D1F4FF1D99B140" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.BS.lua" />
+      </Component>
+      <Component Id="cmp55B4C299EBE48CDDE0A86546B718580E" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filCFAFA4184DBE97A522C630F45C293C57" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.CtrlIns...lua" />
+      </Component>
+      <Component Id="cmp49C4762BCC8A123341415A84A75DEB8E" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil98A71087274CC7D41BEDF256C4B29E24" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.CtrlLeft.lua" />
+      </Component>
+      <Component Id="cmpB4EE97AFC5B28A98128AACFE4CC8A6F2" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil6E63B2C9C41FA3DBD74FBA10EC6891B1" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.CtrlQ.lua" />
+      </Component>
+      <Component Id="cmpB2BDA9E2AD2A37C01D7B8D88F8A52066" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filC9BDBE73A0EC8046CB0AF9D38F7E873C" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.CtrlRight.lua" />
+      </Component>
+      <Component Id="cmp2ECB0919DFDDEA9D13AF48D63F77710F" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filFC2EE6B2148750C3156D535955CD2549" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.CtrlShiftBackSlash.lua" />
+      </Component>
+      <Component Id="cmpABE1B88C124E9DEA42392DB83B4B5BB0" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filFE75120E7F4EBE680603A27DBFF3814E" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.CtrlShiftPgUpDn.lua" />
+      </Component>
+      <Component Id="cmp5E7A73D598D6ED2CC4CDFEA10905BB05" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil17348A278C98D255FF1AA36E3CBFC025" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.Del.lua" />
+      </Component>
+      <Component Id="cmp9BFE6ED4A3AD05CE517757DC3E1EBE1C" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil0CD31CBCC57B4958654FBBE8DCDA1A14" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.Esc.lua" />
+      </Component>
+      <Component Id="cmpDBC3A3355CA62B91F2F057FA8F5E1AF2" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filAFFCED59AA1DE4BE5555667F7A5B02E4" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.EscKeyBar.lua" />
+      </Component>
+      <Component Id="cmpB27F7E22EBC9235BA84DC1F8E4FD985B" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filE54A63C8BB7CC64E39205F4675AD7801" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.JumpToSelectedFile.lua" />
+      </Component>
+      <Component Id="cmp2F58A49F8119340182AC0D59F5A9A03F" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil23047C2909B75436A0F683ABC3C54E41" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.Lynx-mot.lua" />
+      </Component>
+      <Component Id="cmp0F30658488BB2A8B4CCA709BEE6590ED" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil7581039F72536471FE9BD4FB74CD5601" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.MouseWheelTilt.lua" />
+      </Component>
+      <Component Id="cmpABC60569EB32538EA784AE5748356043" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil9540529D87825E148E478C33E8309062" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.Numpad.lua" />
+      </Component>
+      <Component Id="cmp9EA5791491911E94B3A2F9DA3DC5AB32" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filA2DA37E72DF074589D192C0B837E71BD" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.SelectFromClipboard.lua" />
+      </Component>
+      <Component Id="cmp0B075034AFB9D58A14348DE7A6ACBE04" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filF9B411CDD6AA6D1B5D1E98B36F3F7FEC" KeyPath="yes" Source="SourceDir\Addons\Macros\Panel.SpaceToSelect.lua" />
+      </Component>
+      <Component Id="cmp4679F2CFE478A511C11401CD9FBA9636" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil9F1F9D4C6F7622BB5944D11FC4360B59" KeyPath="yes" Source="SourceDir\Addons\Macros\Search.CtrlIns.lua" />
+      </Component>
+      <Component Id="cmp1AD044DC8808AE224BAF36FF75114CE2" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil1A917071180F8D2B3D762AFF471350C8" KeyPath="yes" Source="SourceDir\Addons\Macros\ShiftBS.lua" />
+      </Component>
+      <Component Id="cmpEDCBA3B8F87F803CCFE138AF0AC45028" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filC647AAEA93E3E13B6FBA3B4DA1AB6656" KeyPath="yes" Source="SourceDir\Addons\Macros\ShiftF1.lua" />
+      </Component>
+      <Component Id="cmpFE4F4BCD06934ED6B283DD842806035B" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil83F51D12A4128AF06980639FDAA839D8" KeyPath="yes" Source="SourceDir\Addons\Macros\ShiftTab.lua" />
+      </Component>
+      <Component Id="cmp5167B74EB26779E7B028580A14E53BAE" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filD326D61B18A5B444AFB8D72ACC518608" KeyPath="yes" Source="SourceDir\Addons\Macros\Symlink.lua" />
+      </Component>
+      <Component Id="cmp466338DEC08427696ECA273898B231AE" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil9C887CBE69A2E7DD3BA79055FF325FF7" KeyPath="yes" Source="SourceDir\Addons\Macros\UppercaseFolders.lua" />
+      </Component>
+      <Component Id="cmpDAD959E9994C92FF0D0E0604C7B9DA90" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil8040172AF055C09597570735087976EF" KeyPath="yes" Source="SourceDir\Addons\Macros\View.CtrlUpDown.lua" />
+      </Component>
+      <Component Id="cmpF96762A9D71D386F35E426C6EB2DFA72" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filDC6CEB93034690D78FE919332DB52317" KeyPath="yes" Source="SourceDir\Addons\Macros\View.NextPrevFile.lua" />
+      </Component>
+      <Component Id="cmp0CBAD8FF31D66AE548B4B7E346328B7E" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="filD6A6B90F358F8D020E990B2C353F35F2" KeyPath="yes" Source="SourceDir\Addons\Macros\View.PgDn.lua" />
+      </Component>
+      <Component Id="cmp10DBFFF6F5E9329A1EC14CC3207A2251" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil2B372AADF8E2BBBC5DF9EF9E592C9F83" KeyPath="yes" Source="SourceDir\Addons\Macros\View.ShiftInsSearch.lua" />
+      </Component>
+      <Component Id="cmp3E3BBEF321E5E3C2DB51C6CFB8BB03FF" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil143BEF198A30E5531AA2CC53C37EF0EB" KeyPath="yes" Source="SourceDir\Addons\Macros\View.Space.lua" />
+      </Component>
+      <Component Id="cmp29F2418DB423D404D8972BBF7921910B" Directory="dir1439FDF2BBE339642264A10F23D59BB8" Guid="*">
+        <File Id="fil634F0085D6785FDA85AF45D14A85B33A" KeyPath="yes" Source="SourceDir\Addons\Macros\WheelScreenSwitch.lua" />
+      </Component>
+      <Component Id="cmpD751F4EC858E531DDFC1E1DCD03D0CC7" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil5F85439CAB442696C89C17C149A66559" KeyPath="yes" Source="SourceDir\Addons\SetUp\Default165.farconfig" />
+      </Component>
+      <Component Id="cmpEA5BD20F9B02CDB1928C17A62938A66A" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil75D8F748EA5A2078FE904854E9B73DDA" KeyPath="yes" Source="SourceDir\Addons\SetUp\Descript.ion" />
+      </Component>
+      <Component Id="cmp3F48E90F13A004014FB7ABF0AD30A3F4" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil928929CE088B985DEFE2DC705A885BA7" KeyPath="yes" Source="SourceDir\Addons\SetUp\Executor.4NT.farconfig" />
+      </Component>
+      <Component Id="cmpF903B0BC53D89136C481176144E031C5" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="filF40A2470A8EA1CCB33F4D6DA068EE2D2" KeyPath="yes" Source="SourceDir\Addons\SetUp\Executor.CMD.farconfig" />
+      </Component>
+      <Component Id="cmp149DF2A41DB50C9AC15740869FEB9DFD" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil08785D8AC5CB5A4C5579AE3CD3257A72" KeyPath="yes" Source="SourceDir\Addons\SetUp\Executor.COMMAND.farconfig" />
+      </Component>
+      <Component Id="cmp7C62991360F15ADEA2A49E955BA184B1" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil43BF94E9B55FB345EB3D194ED9D9CF5D" KeyPath="yes" Source="SourceDir\Addons\SetUp\Executor.TCC.farconfig" />
+      </Component>
+      <Component Id="cmp7E25083A928AE9C61B83C6C3E3474368" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil117A380831B9BB3117556AAB3CC3C991" KeyPath="yes" Source="SourceDir\Addons\SetUp\Executor.TCCLE.farconfig" />
+      </Component>
+      <Component Id="cmp8221B9C1EC4363BB07FBD56064DE7536" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="filEA45500CE31589543D7D8EDC2A4F1F20" KeyPath="yes" Source="SourceDir\Addons\SetUp\KeyBarLabels.farconfig" />
+      </Component>
+      <Component Id="cmp269A9327F0C2DD52BC36268EE44867E7" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil79937C7154E3D9B0EF36BDCEBAD2FECA" KeyPath="yes" Source="SourceDir\Addons\SetUp\WindowsGUI.farconfig" />
+      </Component>
+      <Component Id="cmpA640E74CFD361DB4AC604E31A8E7178D" Directory="dirD567699AEE7B1C7F670C49371F6FB32E" Guid="*">
+        <File Id="fil476F999A39791AA68EE4CF4DB75EF169" KeyPath="yes" Source="SourceDir\Addons\SetUp\WindowsGUI.lua" />
+      </Component>
+      <Component Id="cmpFB5AD2D063AC82B28B052C8A5E1357FF" Directory="dir40F57B5237E0685B3B8CD558ACE5EB2D" Guid="*">
+        <File Id="filA665B6B910A995BF620133FCCCD4B754" KeyPath="yes" Source="SourceDir\Addons\Shell\Descript.ion" />
+      </Component>
+      <Component Id="cmpAD973F4557B3FF3A245CCBBE8AFC55ED" Directory="dir40F57B5237E0685B3B8CD558ACE5EB2D" Guid="*">
+        <File Id="fil558E1F7B78B32C1A8AFF4B1EBE85682F" KeyPath="yes" Source="SourceDir\Addons\Shell\FARHere.inf" />
+      </Component>
+      <Component Id="cmp5167B723B8B41D122EF8C12F50BB8A68" Directory="dirCC1905DD8D6CB434C4A130B9753645DC" Guid="*">
+        <File Id="filB7E0FF70A408F100E01FBF99AA6DC133" KeyPath="yes" Source="SourceDir\Addons\XLat\Descript.ion" />
+      </Component>
+      <Component Id="cmp4B8F408781D0B7746FBC27755E0DA804" Directory="dir6FD2906E5E4EC6B2F9208C4A6BC356B9" Guid="*">
+        <File Id="filC20455D69499A676E4A77BBD82B916A1" KeyPath="yes" Source="SourceDir\Addons\XLat\Russian\AltR.lua" />
+      </Component>
+      <Component Id="cmpC9B1FC69613910AA7088D3783F49095D" Directory="dir6FD2906E5E4EC6B2F9208C4A6BC356B9" Guid="*">
+        <File Id="filDC587CA5162E49569473C174F487EBCD" KeyPath="yes" Source="SourceDir\Addons\XLat\Russian\Apps.lua" />
+      </Component>
+      <Component Id="cmp0B3D38E64209AB5461434D6D93E4A0CA" Directory="dir6FD2906E5E4EC6B2F9208C4A6BC356B9" Guid="*">
+        <File Id="fil4608160CAE5304BDBD9DFC6D443297D7" KeyPath="yes" Source="SourceDir\Addons\XLat\Russian\CtrlR.lua" />
+      </Component>
+      <Component Id="cmpE3D298FBF9CF31D3805B5924EA402722" Directory="dir6FD2906E5E4EC6B2F9208C4A6BC356B9" Guid="*">
+        <File Id="filFEAF1D530B903C4906552C0F40BF33C4" KeyPath="yes" Source="SourceDir\Addons\XLat\Russian\CtrlShiftX.lua" />
+      </Component>
+      <Component Id="cmp4236D9ABD40EE5FA316E706644C47ED8" Directory="dir6FD2906E5E4EC6B2F9208C4A6BC356B9" Guid="*">
+        <File Id="fil6EC7304D7F82644FC76559D9C54BA6D9" KeyPath="yes" Source="SourceDir\Addons\XLat\Russian\Descript.ion" />
+      </Component>
+      <Component Id="cmp3F75BD92D169BE2DF513B61C35B80C25" Directory="dir6FD2906E5E4EC6B2F9208C4A6BC356B9" Guid="*">
+        <File Id="filB3B5748E1F19683B5531EB0F7FD0E9C7" KeyPath="yes" Source="SourceDir\Addons\XLat\Russian\Qwerty.farconfig" />
+      </Component>
+      <Component Id="cmp27A56C8D986F156BBB9E39C6066E26D4" Directory="dir673CA19662820854706137661E65BD13" Guid="*">
+        <File Id="filFD2B28EF0C2021382634B66F4BA299BC" KeyPath="yes" Source="SourceDir\Documentation\eng\Bug.Report.txt" />
+      </Component>
+      <Component Id="cmp20257880C6E2D05371641045E3462E4E" Directory="dir673CA19662820854706137661E65BD13" Guid="*">
+        <File Id="filADD4A47319C60B7B423391A095FB01AD" KeyPath="yes" Source="SourceDir\Documentation\eng\Far.FAQ.txt" />
+      </Component>
+      <Component Id="cmp7C0B7988DC91BC2497CDB5A8A32070F4" Directory="dir673CA19662820854706137661E65BD13" Guid="*">
+        <File Id="fil47C2FA87D3F5C9497182D6E025646C20" KeyPath="yes" Source="SourceDir\Documentation\eng\Plugins.Install.txt" />
+      </Component>
+      <Component Id="cmpB8EF53529604C91732CEDC199B26ECE5" Directory="dir673CA19662820854706137661E65BD13" Guid="*">
+        <File Id="filEEAA4B5894A12BA17E9FF028D9B24140" KeyPath="yes" Source="SourceDir\Documentation\eng\Plugins.Review.txt" />
+      </Component>
+      <Component Id="cmp590DD4A37333AF7CE1E9A27162C236BF" Directory="dir673CA19662820854706137661E65BD13" Guid="*">
+        <File Id="filF8A27A947DD81F68BE51ADC25DCB7F1C" KeyPath="yes" Source="SourceDir\Documentation\eng\TechInfo.txt" />
+      </Component>
+      <Component Id="cmp2E66AA66F198A55E9BFBF1D97CDED7D3" Directory="dir97FC1561B4C736257E8BF64FC388C5A4" Guid="*">
+        <File Id="fil7AC4E22562A7B51A82DF968810999E6F" KeyPath="yes" Source="SourceDir\Documentation\rus\Bug.Report.txt" />
+      </Component>
+      <Component Id="cmpF6E1F550467E50D987A129362C0BF083" Directory="dir97FC1561B4C736257E8BF64FC388C5A4" Guid="*">
+        <File Id="fil5622625B78B8CF53EB41B6EBF9F7B260" KeyPath="yes" Source="SourceDir\Documentation\rus\Far.FAQ.txt" />
+      </Component>
+      <Component Id="cmpC9FB44BA7ACAA7B473718A7B19121FA5" Directory="dir97FC1561B4C736257E8BF64FC388C5A4" Guid="*">
+        <File Id="fil2B0171ABBD908C1510562624B13C7625" KeyPath="yes" Source="SourceDir\Documentation\rus\Plugins.Install.txt" />
+      </Component>
+      <Component Id="cmp604738040676545CD0DE05F62CCAB841" Directory="dir97FC1561B4C736257E8BF64FC388C5A4" Guid="*">
+        <File Id="filB910C794FA4C0FEC57B809CCC7181EE1" KeyPath="yes" Source="SourceDir\Documentation\rus\Plugins.Review.txt" />
+      </Component>
+      <Component Id="cmpB733BA2B9A1EBE9D592928CE1710D2F6" Directory="dir97FC1561B4C736257E8BF64FC388C5A4" Guid="*">
+        <File Id="filA59F22D178E556E438D8C6AC19C621DA" KeyPath="yes" Source="SourceDir\Documentation\rus\TechInfo.txt" />
+      </Component>
+      <Component Id="cmp0837B902A94E60538EBF861773768978" Directory="dir8DC5C3F99C76383FCF4750C86777020F" Guid="*">
+        <File Id="fil61518B01338F76D335C8033DEA675386" KeyPath="yes" Source="SourceDir\Encyclopedia\FarEncyclopedia.ru.chm" />
+      </Component>
+      <Component Id="cmpF5B94A477341E6C8301B1135ECF4D328" Directory="dir8DC5C3F99C76383FCF4750C86777020F" Guid="*">
+        <File Id="fil87B3BD68098A113FEC5839F6F778A096" KeyPath="yes" Source="SourceDir\Encyclopedia\luafar_manual.chm" />
+      </Component>
+      <Component Id="cmp7369BAFC483428EDE539913A09F7B237" Directory="dir8DC5C3F99C76383FCF4750C86777020F" Guid="*">
+        <File Id="filBA1DBDFB40CB5B69B89881143554B32E" KeyPath="yes" Source="SourceDir\Encyclopedia\macroapi_manual.en.chm" />
+      </Component>
+      <Component Id="cmpBFFA204C27A885C6B8AF1ECB954E3471" Directory="dir8DC5C3F99C76383FCF4750C86777020F" Guid="*">
+        <File Id="fil93B9A0B703B77F547F1EDBBD53B2C15E" KeyPath="yes" Source="SourceDir\Encyclopedia\macroapi_manual.ru.chm" />
+      </Component>
+      <Component Id="cmpCEAF2F261AC4D07FBC02B04E5B937DF2" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil2A6F1A126BD193E382CB46B7F358CFF7" KeyPath="yes" Source="SourceDir\Plugins\Align\Align.dll" />
+      </Component>
+      <Component Id="cmp46E811BC4F63649B1177D72FACA3859D" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="filB85FD3041AB343A37591C3788F338FB0" KeyPath="yes" Source="SourceDir\Plugins\Align\Align.map" />
+      </Component>
+      <Component Id="cmp1838271FEB6DC767CDDD2060867EA537" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil8C0B6BC0C7907886603DE66EAFB6E5A2" KeyPath="yes" Source="SourceDir\Plugins\Align\AlignBel.lng" />
+      </Component>
+      <Component Id="cmpDDC27F5C403654935EE24D6B905D1A67" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil0145E876C959C511ED9138D65E82C16C" KeyPath="yes" Source="SourceDir\Plugins\Align\AlignEng.lng" />
+      </Component>
+      <Component Id="cmp5CD001C2BA44D68B91484B0D06D6053F" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="filD582ECEE24FDFBCC58019BBD8BA7EA9C" KeyPath="yes" Source="SourceDir\Plugins\Align\AlignIta.lng" />
+      </Component>
+      <Component Id="cmp52876F0457E7EBB38E313F9A8F1A2D9E" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil30CE875AD78263AF0257E7E8490A17FE" KeyPath="yes" Source="SourceDir\Plugins\Align\AlignPol.lng" />
+      </Component>
+      <Component Id="cmp731792BB79FDE390F52B1005821BF0B0" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil0A79CD3EAC8080EDE06D490F821286DF" KeyPath="yes" Source="SourceDir\Plugins\Align\AlignRus.lng" />
+      </Component>
+      <Component Id="cmpA52DACA04C0DFA14BDDBD67FAABB843C" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil4EDAB0927CDBFE9977865D0947BDC1CD" KeyPath="yes" Source="SourceDir\Plugins\Align\AlignSky.lng" />
+      </Component>
+      <Component Id="cmp576774D9AF3C33C5AD86716918F2985D" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil155EB25B00949FD3C8CD6D20210875C7" KeyPath="yes" Source="SourceDir\Plugins\Align\AlignSpa.lng" />
+      </Component>
+      <Component Id="cmpF99CBC8794B4D44D8B2AD1099D1BCA88" Directory="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Guid="*">
+        <File Id="fil06B0B2C42019F2FDC6A0D283DB3EB836" KeyPath="yes" Source="SourceDir\Plugins\Align\changelog" />
+      </Component>
+      <Component Id="cmp816BF196F1E66C9159FBC614CEA4113B" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil65A7F424AA4ACE406C72771514256F8B" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\7z.dll" />
+      </Component>
+      <Component Id="cmp6C0695A2E89ABB5A19DEA427BA37E045" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil1678A2DC55CDD7CB1F4AE6C9F6DDF918" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\7z.sfx" />
+      </Component>
+      <Component Id="cmp2716565BEDCD330468EAD80FDFDA0E14" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil8A903D056DC19C4A29256683CAA6AF71" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\7zCon.sfx" />
+      </Component>
+      <Component Id="cmp9D6C7EA5AAC215957BCEA7F841D07A45" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil559CBBC9961004577E079392D410AF79" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\7zS2.sfx" />
+      </Component>
+      <Component Id="cmpF6C375AE11275642ABDDD660F9E4E42F" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil19F2BF4B2B94E298E95FC919613BDE2D" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\7zS2con.sfx" />
+      </Component>
+      <Component Id="cmp1AD328370413066267DED6A655E2DF46" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filB873B295A7CB395A1B52C3B3DAE74E58" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\7zSD.sfx" />
+      </Component>
+      <Component Id="cmpE52639D8033A44C4FF2203D424EC077F" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filFC0DA0A7226FB25485DA3C84B5745F83" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite.dll" />
+      </Component>
+      <Component Id="cmp36DA9B9A4404F8AF7C25C59B22D341FB" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil6F86CDF86C203746DF3A39577CDB5F11" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite.map" />
+      </Component>
+      <Component Id="cmp7B470E04179B2BDE951983374496FA54" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filD56E858CCE0289CBD68C216D04094EC4" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite.xml" />
+      </Component>
+      <Component Id="cmp6713932DDC6D0FB0821B6369AFBAAD6D" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil5B5C28EC6439452C184E5D41ECD6120B" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_bel.lng" />
+      </Component>
+      <Component Id="cmp17686A56E51E5577B26EA62C56EDC63B" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filA56403F1EC205D32594E800BC82FAF99" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_eng.hlf" />
+      </Component>
+      <Component Id="cmp7F4305ADBEE76073295E9C490EF71175" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil587D9E27FD0D631AFCCE92FFDA7A4420" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_eng.lng" />
+      </Component>
+      <Component Id="cmpB361D9500ADBDCE76D8FBC8E204611B1" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filD7A759E0B8B0D70F1F02E45B1433F78B" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_ita.lng" />
+      </Component>
+      <Component Id="cmp585616E21A860D19215FBAC4DCDF2664" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filC56DFDBF62E528BDB2190361823B452A" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_pol.lng" />
+      </Component>
+      <Component Id="cmp22B94927006B0B03F5A90E15217CADE2" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filC311403898561CCEB4DF372B7166703C" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_rus.hlf" />
+      </Component>
+      <Component Id="cmpECB0B61B2722DDAD69A141AB4097020C" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="filA1116B44FC6241687557FED13D30EE1C" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_rus.lng" />
+      </Component>
+      <Component Id="cmpD7350B6B548B3A0C0105F024A5BC4E7F" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil0E4FBA5B1D0FAA1C4A95E89B48AE0F70" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\arclite_spa.lng" />
+      </Component>
+      <Component Id="cmpEB6F1B77A2EB58214D6EE2E8F01ABF50" Directory="dir74CF2500636806B11FA38195AF3DE366" Guid="*">
+        <File Id="fil6BA250130E64EA7A637F28D545408830" KeyPath="yes" Source="SourceDir\Plugins\ArcLite\changelog" />
+      </Component>
+      <Component Id="cmp4FA0BB7490BE2D5B3A72F411DCBEC987" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="filA8FD9004905632F87301C9EE863B0DC3" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\AutoWrap.dll" />
+      </Component>
+      <Component Id="cmp73501B0DC4D81A9448A956E477B412BF" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="filCF17FCAD18815DF1A351F018576B491A" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\AutoWrap.map" />
+      </Component>
+      <Component Id="cmpDB318791550F01C089F71A51E7060649" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="filC007FF970FB794C6B36EC72A0E99EBEB" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\changelog" />
+      </Component>
+      <Component Id="cmp15801D968DAC9927ED1403BF6C76A432" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="filC51E94C1FF3C4C7B61D026149F326B14" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\WrapBel.lng" />
+      </Component>
+      <Component Id="cmp91AD066F2296E1B5508BA0F55F3502CE" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="filF8D236B3889D3ED97567D19D64F8E74A" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\WrapEng.lng" />
+      </Component>
+      <Component Id="cmp585E71108ED67E0893FC033154835E2D" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="fil99ACE93B6B81DC60751398EDFD982FBD" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\WrapIta.lng" />
+      </Component>
+      <Component Id="cmp51092EE76740F14146492E6DF34D5C0A" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="fil8CF0C1C56D78C69E2DD494153EF9B848" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\WrapPol.lng" />
+      </Component>
+      <Component Id="cmp0EBB97DCEA219260EC62D3A14C411716" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="fil80212FEC5429375D6DFB433E6EA08632" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\WrapRus.lng" />
+      </Component>
+      <Component Id="cmp7D34E988E6D63EA6C9492C9C8F34E790" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="filB43CD005DC630AA89B5C537824DFF60B" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\WrapSky.lng" />
+      </Component>
+      <Component Id="cmpE0910EFEFD212FCD68D5EDC66BBB7415" Directory="dir83A15706B4E962BD78ED8BFF01C0C19F" Guid="*">
+        <File Id="filF845738FC2140C688E4E0B1DC05C66CB" KeyPath="yes" Source="SourceDir\Plugins\AutoWrap\WrapSpa.lng" />
+      </Component>
+      <Component Id="cmp19BAE7909B70F171291F4A73DE0DDB05" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="fil6C8BCB17BCF304FA3CBE3213C090D335" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackBel.lng" />
+      </Component>
+      <Component Id="cmpF4306192616BE074461B3EC62D7E5600" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="fil90758AC4B9AB0DAC4504E1D8BC52093F" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackEng.hlf" />
+      </Component>
+      <Component Id="cmp23882732FB04C7B3C6C26E1448FDF8DF" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="fil14C7EC131914DFFCAA61E1A32A95AFD6" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackEng.lng" />
+      </Component>
+      <Component Id="cmpDF9D5633291A7AB033EA28404368B7DB" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="fil49547578FBC49CD8B3544BD8B37658EA" KeyPath="yes" Source="SourceDir\Plugins\Brackets\Brackets.dll" />
+      </Component>
+      <Component Id="cmp7D0C54B160E7FF9C66DA43BBB6277A27" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="filEF1D11015262EF82DE3E3A4D50C6B6AA" KeyPath="yes" Source="SourceDir\Plugins\Brackets\Brackets.lua" />
+      </Component>
+      <Component Id="cmpB41E379DE2B95B9DE3873CF7291C845D" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="filC16700A6FC1914BCD0A72051865352A5" KeyPath="yes" Source="SourceDir\Plugins\Brackets\Brackets.map" />
+      </Component>
+      <Component Id="cmpEA291ED440D669792BA079C19BB3E1B9" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="filEC72DC6EEC5FDAB1881E08071B4A04E2" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackIta.lng" />
+      </Component>
+      <Component Id="cmpB4A4F9697696F17E7327E7E8FE289809" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="filBE38ED90EDB05AAEFC08C9DCA15CEF5D" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackPol.lng" />
+      </Component>
+      <Component Id="cmpBD157E6579551A9C7321066C6CF655DC" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="fil5F47AF452F8CBBF80072B2ACDE16F055" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackRus.hlf" />
+      </Component>
+      <Component Id="cmpAEA4B364851E622FE999C7C3C703635B" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="fil67EC9B5D87FFD1103120A8343E6A452D" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackRus.lng" />
+      </Component>
+      <Component Id="cmp68B91A597EBC2F52FA25BFB5BC5FF21B" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="filE287E66BB7E768B4519D0F459ACDC9B8" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackSky.lng" />
+      </Component>
+      <Component Id="cmpDFAFC937971AFB2D8251DCB4FDC47C21" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="filC4A78F19D19C6977565A1B441C077D33" KeyPath="yes" Source="SourceDir\Plugins\Brackets\BrackSpa.lng" />
+      </Component>
+      <Component Id="cmp56BAD98078C0CC0ED7688CB944E11FA0" Directory="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Guid="*">
+        <File Id="filFA465FC6D51776087ED4C433251FA258" KeyPath="yes" Source="SourceDir\Plugins\Brackets\changelog" />
+      </Component>
+      <Component Id="cmp328B1858C1C95F733C2CA50E3CA08D5A" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="filF2377A104D78A90C6AAA701EE2A55D70" KeyPath="yes" Source="SourceDir\Plugins\Compare\AdvCompare.CompareBufferSize.farconfig" />
+      </Component>
+      <Component Id="cmp691101AC23E133AE9F8C9455687B2A78" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil9D97369EF201EEA3D36D3A4C049A99DC" KeyPath="yes" Source="SourceDir\Plugins\Compare\changelog" />
+      </Component>
+      <Component Id="cmp11D849C488B2E91D5DC1688877638E81" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="filEB2D491D7541BBBD1E5E0F6AABE2D3B8" KeyPath="yes" Source="SourceDir\Plugins\Compare\CmpEng.hlf" />
+      </Component>
+      <Component Id="cmp73C0D9959D7C09140AE33A5189DD3F41" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil42250DABDE6667AB3C349441593F9E88" KeyPath="yes" Source="SourceDir\Plugins\Compare\CmpRus.hlf" />
+      </Component>
+      <Component Id="cmpD2E665F2C1F444299C7A36CCE97069F2" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil26AE8942D63D11134B9A43DCA543D52E" KeyPath="yes" Source="SourceDir\Plugins\Compare\Compare.dll" />
+      </Component>
+      <Component Id="cmpC51B64D25E72E50EE1C4E6E133EAA335" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil0E5DFBCF5EFDF5CE7C8A8D1D764104CC" KeyPath="yes" Source="SourceDir\Plugins\Compare\Compare.map" />
+      </Component>
+      <Component Id="cmpD5296D9A860705C075159F1F4486E5C4" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil6DBF0FC27A3159B1078DD8499A37AA1C" KeyPath="yes" Source="SourceDir\Plugins\Compare\CompBel.lng" />
+      </Component>
+      <Component Id="cmpEEE2BF22029C0874488E78853CB7ADD4" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil3C82023929897C5F61462AB120E69155" KeyPath="yes" Source="SourceDir\Plugins\Compare\CompEng.lng" />
+      </Component>
+      <Component Id="cmp1A7136AB00B872318F792F7445893CBB" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil2D7B3AE413E0EF6228338D5712DA88DF" KeyPath="yes" Source="SourceDir\Plugins\Compare\CompIta.lng" />
+      </Component>
+      <Component Id="cmpBAFB8E5FE2A6381F50EE334B618E9938" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil3622DC70883ECAA8007E05819CC7D4C3" KeyPath="yes" Source="SourceDir\Plugins\Compare\CompPol.lng" />
+      </Component>
+      <Component Id="cmpD1BD01A74C08CA44910A2C6B004A04EB" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="filA9CF56FB5FF1F5A6D0A9ABDA1B54825A" KeyPath="yes" Source="SourceDir\Plugins\Compare\CompRus.lng" />
+      </Component>
+      <Component Id="cmp79CCB711F69CD0435771590D127C8253" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="filDD4C8150042ABEF82927808A15A98A35" KeyPath="yes" Source="SourceDir\Plugins\Compare\CompSky.lng" />
+      </Component>
+      <Component Id="cmpDA0F4D6BAAB89340EFCB37255DACB8F5" Directory="dirD9046C5C7141111DBEAFA29A20E3DF6E" Guid="*">
+        <File Id="fil05D9E39F19811B340C30BB967E968779" KeyPath="yes" Source="SourceDir\Plugins\Compare\CompSpa.lng" />
+      </Component>
+      <Component Id="cmp64F77E0700618CC94AAA83927D76E74C" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="filFBF8452036C995672A112766E05BECFD" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\changelog" />
+      </Component>
+      <Component Id="cmpCCA05AD2C063E2C491B7929D4C7E4CB9" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil8E554BB3BD9F559F313A98D17731E9FD" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawBel.lng" />
+      </Component>
+      <Component Id="cmp00E608F510B801D0B324D57A59EB0116" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil54DFE3EF69BF415E192AB10C7846A51C" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawEng.hlf" />
+      </Component>
+      <Component Id="cmp53EDE93FFF6EC3D8D9FCA2930DCDDF7B" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil99887E8EBE4ED2D27CFA82C1177F7FF1" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawEng.lng" />
+      </Component>
+      <Component Id="cmp1DDF4444C3B1DA7FE0218947521909FE" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil1181549BC47EEBDA184B7EEFC6FB167A" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawIta.lng" />
+      </Component>
+      <Component Id="cmp1028E4974031920A888B8D00D138B795" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil089E31A3344E5AA2495BD9FE4BF4D983" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawLine.dll" />
+      </Component>
+      <Component Id="cmpDB2B907760D233CD36ABA07A5AD1958D" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="filBA32DD608EF1A9C9E8BA812F98AF53EB" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawLine.map" />
+      </Component>
+      <Component Id="cmp190BB2ACEF5E10B8610E987ABD2166DC" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil5E5EE320D0FC65C97660D88C7CCE6AAC" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawPol.hlf" />
+      </Component>
+      <Component Id="cmp25C789E367072326F03E05DC753CAB22" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="filE8C1D061F44FB70F484F0AEDB31000F6" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawPol.lng" />
+      </Component>
+      <Component Id="cmp4852076D8F0A54904781C8AC7118BFDC" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil84EBC57AA4B3C95FBA73E98DE636D308" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawRus.hlf" />
+      </Component>
+      <Component Id="cmpD969A17F66782E8AC30CAEE003096511" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil3014333D04BC9A8BD22E8168F6406BDB" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawRus.lng" />
+      </Component>
+      <Component Id="cmpE64F8196342E4F093A7B668F1987673B" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="filA6DEFFF616DC757C40C2C0339902F2B6" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawSky.lng" />
+      </Component>
+      <Component Id="cmpA7DA0C2F55C7AE8B6ACFB052DFA4979D" Directory="dirDC028920E04748DC0E18DE775A2FEA2A" Guid="*">
+        <File Id="fil314F4549D0C4970B31EA13AD244D85A1" KeyPath="yes" Source="SourceDir\Plugins\DrawLine\DrawSpa.lng" />
+      </Component>
+      <Component Id="cmp88A9CDF1E9587026EE9FCA9D217EA0D1" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="filB62D48ADC4466796F5D8BFE1854BE38B" KeyPath="yes" Source="SourceDir\Plugins\EditCase\changelog" />
+      </Component>
+      <Component Id="cmpDEEE72D508F60CD40055E91285890B3D" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="fil3DEC1EAE7AC5A596AB071A5B8929945E" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseBel.lng" />
+      </Component>
+      <Component Id="cmp9976533123EE4582A93AEAEA1958D810" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="filA12FE5682B7A6C907BF171169AF77AB7" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseEng.hlf" />
+      </Component>
+      <Component Id="cmpEF0C032E39E7776E369909C7BEF1CEA9" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="filD5ED6EE3FA8C1C9087187929B470ACF9" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseEng.lng" />
+      </Component>
+      <Component Id="cmp6219BD5A12D900A61B6F9E17461436E6" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="fil63902B06199C8BC5F631FA004FDB7A5E" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseIta.lng" />
+      </Component>
+      <Component Id="cmp7E218DD15C78DE102E7F2D746D5BD99C" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="fil37927E3BAF277982A1110CA1C853545C" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECasePol.hlf" />
+      </Component>
+      <Component Id="cmpB05403EAC052D365F0271AADD85B0084" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="fil360ECD98FAB2D798D62D273A496F2A1B" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECasePol.lng" />
+      </Component>
+      <Component Id="cmp0D8E5BD8786DAC30968A3A70F794BEC3" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="filF240A0BC7A0249B542ECDDF4DBEC86D4" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseRus.hlf" />
+      </Component>
+      <Component Id="cmp57DC1611B817FB3EF711F6BF1CE9172B" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="fil8507049065905CEC5AD0AAD54AAFB78C" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseRus.lng" />
+      </Component>
+      <Component Id="cmp58F14C9ED48B1369191344418C28FBCA" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="fil2CDB5656BA3543A36174B371E58E30D7" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseSky.lng" />
+      </Component>
+      <Component Id="cmpEC1401D4F9089DBBA6903DA7E8061F5F" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="filFE42298A56252803564A2A04F1C9263A" KeyPath="yes" Source="SourceDir\Plugins\EditCase\ECaseSpa.lng" />
+      </Component>
+      <Component Id="cmp26B08E08F5D897662AB3F0BCB95ED5F8" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="fil6D8233C55B7F5A1C7EC9C0F92425708E" KeyPath="yes" Source="SourceDir\Plugins\EditCase\EditCase.dll" />
+      </Component>
+      <Component Id="cmp4C26914FCCFFCE21874F34C55B3A481C" Directory="dirE7C65BAC74B68357DCBE9AAE356E7E91" Guid="*">
+        <File Id="filA6D9AE778568A06C9817CC86EA2536EC" KeyPath="yes" Source="SourceDir\Plugins\EditCase\EditCase.map" />
+      </Component>
+      <Component Id="cmp2F0B1DC986E3DEF264CF1A080C101376" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filAEBFB09C746BDD318CF40F749D7D3565" KeyPath="yes" Source="SourceDir\Plugins\EMenu\changelog" />
+      </Component>
+      <Component Id="cmpD37634C9ED851DA35403D28437678A6F" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil98C2AF5FD160897C039755FEFACF43BE" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenu.dll" />
+      </Component>
+      <Component Id="cmpA7436E511D4FBF1F68BD46BEFF328CB9" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil85AF8F1DD4DD15CDC6F09DD9D2910556" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenu.map" />
+      </Component>
+      <Component Id="cmpEC82ADE71BAACAC64B1947401AEF6CBF" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil9A19F47CCD03296D95033293EAA35F5F" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuBel.lng" />
+      </Component>
+      <Component Id="cmp058D26D27DF78DBBB472416A192FEDA8" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filFE2EF14368F006225EE4CEDD2C8D64C4" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuEng.hlf" />
+      </Component>
+      <Component Id="cmp9295A8A3E62B630217E27CFA7EEF6CFB" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil6F90A4357FECFF23960E0AA1F04D5B29" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuEng.lng" />
+      </Component>
+      <Component Id="cmp6910D69F7BF973AE5FBCB54CBCFBFA8F" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filF696072CFE2E424A5315E38F6BEE38B4" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuIta.lng" />
+      </Component>
+      <Component Id="cmp7BEBA0EC45DA98860ED389086C5EDAE8" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil7549FFF861468B32106ED367A240E0D9" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuPol.hlf" />
+      </Component>
+      <Component Id="cmp40D10741A9D7AF0004EB2DAD9EDEB066" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil79184E2ECA22F4739BEFE12F1CDD9FF3" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuPol.lng" />
+      </Component>
+      <Component Id="cmp18E365AF092B34924100C25BA2307564" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filD03D06071094DBBC7783AA43512C97E1" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuRus.hlf" />
+      </Component>
+      <Component Id="cmp15DFBAAC56BA294CDDD1DB4D276D9958" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil5244604C05B3ACE3898F277065B9744E" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuRus.lng" />
+      </Component>
+      <Component Id="cmp08B037E677215F10CEB9CF18D093BD8A" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filD33220C65F8DD68BEE8921A9F6906F08" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuSky.lng" />
+      </Component>
+      <Component Id="cmpE0116AB36B98DCDCA89B5BD52D7682C8" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil32B8B0D7FD034ADB4C5DFA8861107B3D" KeyPath="yes" Source="SourceDir\Plugins\EMenu\EMenuSpa.lng" />
+      </Component>
+      <Component Id="cmpD885929267CF4249BDA0AE4FE13ECE4A" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filC9A6933C83089612C9A5D16D2FD01D61" KeyPath="yes" Source="SourceDir\Plugins\EMenu\Hotkey.farconfig" />
+      </Component>
+      <Component Id="cmp06DB040F79E3AE75C66FC856F3E624A9" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="fil2DCE09E0506ECD703BDAD6CC74955CAD" KeyPath="yes" Source="SourceDir\Plugins\EMenu\Hotkey.lua" />
+      </Component>
+      <Component Id="cmp2DCFB519E32FCEA2461C413814C1ACB6" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filFBB740B6156AA0553B1A439413052E33" KeyPath="yes" Source="SourceDir\Plugins\EMenu\HotkeyClipboard.lua" />
+      </Component>
+      <Component Id="cmp7A8B03F54AD5E225B0CEBC3003130CD2" Directory="dir807EE1D61C88C3A5F892C92C84DA97A7" Guid="*">
+        <File Id="filAEAD5CA608A5333A0EF34B56C9E34358" KeyPath="yes" Source="SourceDir\Plugins\EMenu\HotkeyProperties.lua" />
+      </Component>
+      <Component Id="cmp0F599A074B29B17DC04C5A83CB83B7CB" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="fil3C42DCFB2516FCA69E8ED490E1CE5280" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\changelog" />
+      </Component>
+      <Component Id="cmp1836AF9D21EC4AC2BF724AD03725D2C4" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="filA7799345BFFDFF448BA14B9DF162DF66" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmds.dll" />
+      </Component>
+      <Component Id="cmpA7A867EB0665B1C64F882C9FA13304EA" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="filF16A8D964A6908C7867B3A2F21B39C8A" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FarCmds.map" />
+      </Component>
+      <Component Id="cmpEF5491A1B3939D3C62D02E436D403845" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="fil12C9F650EF1B65E608A19C4E3C993247" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsBel.lng" />
+      </Component>
+      <Component Id="cmp30B5F1220271606CB7B89AF9D553DB13" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="filC66D11815495CC5A676DF2FC174EF1BE" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsEng.hlf" />
+      </Component>
+      <Component Id="cmpECE01AC25F53C0C3243CA75E158B9C8F" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="filD681489778269891F155B0942CECA622" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsEng.lng" />
+      </Component>
+      <Component Id="cmpFC6A11748A8023F20A2624BFA4698BA8" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="fil4CC66276A55273BD05A36B00842D6E5A" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsIta.lng" />
+      </Component>
+      <Component Id="cmpBA47E6B219D51729402460D38B7AC299" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="filB84CEDB78DEA150B34F683B2468BB847" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsRus.hlf" />
+      </Component>
+      <Component Id="cmp6C52787E409B75FD1E3717C8CD1A65B0" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="fil657720CB8F1472ACEF8B6FBC0A2D7D22" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsRus.lng" />
+      </Component>
+      <Component Id="cmpBE9985E6DFC9C8846C4FA36E85087146" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="fil3CEADC6AF3294855CDCB524C23A67289" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsSky.lng" />
+      </Component>
+      <Component Id="cmp92EF89777CCCB3D4EF9F12F63A744260" Directory="dir7F6E2DCBEBA968848E7962A11E7A276F" Guid="*">
+        <File Id="filDCD60B31CFBE2FCB09E134109DE83D75" KeyPath="yes" Source="SourceDir\Plugins\FarCmds\FARCmdsSpa.lng" />
+      </Component>
+      <Component Id="cmp2BA16D4F93A3D2B719CA4EC5C1D850DA" Directory="dir697C6ADD4B0A63D2004B2BE46E7C40B9" Guid="*">
+        <File Id="fil1D49FC3278F447A751037754FBDC8082" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\history.ru.txt" />
+      </Component>
+      <Component Id="cmp1845B4683733B6468D83D459B602590D" Directory="dir697C6ADD4B0A63D2004B2BE46E7C40B9" Guid="*">
+        <File Id="fil5B67A91F0F66E3679E39495CA23C94AF" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\LICENSE" />
+      </Component>
+      <Component Id="cmpB60E499D8C4A073ADBCFB1C86C226BAD" Directory="dir697C6ADD4B0A63D2004B2BE46E7C40B9" Guid="*">
+        <File Id="fil004FFB445A55F5B852A9FC6C9D68EEDE" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\README.md" />
+      </Component>
+      <Component Id="cmp8ED79DBADA5CBC6CBEF8A96B47384CE6" Directory="dir42CA5725679B5F065078377B129CFE15" Guid="*">
+        <File Id="fil6FDA9227C0415CEDB65DB7E2AA576470" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\catalog.xml" />
+      </Component>
+      <Component Id="cmp6FD85B88F11C0193E5ACAECFCD4CA824" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="fil4970BD18F9E72054AB011D5296BC85A8" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\CHANGELOG" />
+      </Component>
+      <Component Id="cmpF1B9B6206B1D8FA901A73020BF6799AC" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="filAFD44299C3928D901D439899EDBA5CD0" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\common.jar" />
+      </Component>
+      <Component Id="cmpAFF94D40A9C1F11A673A895C2457E03A" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="filF9865608DD66E7AEA91E8D2A7916CFC2" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\php-prot.ent.hrc" />
+      </Component>
+      <Component Id="cmp875EF4135B3ED769302FAB8F923D495E" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="filD610D2DB294A53C8A1905FDE0E6F4160" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\proto.hrc" />
+      </Component>
+      <Component Id="cmp68C33CCD5F8637AC1489EEDC33803B26" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="fil3AE499B1FF21B0BFEE047DB410988717" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\rare.gen.ent.hrc" />
+      </Component>
+      <Component Id="cmp6B1B807AF16181F50242E42C95DF21A1" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="filB5F180193023406484ADD6D095943728" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\rare.ie-weidu.ent.hrc" />
+      </Component>
+      <Component Id="cmp09D61F66A62B5E3B540C90B17EC44D98" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="fil979868580801B1DBC437B65CDB1AD2A1" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\rare.j2ee.ent.hrc" />
+      </Component>
+      <Component Id="cmpCA0CC8E018AA6338EDC66611AB955173" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="filB35EAF5F93C1313D606EEB4913D2BC3B" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\rare.qrm.ent.hrc" />
+      </Component>
+      <Component Id="cmpEDD30A3034E2D3E5F2D7D45DBFF94DC9" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="fil857ADB1A1DA491703A40DFBF283D0B22" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\rare.scripts.ent.hrc" />
+      </Component>
+      <Component Id="cmp31869E1D599FC2874107B552BBC3F3DE" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="filDC4274DFB43C51EAF28D01EF3CAA99BD" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\scripts.colorer.ent.hrc" />
+      </Component>
+      <Component Id="cmp2D5C5B16B9A6C844D2FFF31F56176086" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="fil431D28185D13451E3EA5339444833968" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\scripts.far.ent.hrc" />
+      </Component>
+      <Component Id="cmpAD8A9813D811585ACE09DD1AF7698B3B" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="fil39770A056B69F313D5934868D9806813" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\scripts.ini.ent.hrc" />
+      </Component>
+      <Component Id="cmp2010A3C951EB8D2CED1BCF58D31FE3F3" Directory="dirE58A9F13740ADFA4EC401D588A5610B5" Guid="*">
+        <File Id="fil011143049FEA6DD509ABEDCCABE6157F" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\scripts.msg.ent.hrc" />
+      </Component>
+      <Component Id="cmpD0407C99658880F97E1EA6CBE5CF098E" Directory="dir4ACFFFBBBA27E6A93ED4F66603DFAC96" Guid="*">
+        <File Id="fil84066189F88BAD54FA12820AAE8F769C" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrc\auto\empty.hrc" />
+      </Component>
+      <Component Id="cmp03FF734DEBC64C7BA9BE5FE8C679F67F" Directory="dir991DE8A926C027DE4303EEF8B60D5EFA" Guid="*">
+        <File Id="fil456386C50D5A2D8072BA7C8F20BD6F3D" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\catalog-console.xml" />
+      </Component>
+      <Component Id="cmp41E654C36E240D23617FA437174696BD" Directory="dir991DE8A926C027DE4303EEF8B60D5EFA" Guid="*">
+        <File Id="filDD2B0FE6A6CC39F359E02F2C4562782F" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\catalog-rgb.xml" />
+      </Component>
+      <Component Id="cmpBE1F5AACAAE84C2B9C371FF325C22EE3" Directory="dir991DE8A926C027DE4303EEF8B60D5EFA" Guid="*">
+        <File Id="fil7D6B975A8D3FB442524AA9924148CC87" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\catalog-text.xml" />
+      </Component>
+      <Component Id="cmp603BD474F4A2D7F25CE2328DF06541E5" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="fil639A3D53379593AEC721F5850DA04FC5" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\black.hrd" />
+      </Component>
+      <Component Id="cmp5C094D0F2699A36FDFA73E217A4B3C5D" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="fil89FE659CB0BED6F326D9F4A48F84468D" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\blue.hrd" />
+      </Component>
+      <Component Id="cmp0A36D50A468A946D0D7D408300F27A48" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="fil623704EB8F52CB2B420E14E9FA44566C" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\default.hrd" />
+      </Component>
+      <Component Id="cmpFDEBF7B13A3B0337985F490ABB0AD968" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="fil9226CE14D6A0F225FFA9C8BC25AB36B2" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\dnlike.hrd" />
+      </Component>
+      <Component Id="cmpA4E4BA6D25C9EF81C61432E161A47E1F" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="filEDB9005541AAE439EC0EB614140E2804" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\gray.hrd" />
+      </Component>
+      <Component Id="cmpC0707B627594F064DE7D79A466480A2E" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="fil6441A0F085B5726380FCD833AE30F5B6" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\hack.hrd" />
+      </Component>
+      <Component Id="cmpE7C9361F3083579DA9BB594BE61E253C" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="filDF3EAFAD3C976E7681802C2AB4A44AFA" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\mirror.hrd" />
+      </Component>
+      <Component Id="cmp5808215969BE1F3EF934CF8F1FE5774E" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="fil3032FC1A51360A5402426D01C7C5A54E" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\nc.hrd" />
+      </Component>
+      <Component Id="cmp8526F678594D022D8DA981FC53CFE108" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="filEAF56B8315E07A0C326093E85B31A0EC" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\white.hrd" />
+      </Component>
+      <Component Id="cmp0C32E2D469073332ABEFF0B7CE6F03DE" Directory="dir4DF983EB029116FF426124C264C063EB" Guid="*">
+        <File Id="fil07F9237BBC5F60CE980B3EAC7E52DF35" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\xmastree.hrd" />
+      </Component>
+      <Component Id="cmpA0D79190FCFA47C42AE344B91D7B457D" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="filA6FABC89072503618BAFFD6BB3FE6A63" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\black_ay.hrd" />
+      </Component>
+      <Component Id="cmp78C348B3036565E8D1D69959DC998310" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="fil3FC72C3E587DBF3809A1FE702C9C5B0C" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\black_sezal.hrd" />
+      </Component>
+      <Component Id="cmp22B6255EFC18305B388552AE1AE204E8" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="filF57110AC2A690BD6DC765931DE57F3CE" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\classic.hrd" />
+      </Component>
+      <Component Id="cmpA653AB4783D143930D2960DF759E3ED3" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="filF4B76DA72D9F92DE6EFFEB87678EC592" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\cyberpunk.hrd" />
+      </Component>
+      <Component Id="cmpBC2E314715565FC9A19DA8B5C215B22C" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="fil485CD2E81CF5C7BD644432A599BF9699" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\gray_pult.hrd" />
+      </Component>
+      <Component Id="cmpF216C7FF1BEB96625C69B8C7DBE82165" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="fil885153B8292990594BE8D78CAA6BCD27" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\ocean.hrd" />
+      </Component>
+      <Component Id="cmpDF4AE228A23B6934936601484D6AA049" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="fil7BA37DE561A5AAEDCEF781652D56DD3D" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\take4.hrd" />
+      </Component>
+      <Component Id="cmpA946BD98DF6B7500E2DEFCBCAB9D3F52" Directory="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Guid="*">
+        <File Id="fil92658E4E783704A046F92FB9A11B9D45" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\contrib\visual.hrd" />
+      </Component>
+      <Component Id="cmp40B77D08267810EE32ED28767C91C00B" Directory="dir7A671C07745E6CC8BE396117F6C2E674" Guid="*">
+        <File Id="fil79B781A7F7A7DC57CC250917200BA78F" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\console\emu\mirror.hrd" />
+      </Component>
+      <Component Id="cmp4E03456A71FAD09411C066953E7E347E" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="fil9567BD9B3ECAFBC41C18714DCEE38B96" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\black.css" />
+      </Component>
+      <Component Id="cmp99515620CB910A2A318259E60AB434FF" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="fil751D3CC1AE1B5A99EFA42FF99D8765CD" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\blue.css" />
+      </Component>
+      <Component Id="cmp8A0D7A8430A3B8DD38F324619FF8B46D" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="fil8F282040A5A05BF50F92568A5B2DF9CA" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\eclipse.css" />
+      </Component>
+      <Component Id="cmp9216EF21736DEEA3AE3D18FA8235A5D5" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="filDAA7D8132924E57D3358B704C605AFF6" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\grayscale.css" />
+      </Component>
+      <Component Id="cmp3CF510EEEAC1C64FB2D8C1DF245EDFB1" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="filFC160B4B9D306B160B6AAFB34582555D" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\hs.css" />
+      </Component>
+      <Component Id="cmpD38D84CBFAC92D752FC6FEFCD96FA0FF" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="filA38549D2455AA669C5952D51F2891E77" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\mirice.css" />
+      </Component>
+      <Component Id="cmp7BFA112F3D4DC165A2A9663A515BC2F6" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="fil85D658166A742ACAC6A901CA705151C3" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\mirror.css" />
+      </Component>
+      <Component Id="cmp86C6EF4D6019C2D1B5838D455E6AFD9C" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="fil798BB4BC00DE216B905BE0EDB55E1F16" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\navy.css" />
+      </Component>
+      <Component Id="cmp18F15895BDD00B124CF0650F1154B93A" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="fil3A3105CFFA57518FF1B0A807DC1E4D2E" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\neo.css" />
+      </Component>
+      <Component Id="cmpB616F6316220C80704CAC9C7A0A3DDA5" Directory="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Guid="*">
+        <File Id="fil69801A765FC32D9D052297929DE8C0FE" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\white.css" />
+      </Component>
+      <Component Id="cmp691D6F156D1CE813447888BB2689F9BE" Directory="dirC4DCFD34FCFDDCB55A8B5495381B2AEC" Guid="*">
+        <File Id="filE879B8AE8E8380B733C89E71DB1E12B8" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\contrib\bred3.css" />
+      </Component>
+      <Component Id="cmp339EC81491BD4B2E8D348DC4A8DBD21F" Directory="dirC4DCFD34FCFDDCB55A8B5495381B2AEC" Guid="*">
+        <File Id="filF9EA0AF8DAFDCCF315C0DAF06B134423" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\contrib\fmx.css" />
+      </Component>
+      <Component Id="cmpCD74DCEBD8719039BF0DEBFE944B0199" Directory="dirC4DCFD34FCFDDCB55A8B5495381B2AEC" Guid="*">
+        <File Id="filC108220A6F7E4DA0805C579A2F82639B" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\css\contrib\visual-rgb.css" />
+      </Component>
+      <Component Id="cmpF96E8E10737EB33C2C75B7C64058BD12" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="filA1823E3A12889842951A5B1D593C4C5B" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\black.hrd" />
+      </Component>
+      <Component Id="cmp03A26E45A7F9F8BE83EE96FB69EB8DA0" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="fil12CE9149988A6AE40C945A60DE33853D" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\blue.hrd" />
+      </Component>
+      <Component Id="cmp1AA3434AFCBA2864BFA1B8F3C70BC6ED" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="filED375C55836089245078B8038F8DF96B" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\eclipse.hrd" />
+      </Component>
+      <Component Id="cmp07643C00914B87CC1D3937E2DA9CD3B0" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="filD51E1FE51661F7E9BA787B34DB2AC80A" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\grayscale.hrd" />
+      </Component>
+      <Component Id="cmpAD88E749D91B62C25712D457149A78E4" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="fil31AD529109DCEEDF7D6079A2BAE42EB8" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\hs.hrd" />
+      </Component>
+      <Component Id="cmpAE4923574592605626B46742D45A93F2" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="fil809684816869B05EF2171BE64A1B0006" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\mirice.hrd" />
+      </Component>
+      <Component Id="cmpCEE6D75256451FD107BDFB6383567A97" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="fil618873901D93B4C68DD5BA405D358058" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\mirror.hrd" />
+      </Component>
+      <Component Id="cmp647F9C38B3DF698E084A85921BA7452B" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="filD8BEC0E144FE67F18E48EADAC852AE9E" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\navy.hrd" />
+      </Component>
+      <Component Id="cmp8196A599DA1FA10C1C0924D333DD978E" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="fil8D79C13B8DBDD8242D8B5DCD0934886D" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\neo.hrd" />
+      </Component>
+      <Component Id="cmp720F725B165458E544A535FE7CA0E27D" Directory="dir688A67B292E91417F42E29EF03401B1F" Guid="*">
+        <File Id="fil92B3F805347CEC7EB98396238C7FB23F" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\white.hrd" />
+      </Component>
+      <Component Id="cmp77D9A31783D50E809BDF92261A2B0EC9" Directory="dir240CF74DFF8FE53071529E798AD5B942" Guid="*">
+        <File Id="filA01149D8A0DA4C3312EA07A446CE7E4C" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\contrib\bred3.hrd" />
+      </Component>
+      <Component Id="cmpA82C11E2559A79161544E409F4FCE358" Directory="dir240CF74DFF8FE53071529E798AD5B942" Guid="*">
+        <File Id="fil498625D2E98C42A798D2583409DD1E17" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\contrib\fmx.hrd" />
+      </Component>
+      <Component Id="cmp09F989B737BDDE167378E7A667F1CE7C" Directory="dir240CF74DFF8FE53071529E798AD5B942" Guid="*">
+        <File Id="fil58AE72CD604055EA19F77400E59F21E2" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\rgb\contrib\visual-rgb.hrd" />
+      </Component>
+      <Component Id="cmp741383BF7F416525FF62DD9F88BC0BD0" Directory="dirD313195A5269F4F93D700AF1401ECE5B" Guid="*">
+        <File Id="filB01F0A7861BDE5F024090614D84EF9A1" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\text\htmlcss.hrd" />
+      </Component>
+      <Component Id="cmpC69F01E4192C8F57E367E52D25B10695" Directory="dirD313195A5269F4F93D700AF1401ECE5B" Guid="*">
+        <File Id="fil02ACA1B35CDA5227829F5E19A8842228" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\base\hrd\text\tags.hrd" />
+      </Component>
+      <Component Id="cmp46B27EDFEA87DB7045AD0F91EE3ADEE0" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="fil34DD1D5E45102811F20F0D5E1E628261" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\colorer.dll" />
+      </Component>
+      <Component Id="cmp467F9CAA3E3D69E841DFF2C886162574" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="fil2FEEAE1BDCB2171C0D2FEBBCBE78030F" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\colorer.map" />
+      </Component>
+      <Component Id="cmp2B0CD718DD610090A69B25E68D815291" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="filFFF7B1516D48B15E344D266AFBCFA9DA" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\colorere.hlf" />
+      </Component>
+      <Component Id="cmp1D0D61F8E9AD599FA9E8E417FF85B1DD" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="filA8F3BD9C9F0B829F965B156B58CCB137" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\colorere.lng" />
+      </Component>
+      <Component Id="cmpA6CB638C077ECBBC51231C5E5479DC2D" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="fil1330EC389A58EE344E2E6F7606C12651" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\colorerr.hlf" />
+      </Component>
+      <Component Id="cmp37AFFF3BC7181C43EF2F19ED2F1BA675" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="fil6E878BFE1FC74BE1D4CEE94B847E9F66" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\colorerr.lng" />
+      </Component>
+      <Component Id="cmp65EDC4DB42DDA89BA05795CF7131B9F3" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="filA137171C03D4C6A1994FBC7B347DC67E" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\hrcsettings.xml" />
+      </Component>
+      <Component Id="cmpB8044E438A49B1974590F8F900EE4146" Directory="dir749ED700E83FC01D09BC397B85172E8D" Guid="*">
+        <File Id="fil6C265E6CD4DB8C525C949A731D503283" KeyPath="yes" Source="SourceDir\Plugins\FarColorer\bin\Plugin.Colorer.lua" />
+      </Component>
+      <Component Id="cmpEF6BA41759FFBC2271BA1BBC282E6EA0" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="filE30CA30DB0F10336BD1B5A8FF6A6E328" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseBel.lng" />
+      </Component>
+      <Component Id="cmpB67F0CAD4AD834142385F2BAE00703D7" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="filF3054AA2338B3FDC0441E048AA5F9075" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseEng.hlf" />
+      </Component>
+      <Component Id="cmp6944A62522A84FF3A7B161A916B5BC2B" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="fil1147B15D478D16C588DE13005A71BF42" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseEng.lng" />
+      </Component>
+      <Component Id="cmpEEBF1CEBB958C739D0D26F72E5E957C4" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="fil2B4AAE4132035016AD326D3D13BD004C" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseIta.lng" />
+      </Component>
+      <Component Id="cmp4D5F22A17EADA6419AFE185FBB9A7C0B" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="filB212561C4E05B0DC93EE9D66287AE15C" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CasePol.hlf" />
+      </Component>
+      <Component Id="cmpF0C1A760A79913AA2E2E8E23892A80F5" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="filADD7E4FEF26599266AC16B7E4D818CA3" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CasePol.lng" />
+      </Component>
+      <Component Id="cmp5970864D81B287D65DB73C8DC12B6E80" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="fil0D48CCFF71A9DE73336DE40527769BE4" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseRus.hlf" />
+      </Component>
+      <Component Id="cmp8D8A5800FB42E3E9BEF5F9331C9880D6" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="fil6B067B709962BDE1DE65264FBD8B9DEF" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseRus.lng" />
+      </Component>
+      <Component Id="cmpFC08C804E3604B75B5BA83C5A07EEA50" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="fil165D556D19C94BD5B9F0EE7016A437E5" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseSky.lng" />
+      </Component>
+      <Component Id="cmp3AA081C7A6BE899DECA49122EA81226C" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="filED294957E7DC1265C6EB53AA93C2E86E" KeyPath="yes" Source="SourceDir\Plugins\FileCase\CaseSpa.lng" />
+      </Component>
+      <Component Id="cmpE37A9C8EC01AEB5E866DE83CE9832E39" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="fil1AF7532847DE5EF967A01DBAADD8A8EB" KeyPath="yes" Source="SourceDir\Plugins\FileCase\changelog" />
+      </Component>
+      <Component Id="cmp903585AC0F67B4F0AA815F581454A38B" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="fil5B30B5114A0DC6793C98980C9CF2A857" KeyPath="yes" Source="SourceDir\Plugins\FileCase\FileCase.dll" />
+      </Component>
+      <Component Id="cmpAF1D325E0E96D99F866E15876F4E2238" Directory="dir62EBE9417119538C09CBD9519CC08011" Guid="*">
+        <File Id="filBB24DB34503DB29233F70EFA06C76B2D" KeyPath="yes" Source="SourceDir\Plugins\FileCase\FileCase.map" />
+      </Component>
+      <Component Id="cmp5873DADFC247118197ADCCF8A9528CDF" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="filD0805135AC57A9AFF28C4A268B0E9928" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\changelog" />
+      </Component>
+      <Component Id="cmpA265848620E01C495A213A9F0DF9CCD3" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="filB8EB802943BAA4DB674FA2BE25EC15C5" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewer.dll" />
+      </Component>
+      <Component Id="cmp82DB00A6A560AA3B5FF1855024552DD4" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil2103450E598195AE951F2F6574EAFFF8" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewer.map" />
+      </Component>
+      <Component Id="cmp574AA8EC2AB525CFE527A5D5413CDD58" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil95CCA275D5A294DFEC49A13378364C4D" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerBel.lng" />
+      </Component>
+      <Component Id="cmp92A42C0CCC070521FF6F88F1DE2B2CAB" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="filE191B65E0FE38EDB0D532B84EB888559" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerEng.hlf" />
+      </Component>
+      <Component Id="cmp515AD8F5E72614EA423AC4C73431756A" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil4B8CDA6900171537CC877016C071A079" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerEng.lng" />
+      </Component>
+      <Component Id="cmp4CB7FF6EEC672C649946B64A2DC30F59" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil7A5EB2ABD8AB375C51676AE6B7717580" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerIta.lng" />
+      </Component>
+      <Component Id="cmp92A5673BD638499B4EDE2CE3CB8CB5E8" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil560E8374B53F482883F617BDDDB928F1" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerPol.hlf" />
+      </Component>
+      <Component Id="cmp1FF63EB150AAE0C768399070EC63CF67" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="filE16D8DA9D1478034437FAC55D49D89EE" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerPol.lng" />
+      </Component>
+      <Component Id="cmp9769C1277A8BC0736CA806DE0C5F76BF" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil1B3CF7619F30102B967F36B643CEBF74" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerRus.hlf" />
+      </Component>
+      <Component Id="cmpF6F9A593C5AEFC73FD8B7B346A37161C" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil859A8DA53B0AC939D61418DE6267E4FD" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerRus.lng" />
+      </Component>
+      <Component Id="cmpFE21B4B50922C88B103E8312DFFEDE2C" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="filCAF69FD27B58DA51A7C179F0D12714FB" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerSky.lng" />
+      </Component>
+      <Component Id="cmp536B7212160F20015113123A11B39C57" Directory="dirF09D847EC1A9B7D411FC40B8065D7DD4" Guid="*">
+        <File Id="fil61BEDC9C213508C84553D74D37DA5075" KeyPath="yes" Source="SourceDir\Plugins\HlfViewer\HlfViewerSpa.lng" />
+      </Component>
+      <Component Id="cmp08448646949023D529CE68245518AC5E" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil7533ED3BA0C3AC0C8334CFCEE66AE2EC" KeyPath="yes" Source="SourceDir\Plugins\json\changelog" />
+      </Component>
+      <Component Id="cmpF1E2979CB169C050749A16CFE046982F" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil5C1F7AAED2C84EEDF2511B2410385088" KeyPath="yes" Source="SourceDir\Plugins\json\json.dll" />
+      </Component>
+      <Component Id="cmp7DED761F8A72331D1ADFC0BED1710CFC" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil4D33E1A74B778ECA6DC97F143EA124F5" KeyPath="yes" Source="SourceDir\Plugins\json\jsonEng.hlf" />
+      </Component>
+      <Component Id="cmp83D88283761C19A04D86F40C3D0AFEDB" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil50637C0E840D28FE6906452D54620CA5" KeyPath="yes" Source="SourceDir\Plugins\json\jsonEng.lng" />
+      </Component>
+      <Component Id="cmp5027C23517B8511984AA8649151ED160" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil8CB48D54A9BDA3282FB579E856C4858B" KeyPath="yes" Source="SourceDir\Plugins\json\jsonRus.hlf" />
+      </Component>
+      <Component Id="cmp7E7894220ECD858E327A5846D05A79BC" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil6CCA2B4B60587DEBCEFD9B35686FE819" KeyPath="yes" Source="SourceDir\Plugins\json\jsonRus.lng" />
+      </Component>
+      <Component Id="cmp8D4B1A7B3A66B6BAD77ED39542FF28FC" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil3A8E9865006709B1BCC1CEF5C8171CEA" KeyPath="yes" Source="SourceDir\Plugins\json\License.txt" />
+      </Component>
+      <Component Id="cmp4ABB51DC67B233218B0147AAED316CC1" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="filEFA5530973E5C8099F33A93EDB3C12F3" KeyPath="yes" Source="SourceDir\Plugins\json\ReadMe.md" />
+      </Component>
+      <Component Id="cmp77FA6A6267CA07C89FCF8C2941E5B52E" Directory="dir084114DD354398F51A1E1453464A2ABD" Guid="*">
+        <File Id="fil469A90710EFD8182459B6003801D52A7" KeyPath="yes" Source="SourceDir\Plugins\json\Renewal.xml" />
+      </Component>
+      <Component Id="cmpA03B412777A16343AE0C9BFEB8FB3279" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filFC57AB0C135A28417365CDFB230C8F20" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\api.lua" />
+      </Component>
+      <Component Id="cmpFE1EE48A8883D80874E80CDFAC279394" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filF4BBDA64508BB976227B18FB3D329F4F" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\changelog" />
+      </Component>
+      <Component Id="cmpA41A31074309BF0549F1E8AF8096BBBE" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil9CCB1BF8B4F1F8B3827A519B9B340598" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\farapi.lua" />
+      </Component>
+      <Component Id="cmpB9C45A9CAB866B34ED82D13AE020135F" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filC94DFC2698723843AB816281F654BE22" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\keymacro.lua" />
+      </Component>
+      <Component Id="cmp3CF115B6FCF1950571A9AD336A6182D9" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filC5BA1011BD2996039424FA73E3CDB84D" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\lang.lua" />
+      </Component>
+      <Component Id="cmp4B829EB54B2A3D619C817AD134820FD8" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filE8189154BFEEBBACFA449ED5D4D482A3" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\lm_bel.lng" />
+      </Component>
+      <Component Id="cmp5A7F00E6BF298E9F86B90EA1D6FF38FB" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil24BAEF3979207CAD63175F48C7763F12" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\lm_eng.lng" />
+      </Component>
+      <Component Id="cmp19B5F0AFD1087F3DB6396C779C90A914" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil19D0A9FBCBD9E20BE4B7B8183EE31532" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\lm_ita.lng" />
+      </Component>
+      <Component Id="cmpEA76AAB18527CB83ED615B8C49B44E32" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filC3A3A46A6D364C6CBC68EB0AECA66741" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\lm_rus.lng" />
+      </Component>
+      <Component Id="cmp256A5B6FD4A295A37918D573A43072D7" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filDA37B7795F48F11B7E151361D6A455AD" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\lm_sky.lng" />
+      </Component>
+      <Component Id="cmp1C57D393BC1C94AB4D5F48CF951CBAA3" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filE9DF014022BD665C61EBEDA2DD0C3640" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\lm_spa.lng" />
+      </Component>
+      <Component Id="cmp5AA2001D81E91E21A4F9F18E6F234F62" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filB97C33D7F81E60963ABD0C837E49B227" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\LuaMacro.dll" />
+      </Component>
+      <Component Id="cmp9D2222DB538861C75BF2677568C34A32" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil55BECB85C9CBD7A4C631A52EECF6DC01" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\luamacro.example.ini" />
+      </Component>
+      <Component Id="cmp67DDEC35C221CCA0D5568392CB80AE8D" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil600C2DB9BAA0043903BBF4992812B30C" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\luamacro.lua" />
+      </Component>
+      <Component Id="cmp99C225697E1E124A6C75EF74D6E5D314" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filA57F4A5B051C262944ABEFE54FCC6CC8" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\LuaMacro.map" />
+      </Component>
+      <Component Id="cmpCAF554E7AC57F061ED98B1B011117111" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil08EA00E97A75E992D652F215D72BBF41" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\macrotest.lua" />
+      </Component>
+      <Component Id="cmp6EE150B4E9E442BFD04780526EC1A84A" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filB20DD1A972D98A5E077F8FC30AF09B67" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\mbrowser.lua" />
+      </Component>
+      <Component Id="cmpB6513F6E3E7EA8D7DD9577F945DFAF5A" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil5C5466F321C688171C82C500B530CE45" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\moonscript.lua" />
+      </Component>
+      <Component Id="cmp5F65526587B4FAD94E59C72299D32695" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filDCAB08B157B54E5864AF9C8DD124834A" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\panelsort.lua" />
+      </Component>
+      <Component Id="cmpAEFAC93AE4617232F4E68BC50B158640" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="filC740375E3F5B2C467ACAD74DC36E2A76" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\utils.lua" />
+      </Component>
+      <Component Id="cmp20B43186827DA7515C9E34A33B32D8B2" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil4962B22AB1443A2BC2B5666D09EB85CA" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\winapi.lua" />
+      </Component>
+      <Component Id="cmpF18EAA25FA306D7C42E79EEAC6BBEBB2" Directory="dir60568F2A315EBAFE63812FB2759020AA" Guid="*">
+        <File Id="fil3E0C6EF1D9DFBC69420834A5A5940398" KeyPath="yes" Source="SourceDir\Plugins\LuaMacro\_globalinfo.lua" />
+      </Component>
+      <Component Id="cmpC3DBD92F03776DCFC67BA8E7BCE79719" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="filB8405194794A9A8A7B03C768D4968C84" KeyPath="yes" Source="SourceDir\Plugins\NetBox\ChangeLog" />
+      </Component>
+      <Component Id="cmp8EF794996A8259A2D7DDA90A2A942BD9" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="fil3FA269470D93120F540535EB11B71C55" KeyPath="yes" Source="SourceDir\Plugins\NetBox\LICENSE.txt" />
+      </Component>
+      <Component Id="cmpBE58063150BB2048B2A8C6D8358DCF99" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="fil6E057061186F77A79B0FB1CFC51166F4" KeyPath="yes" Source="SourceDir\Plugins\NetBox\NetBox.dll" />
+      </Component>
+      <Component Id="cmp4C0E2E156A7BDAC698738E32C23F1C53" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="fil17CC3C056F3F100A5DB91C10F3D9DD72" KeyPath="yes" Source="SourceDir\Plugins\NetBox\NetBox.map" />
+      </Component>
+      <Component Id="cmp402D1D464935B1E6452F3D892B5A579F" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="fil981C1A85A4702161D29187927B409756" KeyPath="yes" Source="SourceDir\Plugins\NetBox\NetBoxEng.lng" />
+      </Component>
+      <Component Id="cmpF1E60248F67BC162E6F969994BFA19BE" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="filA3FE396B7312A3C917E943ACB7014CF5" KeyPath="yes" Source="SourceDir\Plugins\NetBox\NetBoxRus.lng" />
+      </Component>
+      <Component Id="cmp27D055163A5C009E45CA7F3BBAB496A8" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="fil759DE293F555455D8DCF1DAF70E9D750" KeyPath="yes" Source="SourceDir\Plugins\NetBox\README.md" />
+      </Component>
+      <Component Id="cmpD67430DDB728CD7165BAD6530B53502D" Directory="dirE1C2FD06EF90DC811FF762AAEAE722BB" Guid="*">
+        <File Id="fil52A6CC3C2252D0BAE61071E6C19D1AD8" KeyPath="yes" Source="SourceDir\Plugins\NetBox\README.RU.md" />
+      </Component>
+      <Component Id="cmp374B65C309A64D469B6316D20EA21396" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="filEB7408AB3C1FA373D7FEA6BBEBEC9BAD" KeyPath="yes" Source="SourceDir\Plugins\Network\changelog" />
+      </Component>
+      <Component Id="cmp58CB86E4B67726E5F495D52DC6F2B543" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="fil94595BB186E65C4090D72CFE498ABB1E" KeyPath="yes" Source="SourceDir\Plugins\Network\NetBel.lng" />
+      </Component>
+      <Component Id="cmp9F43F75D9E6B3D6CF1739F7FC0F5E9FD" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="filC655C38315E2A38715BA7CFBBBC3C4D6" KeyPath="yes" Source="SourceDir\Plugins\Network\NetEng.hlf" />
+      </Component>
+      <Component Id="cmp6B76C0D4D4B9A747B43054AB63AFC642" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="fil36257D8AD216D5A361256F1941772F40" KeyPath="yes" Source="SourceDir\Plugins\Network\NetEng.lng" />
+      </Component>
+      <Component Id="cmpE40881FA94B830A596B2DFDAB361BE33" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="fil24342533F37D75E23789E74384163BB3" KeyPath="yes" Source="SourceDir\Plugins\Network\NetIta.lng" />
+      </Component>
+      <Component Id="cmpF325E4C8E645DEA626706180EA415863" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="fil090C1BA81894AE6BB315EFBC55BDE94F" KeyPath="yes" Source="SourceDir\Plugins\Network\NetRus.hlf" />
+      </Component>
+      <Component Id="cmpD358B8FE45EAA9B12BE857FA2D9B4A1E" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="filC818346680925F9322181938D1FE79D1" KeyPath="yes" Source="SourceDir\Plugins\Network\NetRus.lng" />
+      </Component>
+      <Component Id="cmpBFEC05EE72A425F95E1BC5FEFB85AEF9" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="fil7FD62CB2EF97A9F82E7E2D1AB8144211" KeyPath="yes" Source="SourceDir\Plugins\Network\NetSky.lng" />
+      </Component>
+      <Component Id="cmp24A0E86D08B23CC3872A809BCECF2ACA" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="fil5BB1BFB4EA9BE33CF61DCA4D088949B6" KeyPath="yes" Source="SourceDir\Plugins\Network\NetSpa.lng" />
+      </Component>
+      <Component Id="cmpFEE84166C8FF3209D0C954EDDBFAEE94" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="filD52AE40B1B4A5EA85FD6879ADFAA0175" KeyPath="yes" Source="SourceDir\Plugins\Network\Network.dll" />
+      </Component>
+      <Component Id="cmpF6E6259687CD606FBDAE6D5A9924B3A2" Directory="dir117077EACFA064F00591B3D65A1848CB" Guid="*">
+        <File Id="fil488E9BD1D70FB7B770D0FB19AD802127" KeyPath="yes" Source="SourceDir\Plugins\Network\Network.map" />
+      </Component>
+      <Component Id="cmp70F9EEE153B151AF3369E111605F6A75" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="fil55D5F26048C4B9298EF83D6D94F352C8" KeyPath="yes" Source="SourceDir\Plugins\ProcList\changelog" />
+      </Component>
+      <Component Id="cmpEE7E129265482A8342BB4DBA2EA13A6A" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="fil5F81481ABA2D224B6ACBAE37D81BD9AD" KeyPath="yes" Source="SourceDir\Plugins\ProcList\ProcBel.lng" />
+      </Component>
+      <Component Id="cmpB4493A5B85739B88AECBF587741D5385" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="fil09EEC98EEAAD867E89C1482D83BE7F51" KeyPath="yes" Source="SourceDir\Plugins\ProcList\ProcEng.hlf" />
+      </Component>
+      <Component Id="cmp90FA5A011818E7AD7D0C9CDCF87A660E" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="filA2C6464C7A7F629BC1FB57F7238F86FC" KeyPath="yes" Source="SourceDir\Plugins\ProcList\ProcEng.lng" />
+      </Component>
+      <Component Id="cmp6E6EFFCA72A76EAFB2C939ACD4345574" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="fil90DA01F3C62F6F4ED518C1517F091B6A" KeyPath="yes" Source="SourceDir\Plugins\ProcList\ProcIta.lng" />
+      </Component>
+      <Component Id="cmp4806EE327B66DEAF29715EE91915452C" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="filDCD7CF4C4E205BCDC00D2A0E0116208E" KeyPath="yes" Source="SourceDir\Plugins\ProcList\Proclist.dll" />
+      </Component>
+      <Component Id="cmp0691D0D2C908AFD13B2E27B3FCF498E1" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="filD6C5E78361F5C9A72EEEE9111878F0C9" KeyPath="yes" Source="SourceDir\Plugins\ProcList\ProcList.map" />
+      </Component>
+      <Component Id="cmpD4B74F6C0DA46C26CD2B2CEBA0D9B557" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="fil9330F5E6AAEDF0E96392DAA1A3028EFE" KeyPath="yes" Source="SourceDir\Plugins\ProcList\ProcRus.hlf" />
+      </Component>
+      <Component Id="cmpA5204FD3143F0413ED9FE4E5F4816B17" Directory="dirC710A290B09504BDC9C6B26D1731E862" Guid="*">
+        <File Id="fil5117DED101519A4F12C60EBB78F884A9" KeyPath="yes" Source="SourceDir\Plugins\ProcList\ProcRus.lng" />
+      </Component>
+      <Component Id="cmp8ABD7B4FB188A9EA0A1802BAEA246C39" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="fil5072E53FF0D4C2529A83E6ECCF9CE4DA" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\changelog" />
+      </Component>
+      <Component Id="cmp55F6064AF69770B56288FD9ED38A94E4" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="filD0C718FA968F97F1D158D81DB7D1AFAD" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolder.dll" />
+      </Component>
+      <Component Id="cmpE96BA02DE6949257A76112ABEFAD1421" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="filD9DBC258E07CD0C9D1F6568952F4CE97" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolder.map" />
+      </Component>
+      <Component Id="cmpE160F55F52733CA1C2CD181974BD9C4E" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="filBDAA67F574614302DE722210C8E996B9" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderBel.lng" />
+      </Component>
+      <Component Id="cmp77863A04253F39DEB3E47553378302F7" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="fil26B4C06B4B4FF501FDD112BB6D58DBA8" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderEng.hlf" />
+      </Component>
+      <Component Id="cmpAD90EC7319074FBDB1390F711D4340E4" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="filADA165377B7156B7D57F26C0CEE7C828" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderEng.lng" />
+      </Component>
+      <Component Id="cmpCAF1DC7BF97B84B0EC881A5FF5BD2803" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="fil1FD4576D08C88B598BBC51415E991BC7" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderIta.lng" />
+      </Component>
+      <Component Id="cmp14BB512878A47E98FBB8BBF043592EA8" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="fil10EE4132388DC7C216F5E2EBDEF187B2" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderPol.hlf" />
+      </Component>
+      <Component Id="cmpC9263CD84ACA7A6F786D20E4BF88636C" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="filFC35AEC37091930E796BD45DFA9116AA" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderPol.lng" />
+      </Component>
+      <Component Id="cmp497833A84BF7DC8834EC6BC118FD00DF" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="filB15C51A3FBCD1E282DD80BB72AE7E6F8" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderRus.hlf" />
+      </Component>
+      <Component Id="cmp251A6261D621892D810B91746A84F0E0" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="fil22E39513335DF907F2ECEDBF6D531CC7" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderRus.lng" />
+      </Component>
+      <Component Id="cmp31267A702BBDA193E26D1A5222E3119F" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="fil2307FFA8D07E0879B9E06A9C415B4542" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderSky.lng" />
+      </Component>
+      <Component Id="cmpFE674E2517E9CF420AB4D5777953B5BA" Directory="dirDFD08E3FA2006957EC89D671DC86334B" Guid="*">
+        <File Id="fil5874A2A6D1D0F4343F6CD7166491E984" KeyPath="yes" Source="SourceDir\Plugins\SameFolder\SameFolderSpa.lng" />
+      </Component>
+      <Component Id="cmp6F7F4997EB5C433F2974BFC16D0AD644" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil5D301A9748D18BA74A61E195BDAD8539" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\changelog" />
+      </Component>
+      <Component Id="cmp2EDE21CCB2675BA1CC2CC6ACE7A394CA" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil77C6193549A6EFFDDD421426200B6A9B" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\disks.bel.temp" />
+      </Component>
+      <Component Id="cmpAD088D6E3CA8BCEB632A8C448032A80D" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil231A3B6CB789B562E1F6F9DE6166DCAF" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\disks.eng.temp" />
+      </Component>
+      <Component Id="cmpD9D2C68E1232992164A0E597F29C09A5" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil95393DAB9A07CDDD9D9CEDCE45B3CA51" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\disks.pol.temp" />
+      </Component>
+      <Component Id="cmp1F42C14321417530A0539E0179CD9A84" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil593830D8DB3887E02FAB15F526BA08B9" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\disks.rus.temp" />
+      </Component>
+      <Component Id="cmpFD72B04BBDB76D2DFA8608BFEDEE1BAC" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil38976E82B5CE86DBB342B172E32421B3" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\shortcuts.bel.lua" />
+      </Component>
+      <Component Id="cmp08890E9F9D6F7D268A19803E662488DA" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil0B320EACD57827D5A5D98DA2EE905B7B" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\shortcuts.bel.temp" />
+      </Component>
+      <Component Id="cmp59B779D1FA37C34749565AB69FD7E4E4" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil3146EEF6D6E18CC7E5FDFAB5C1D25376" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\shortcuts.eng.lua" />
+      </Component>
+      <Component Id="cmp43CA6A9370FFC6640CF995C84F8AE042" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil59DC94079E3AA4F4D2111C0EEF8D8888" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\shortcuts.eng.temp" />
+      </Component>
+      <Component Id="cmpE2CE056E8F26FCCC2CAFD9AFA5D96D30" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil405FDF591E586A098659C58AAD5E413E" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\shortcuts.pol.lua" />
+      </Component>
+      <Component Id="cmpBC5218AF613B6FF972B951D0936C34A4" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil4D57B3DDDBA242B6E377F7120DC482CF" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\shortcuts.rus.lua" />
+      </Component>
+      <Component Id="cmpDEC910E23A5DD7D923C94B74B63DF86B" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil80CC4A03A8A610C654D15F45387981C9" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\shortcuts.rus.temp" />
+      </Component>
+      <Component Id="cmp2A3C2C698DA6FB8CC6A59F1DB56CC7BA" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="filF1FBFE254830E0F576B42BA37B188A28" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpBel.lng" />
+      </Component>
+      <Component Id="cmp78E5468C335609A461AD4D9056ECE266" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil1E674B4ADD58889CEB47DD284BF79858" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpEng.hlf" />
+      </Component>
+      <Component Id="cmpE907562ED39F7984C038808ED5F63451" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil2513AC1A02581556DFD1C84953D78E0C" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpEng.lng" />
+      </Component>
+      <Component Id="cmp35A9CA882C06DDE05D25E1F02DE0227A" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil3B0C7EC1498A5E688E3CAD36794C1B7F" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpIta.lng" />
+      </Component>
+      <Component Id="cmp30483983E708DCC7D437F2E8538FE78F" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil5A52E5FF1B01CEB63A0AF32B201BF9A9" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpPanel.dll" />
+      </Component>
+      <Component Id="cmpBF950B1BDF8BEE39A84EB570FB05F359" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil10C06AE08865F48A548D9B83A2C11A68" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpPanel.ListUTF8.farconfig" />
+      </Component>
+      <Component Id="cmp9C61CA519AE8C0EBA30E3FEB18582EE9" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil774AB17B4FF35D4408E836F7C42A8882" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpPanel.map" />
+      </Component>
+      <Component Id="cmp1DA6BF69F97F31D6A16EB19BC9696F33" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="filA75A36E84C6F399B2FC947CFF7FFDE52" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpPol.lng" />
+      </Component>
+      <Component Id="cmpDF81BA9016B5534862F05EC01CE34673" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="filD997E809D616F6EA4837496ACA381ACE" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpRus.hlf" />
+      </Component>
+      <Component Id="cmp4F5E203EB5147B75C35BE9D0DD3D835C" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil403C4D8643F5B4594916770C49D051C6" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpRus.lng" />
+      </Component>
+      <Component Id="cmp5EE66148C2E8B1167FC609148D4C81A8" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="fil9103B1FBFB0CAFE8A046F1DA73433423" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpSky.lng" />
+      </Component>
+      <Component Id="cmpA032FCFE8FDFF0187273CD37351AF6D6" Directory="dir06C68ECC74DD5E41233063A22BE5D53E" Guid="*">
+        <File Id="filDB9D13F1776C405749B7004E6187AC7E" KeyPath="yes" Source="SourceDir\Plugins\TmpPanel\TmpSpa.lng" />
+      </Component>
+      <Component Id="cmpC8F4E556EA7A0C4F0969A4097464F792" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="fil1818690D2965FB011AEC7FE737DD0FEE" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\Compare.fmlua" />
+      </Component>
+      <Component Id="cmp3762C363AA9F9930989CA1472EB26A10" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="fil076E2F99F59B524112EED59C19AF0FDD" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\Compare.lua" />
+      </Component>
+      <Component Id="cmp10B6EBB34FABE2C49CE466E259163D53" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="filE28D7FC5C8B2FC2BA0AAC07DA7218095" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\file_id.diz" />
+      </Component>
+      <Component Id="cmpC4071742BAE66B8CF2D3415A70624E0D" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="fil14097B92738409000C6E7810404B3372" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\History.txt" />
+      </Component>
+      <Component Id="cmp0045155680ECC89968C12417942196A6" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="filE27181CC8211A7FCC233C05468DEBD04" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\VisComp.dll" />
+      </Component>
+      <Component Id="cmp8FDC8E378E16A82CC1E0DD526245C66C" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="fil5F991D0E137AEF91DAE770D9505B53AE" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\VisComp.hlf" />
+      </Component>
+      <Component Id="cmpE1D5CABF308A59CB81D510592C499CC8" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="fil743E12536F5ED1E36A5A11E1079F3F51" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\VisCompEng.lng" />
+      </Component>
+      <Component Id="cmpE90EDCAC88C8B1183AEC256D79936792" Directory="dirEA82B98926EBBFBA04C62E76F32C1FE8" Guid="*">
+        <File Id="filC9968539BB846132C7DABFBB26CECBEB" KeyPath="yes" Source="SourceDir\Plugins\VisualCompare\VisCompRus.lng" />
+      </Component>
+      <Component Id="cmpAD44E274C126691EA4AC1F1DAE48669C" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="filE44BF862E3320B84A6C2E59CD64D02E7" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\changelog" />
+      </Component>
+      <Component Id="cmp230E28123E40CFDC68FAA375D6F58C80" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="filC8BC227B521712AA4BB24466AC5A41B4" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\License.txt" />
+      </Component>
+      <Component Id="cmpE6DE2438E809D908579B442DC7F172C6" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="filC79E580895128B1BC0A7C2D61A07CE66" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\readme.md" />
+      </Component>
+      <Component Id="cmp08DCD5AA129BD69F2123FFD866DF92DC" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="filBF473CCF052ECBD3863D1C12BCAA8A06" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\Renewal.xml" />
+      </Component>
+      <Component Id="cmp704ED4FE20640712D66C73AB0BE7FA06" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="fil173954D11182ACDAA20B9203A957259D" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\XMLDOM.dll" />
+      </Component>
+      <Component Id="cmpAF829D079DD77573452CCBAEB3BD8FF1" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="fil89CDA2193391BD3199C4EAA6E9A79E23" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\XMLDOMEng.hlf" />
+      </Component>
+      <Component Id="cmp6C1B4B63AAC2A2A52681971B320ED18E" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="filDCA19A6C1D22727B913F88E8E6F8CE34" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\XMLDOMEng.lng" />
+      </Component>
+      <Component Id="cmp664CC7C27FE5B7299BE717FED865582A" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="fil527DC13F4ED51F2F907EFECF80DFDD4B" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\XMLDOMRus.hlf" />
+      </Component>
+      <Component Id="cmpF05EEC9A0F52DED5F605BB971C497B7F" Directory="dirC87786BB86FEDBC36AB6B8684317D3BC" Guid="*">
+        <File Id="fil084DF89AAFD0AB52010DC783160188A9" KeyPath="yes" Source="SourceDir\Plugins\XMLDOM\XMLDOMRus.lng" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir06C68ECC74DD5E41233063A22BE5D53E" Name="TmpPanel" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir084114DD354398F51A1E1453464A2ABD" Name="json" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir117077EACFA064F00591B3D65A1848CB" Name="Network" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9CB2366CC42F4EF009BB6926B784CCE6">
+      <Directory Id="dir1439FDF2BBE339642264A10F23D59BB8" Name="Macros" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir688A67B292E91417F42E29EF03401B1F">
+      <Directory Id="dir240CF74DFF8FE53071529E798AD5B942" Name="contrib" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir32BA48EBCAA8EE67C49BF0887C80BDCB" Name="Align" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9CB2366CC42F4EF009BB6926B784CCE6">
+      <Directory Id="dir40F57B5237E0685B3B8CD558ACE5EB2D" Name="Shell" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir697C6ADD4B0A63D2004B2BE46E7C40B9">
+      <Directory Id="dir42CA5725679B5F065078377B129CFE15" Name="base" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirE58A9F13740ADFA4EC401D588A5610B5">
+      <Directory Id="dir4ACFFFBBBA27E6A93ED4F66603DFAC96" Name="auto" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir4DF983EB029116FF426124C264C063EB">
+      <Directory Id="dir4BD22781D3DB94DCB0AD5FC40A8D8457" Name="contrib" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991DE8A926C027DE4303EEF8B60D5EFA">
+      <Directory Id="dir4DF983EB029116FF426124C264C063EB" Name="console" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir60568F2A315EBAFE63812FB2759020AA" Name="LuaMacro" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir7C65DEADD6DF5CEF4D4D50C6845BB669">
+      <Directory Id="dir621FB4437CEF28EC28A95102C179EA4F" Name="Custom Highlighting" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir62EBE9417119538C09CBD9519CC08011" Name="FileCase" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir6D531F61FC46229C0B8020A4DEE239AF">
+      <Directory Id="dir673CA19662820854706137661E65BD13" Name="eng" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991DE8A926C027DE4303EEF8B60D5EFA">
+      <Directory Id="dir688A67B292E91417F42E29EF03401B1F" Name="rgb" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir697C6ADD4B0A63D2004B2BE46E7C40B9" Name="FarColorer" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir74995D48E200D6FEF38AEE89F8FD7C42">
+      <Directory Id="dir6D531F61FC46229C0B8020A4DEE239AF" Name="Documentation" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirCC1905DD8D6CB434C4A130B9753645DC">
+      <Directory Id="dir6FD2906E5E4EC6B2F9208C4A6BC356B9" Name="Russian" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir697C6ADD4B0A63D2004B2BE46E7C40B9">
+      <Directory Id="dir749ED700E83FC01D09BC397B85172E8D" Name="bin" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir74CF2500636806B11FA38195AF3DE366" Name="ArcLite" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir4DF983EB029116FF426124C264C063EB">
+      <Directory Id="dir7A671C07745E6CC8BE396117F6C2E674" Name="emu" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9CB2366CC42F4EF009BB6926B784CCE6">
+      <Directory Id="dir7C65DEADD6DF5CEF4D4D50C6845BB669" Name="Colors" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir7F6E2DCBEBA968848E7962A11E7A276F" Name="FarCmds" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir807EE1D61C88C3A5F892C92C84DA97A7" Name="EMenu" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dir83A15706B4E962BD78ED8BFF01C0C19F" Name="AutoWrap" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir74995D48E200D6FEF38AEE89F8FD7C42">
+      <Directory Id="dir8DC5C3F99C76383FCF4750C86777020F" Name="Encyclopedia" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir6D531F61FC46229C0B8020A4DEE239AF">
+      <Directory Id="dir97FC1561B4C736257E8BF64FC388C5A4" Name="rus" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir42CA5725679B5F065078377B129CFE15">
+      <Directory Id="dir991DE8A926C027DE4303EEF8B60D5EFA" Name="hrd" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir74995D48E200D6FEF38AEE89F8FD7C42">
+      <Directory Id="dir9CB2366CC42F4EF009BB6926B784CCE6" Name="Addons" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir74995D48E200D6FEF38AEE89F8FD7C42">
+      <Directory Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38" Name="Plugins" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirB5B7771D8CA0CCF8BB7A1DF6732F1743" Name="Brackets" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93">
+      <Directory Id="dirC4DCFD34FCFDDCB55A8B5495381B2AEC" Name="contrib" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirC710A290B09504BDC9C6B26D1731E862" Name="ProcList" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir7C65DEADD6DF5CEF4D4D50C6845BB669">
+      <Directory Id="dirC7C84296A79D031961AEAD79466BFDBD" Name="Default Highlighting" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirC87786BB86FEDBC36AB6B8684317D3BC" Name="XMLDOM" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9CB2366CC42F4EF009BB6926B784CCE6">
+      <Directory Id="dirCC1905DD8D6CB434C4A130B9753645DC" Name="XLat" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991DE8A926C027DE4303EEF8B60D5EFA">
+      <Directory Id="dirD313195A5269F4F93D700AF1401ECE5B" Name="text" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9CB2366CC42F4EF009BB6926B784CCE6">
+      <Directory Id="dirD567699AEE7B1C7F670C49371F6FB32E" Name="SetUp" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirD9046C5C7141111DBEAFA29A20E3DF6E" Name="Compare" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirDC028920E04748DC0E18DE775A2FEA2A" Name="DrawLine" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirDFD08E3FA2006957EC89D671DC86334B" Name="SameFolder" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991DE8A926C027DE4303EEF8B60D5EFA">
+      <Directory Id="dirDFE96F4B7DEBC3D0176C1B57E2E3EB93" Name="css" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirE1C2FD06EF90DC811FF762AAEAE722BB" Name="NetBox" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir42CA5725679B5F065078377B129CFE15">
+      <Directory Id="dirE58A9F13740ADFA4EC401D588A5610B5" Name="hrc" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirE7C65BAC74B68357DCBE9AAE356E7E91" Name="EditCase" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirEA82B98926EBBFBA04C62E76F32C1FE8" Name="VisualCompare" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir9F3AF9483DBEB9FE7E26C5CAF0979D38">
+      <Directory Id="dirF09D847EC1A9B7D411FC40B8065D7DD4" Name="HlfViewer" />
+    </DirectoryRef>
+  </Fragment>
+</Wix>

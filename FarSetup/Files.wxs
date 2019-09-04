@@ -10,15 +10,11 @@
     Ключи вида <*Ref> упрощают процесс разделения проекта на фрагменты. 
     Помимо <DirectoryRef> существуют ссылки <FeatureRef>,<ComponentRef> и другие
     -->
-    <DirectoryRef Id="FarDestDir" FileSource='$(var.FarSourcePath)' >
-      <Component Id="BinFilesForFar" 
+    <DirectoryRef Id="FarDestDir" FileSource='FarManager3' >
+      <Component Id="ReadmeComponent" 
                  Guid="{C53860E9-BD21-45B3-A6B6-A9A49A0ADC38}"
-                 DiskId='1' >
-        <File Id='Far' Name='Far.exe'/>
-        <File Id='lpeg' Name='lpeg.dll'/>
-        <File Id='lua5x1' Name='lua5.1.dll'/>
-        <File Id='lua51' Name='lua51.dll'/>
-        <File Id='luafar3' Name='luafar3.dll'/>
+                 DiskId='1' Win64="yes">
+        <File Id='FarReadMe' Name='content.txt'/>
       </Component>
     </DirectoryRef>
 	</Fragment>
