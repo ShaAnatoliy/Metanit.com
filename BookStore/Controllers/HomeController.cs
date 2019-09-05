@@ -37,6 +37,14 @@ namespace BookStore.Controllers
             return View(books.OrderBy(o => o.Name));
         }
 
+        [HttpGet]
+        public ActionResult BookView(int id)
+        {
+            Book book = db.Books.FirstOrDefault(p => p.Id == id);
+            return View(book);
+        }
+
+
         [HttpGet]  // [HttpDelete] [HttpPut]
         public ActionResult Buy(int id)
         {

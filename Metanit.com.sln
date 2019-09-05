@@ -15,6 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvc5App", "FirstMvc5Ap
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FarSetup", "FarSetup\FarSetup.wixproj", "{5333336C-BFD1-4477-81ED-AA2B6F4B0F94}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "todo", "todo", "{FECA27CE-3E2D-4958-89BB-8A19D3C46B34}"
+	ProjectSection(SolutionItems) = preProject
+		далееПродолжить.txt = далееПродолжить.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
