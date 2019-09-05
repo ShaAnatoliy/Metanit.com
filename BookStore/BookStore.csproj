@@ -134,11 +134,6 @@
     <Compile Include="Util\ImageResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\BOOKSTORE.MDF" />
-    <Content Include="App_Data\BOOKSTORE_log.ldf">
-      <DependentUpon>BOOKSTORE.MDF</DependentUpon>
-    </Content>
-    <AdditionalFiles Include="App_Data\dbo.Table.sql" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -207,6 +202,7 @@
     <Content Include="Views\Home\ViewList.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
