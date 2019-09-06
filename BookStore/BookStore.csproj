@@ -203,6 +203,7 @@
     <Content Include="Views\Home\BookView.cshtml" />
     <Content Include="Views\Home\EditBook.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\DeleteBook.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

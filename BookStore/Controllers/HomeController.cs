@@ -133,5 +133,29 @@ namespace BookStore.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public ActionResult DeleteBook(int id)
+        {
+            Book b = db.Books.Find(id);
+            if (b == null)
+            {
+                return HttpNotFound();
+            }
+            return View(b);
+        }
+        [HttpPost, ActionName("DeleteBook")]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Book b = db.Books.Find(id);
+            if (b == null)
+            {
+                return HttpNotFound();
+            }
+            db.Books.Remove(b);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }
