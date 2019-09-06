@@ -8,7 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLscripts", "SQLscripts", "{7FA869A5-9316-4842-8994-FB1CB9E8B552}"
 	ProjectSection(SolutionItems) = preProject
 		BookStore\SQLscripts\Books.sql = BookStore\SQLscripts\Books.sql
+		BookStore\SQLscripts\dbo.Players.sql = BookStore\SQLscripts\dbo.Players.sql
 		BookStore\SQLscripts\dbo.Table.sql = BookStore\SQLscripts\dbo.Table.sql
+		BookStore\SQLscripts\dbo.Teams.sql = BookStore\SQLscripts\dbo.Teams.sql
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvc5App", "FirstMvc5App\FirstMvc5App.csproj", "{D5AA29F2-A7D4-4051-97FD-E5EC8B113445}"
