@@ -119,5 +119,19 @@ namespace BookStore.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Book book)
+        {
+            db.Entry(book).State = EntityState.Added;
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }
