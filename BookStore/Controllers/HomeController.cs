@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 using BookStore.Models;
 using BookStore.Util;
+using System.Data.Entity;
 
 namespace BookStore.Controllers
 {
@@ -94,6 +95,29 @@ namespace BookStore.Controllers
          * RedirectToRouteResult: класс работает подобно RedirectResult, но перенаправляет пользователя по определенному адресу URL, указанному через параметры маршрута
          * ViewResult: производит рендеринг представления и отправляет результаты рендеринга в виде html-страницы клиенту
         */
+
+        [HttpGet] // Редактировать
+        public ActionResult EditBook(int? id)
+        {
+            if (id == null)
+            {
+                return HttpNotFound();
+            }
+            Book book = db.Books.Find(id);
+            if (book != null)
+            {
+                return View(book);
+            }
+            return HttpNotFound();
+        }
+
+        [HttpPost] // Сохранить
+        public ActionResult EditBook(Book book)
+        {
+            db.Entry(book).State = EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
 
     }
 }

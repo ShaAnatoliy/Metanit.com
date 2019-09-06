@@ -201,6 +201,7 @@
     <Content Include="Views\Home\Buy.cshtml" />
     <Content Include="Views\Home\ViewList.cshtml" />
     <Content Include="Views\Home\BookView.cshtml" />
+    <Content Include="Views\Home\EditBook.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
