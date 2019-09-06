@@ -20,5 +20,19 @@ namespace BookStore.Controllers
             return View(players.ToList());
         }
 
+        public ActionResult TeamDetails(int? id)
+        {
+            if (id == null)
+            {
+                return HttpNotFound();
+            }
+            Team team = db.Teams.Include(i => i.Players).FirstOrDefault(t => t.Id == id);
+            if (team == null)
+            {
+                return HttpNotFound();
+            }
+            return View(team);
+        }
+
     }
 }

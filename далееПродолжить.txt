@@ -1,3 +1,3 @@
 Проект BookStore
 ТУТ:
-https://metanit.com/sharp/mvc5/5.5.php
+	https://metanit.com/sharp/mvc5/5.8.php
