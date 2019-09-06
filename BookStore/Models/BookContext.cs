@@ -8,8 +8,8 @@ namespace BookStore.Models
 {
     public class BookContext : DbContext
     {
-        public BookContext() : base("DefaultConnection")
-        { }
+        public BookContext() : base("BooksConnection") { }
+
         public DbSet<Book> Books { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
     }

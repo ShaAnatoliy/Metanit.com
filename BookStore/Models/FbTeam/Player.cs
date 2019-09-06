@@ -32,6 +32,8 @@ namespace BookStore.Models.FbTeam
 
     public class SoccerContext : DbContext
     {
+        public SoccerContext() : base("FootballConnection") { }
+
         public DbSet<Player> Players { get; set; }
         public DbSet<Team> Teams { get; set; }
     }

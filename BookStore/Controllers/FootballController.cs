@@ -17,7 +17,7 @@ namespace BookStore.Controllers
         {
             var players = db.Players.Include(p => p.Team);
 
-            return View();
+            return View(players.ToList());
         }
 
     }
