@@ -12,6 +12,8 @@ namespace Univer.Controllers
     {
         private StudentsContext db = new StudentsContext();
 
+        private ApplicationContext apc = new ApplicationContext();
+
         public ActionResult Index()
         {
             return View(db.Students.ToList());
@@ -79,5 +81,13 @@ namespace Univer.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Menu()
+        {
+            List<MenuItem> menuItems = apc.MenuItems.ToList();
+
+            return PartialView(menuItems);
+        }
+
     }
 }

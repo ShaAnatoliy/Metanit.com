@@ -37,8 +37,7 @@ namespace Univer.Models
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
 
-        public StudentsContext() : base("FootballConnection")
-        { }
+        public StudentsContext() : base("FootballConnection") { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
