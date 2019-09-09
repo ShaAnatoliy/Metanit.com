@@ -1,0 +1,14 @@
+﻿@model BookStore.Models.Book
+
+@{
+    ViewBag.Title = "Книга";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Книга № @Model.Id</h2>
+@Html.DisplayForModel()
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = @Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

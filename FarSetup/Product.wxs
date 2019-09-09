@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <?include Variables.wxi?>
+  
+	<Product Id="$(var.ProductCode)" Name="$(var.ProductName)" Language="1049" Codepage="1251" 
+           Version="$(var.ProductVersion)" 
+           Manufacturer="$(var.Manufacturer)" 
+           UpgradeCode="$(var.UpgradeCode)">
+
+    <Package Id="*" Keywords='Installer' Description='Установщик полезных инструментов'
+             Manufacturer="$(var.Manufacturer)" Languages="1049" SummaryCodepage="1251"
+             InstallerVersion="300" Compressed="yes" 
+             InstallScope="perMachine" AdminImage="yes" Platform="x64" />
+
+		<Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+		<!--<MajorUpgrade DowngradeErrorMessage="A newer version of [$(var.ProductName)] is already installed." />-->
+    <MajorUpgrade
+      AllowSameVersionUpgrades="no"
+      DowngradeErrorMessage="Can't downgrade."
+      Schedule="afterInstallInitialize" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="INSTALLLOCATION" Name="$(var.ProductName)" >
+          <Directory Id="FarDestDir" Name="$(var.FarDestPath)"/>
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="$(var.ProductName)" />
+      </Directory>
+    </Directory>
+
+
+    <Feature Id="ProductFeature" Title="$(var.ProductName)" Level="1">
+      <ComponentRef Id="ReadmeComponent" />
+      <ComponentGroupRef Id="Far3Manager" />
+      <ComponentRef Id="ApplicationShortcutFar" />
+		</Feature>
+
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+		<WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="License.rtf"/>
+		<UIRef Id="WixUI_InstallDir"/>
+
+	</Product>
+
+</Wix>

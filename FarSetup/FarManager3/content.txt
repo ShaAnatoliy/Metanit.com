@@ -1,0 +1,7 @@
+﻿Программа управления файлами и архивами
+             3.0.0.5454 x64
+  Copyright © 1996-2000 Eugene Roshal
+    Copyright © 2000-2019 Far Group
+
+Команда формирования файла WXS:
+ > heat.exe dir C:\FarManX64 -ag -dr FarDestDir -cg Far3Manager -indent 2 -out Far3Manager.wxs > Far3Manager.err

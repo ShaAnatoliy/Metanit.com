@@ -6,18 +6,21 @@
     <h3>Распродажа книг</h3>
     <table id="content" class="box">
         <tr class="header">
-            <td><h1>Название книги</h1></td>
-            <td><h1>Автор</h1></td>
-            <td><h1>Цена</h1></td>
+            <td>Название книги</td>
+            <td>Автор</td>
+            <td>Цена</td>
             <td>Действие</td>
         </tr>
         @foreach (BookStore.Models.Book b in ViewBag.Books)
         {
             <tr>
-                <td><h2>@b.Name</h2></td>
-                <td><h2>@b.Author</h2></td>
-                <td><h2>@b.Price</h2></td>
-                <td><h2>@Html.ActionLink("Купить", "Buy", "Home", new { Id = b.Id }, null)</h2></td>
+                <td>@b.Name</td>
+                <td>@b.Author</td>
+                <td>@b.Price</td>
+                <td>
+                    <p>@Html.ActionLink("Купить", "Buy", "Home", new { Id = b.Id }, null)</p>
+                    <p>@Html.ActionLink("DEL", "DeleteBook", "Home", new { Id = b.Id }, null)</p>
+                </td>
             </tr>
         }
     </table>
