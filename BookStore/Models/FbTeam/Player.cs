@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace BookStore.Models.FbTeam
 {
@@ -36,6 +37,13 @@ namespace BookStore.Models.FbTeam
 
         public DbSet<Player> Players { get; set; }
         public DbSet<Team> Teams { get; set; }
+    }
+
+    public class PlayersListViewModel
+    {
+        public IEnumerable<Player> Players { get; set; }
+        public SelectList Teams { get; set; }
+        public SelectList Positions { get; set; }
     }
 
 }

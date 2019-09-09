@@ -12,14 +12,6 @@ namespace BookStore.Controllers
     {
         SoccerContext db = new SoccerContext();
 
-        // GET: Football
-        public ActionResult Index()
-        {
-            var players = db.Players.Include(p => p.Team);
-
-            return View(players.ToList());
-        }
-
         public ActionResult TeamDetails(int? id)
         {
             if (id == null)
@@ -80,7 +72,46 @@ namespace BookStore.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult Index()
+        {
+            var players = db.Players.Include(p => p.Team);
 
+            return View(players.ToList());
+        }
+
+        [HttpGet]
+        public ActionResult FilterList(int? team, string position)
+        {
+            IQueryable<Player> players = db.Players.Include(p => p.Team);
+            if (team != null && team != 0)
+            {
+                players = players.Where(p => p.TeamId == team);
+            }
+            if (!String.IsNullOrEmpty(position) && !position.Equals("Все"))
+            {
+                players = players.Where(p => p.Position == position);
+            }
+
+            List<Team> teams = db.Teams.ToList();
+            // устанавливаем начальный элемент, который позволит выбрать всех
+            teams.Insert(0, new Team { Name = "Все", Id = 0 });
+
+            PlayersListViewModel plvm = new PlayersListViewModel
+            {
+                Players = players.ToList(),
+                Teams = new SelectList(teams, "Id", "Name"),
+                Positions = new SelectList(new List<string>()
+            {
+                "Все",
+                "Нападающий",
+                "Полузащитник",
+                "Защитник",
+                "Вратарь"
+            })
+            };
+            return View(plvm);
+        }
 
     }
 }

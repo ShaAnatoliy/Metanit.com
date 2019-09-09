@@ -216,6 +216,7 @@
     <Content Include="Views\Football\TeamDetails.cshtml" />
     <Content Include="Views\Football\Create.cshtml" />
     <Content Include="Views\Football\Edit.cshtml" />
+    <Content Include="Views\Football\FilterList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
