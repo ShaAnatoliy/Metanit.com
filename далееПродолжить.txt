@@ -1,6 +1,6 @@
 Проект BookStore
 ТУТ:
-	https://metanit.com/sharp/mvc5/6.1.php
+	https://metanit.com/sharp/mvc5/9.1.php
 
 ??
 Чтобы переопределить стандартный шаблон Visual Studio из каталога 
