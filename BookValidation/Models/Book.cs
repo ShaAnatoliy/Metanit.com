@@ -5,21 +5,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace BookStore.Models
+namespace BookValidation.Models
 {
     public class Book
     {
-        // ID книги
         [HiddenInput(DisplayValue = false)]
         public int Id { get; set; }
 
+        [Required]
         [Display(Name = "Название")]
         public string Name { get; set; }
 
+        [Required]
         [Display(Name = "Автор")]
         public string Author { get; set; }
-        // цена
+
+        [Required]
         [Display(Name = "Год")]
-        public int Price { get; set; }
+        public int Year { get; set; }
     }
 }
