@@ -18,8 +18,8 @@ namespace BookStore.Models
 
         [Display(Name = "Автор")]
         public string Author { get; set; }
-        // цена
-        [Display(Name = "Год")]
+
+        [Display(Name = "Цена")]
         public int Price { get; set; }
     }
 }
