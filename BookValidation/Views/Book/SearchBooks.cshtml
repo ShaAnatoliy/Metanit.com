@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<div>
+    @using (Ajax.BeginForm("BookSearch", new AjaxOptions { UpdateTargetId = "results" }))
+    {
+        <input type="text" name="name" />
+        <input type="submit" value="Поиск" />
+    }
+    <div id="results"></div>
+</div>
