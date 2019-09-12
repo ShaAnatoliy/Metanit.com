@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Univer", "Univer\Univer.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookValidation", "BookValidation\BookValidation.csproj", "{251906A5-97C0-4C76-8AF5-6F56CE6B30D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore", "BookStore\BookStore.csproj", "{055BF90C-8C86-427B-B791-24F410C3E4B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,14 @@ Global
 		{251906A5-97C0-4C76-8AF5-6F56CE6B30D6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{251906A5-97C0-4C76-8AF5-6F56CE6B30D6}.Release|x86.ActiveCfg = Release|Any CPU
 		{251906A5-97C0-4C76-8AF5-6F56CE6B30D6}.Release|x86.Build.0 = Release|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Debug|x86.Build.0 = Debug|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Release|x86.ActiveCfg = Release|Any CPU
+		{055BF90C-8C86-427B-B791-24F410C3E4B6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
