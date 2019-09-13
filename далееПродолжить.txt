@@ -4,3 +4,7 @@
 
 Документация по Bootstrap 4
 https://bootstrap-4.ru/docs/4.0/components/alerts/
+
+Autofac контейнер ( inversion of control (IoC) )
+https://autofac.readthedocs.io/en/latest/index.html
+
