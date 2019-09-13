@@ -2,11 +2,5 @@
 ТУТ:
 	https://metanit.com/sharp/mvc5/9.1.php
 
-??
-Чтобы переопределить стандартный шаблон Visual Studio из каталога 
-[C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Web\Mvc\Scaffolding\Templates],
-нужно создать в проекте папку с именем CodeTemplates. А в нее поместить те шаблоны, которые надо переопределить. 
-Например, переопределим шаблон Delete.cs.t4
-Поскольку шаблон Delete.cs.t4 находится в папке MvcView, то в прокте надо создать соответствующую папку в CodeTemplates 
-и затем скопировать туда шаблон. Кроме того, еще нужно добавить файлы, от которых зависит Delete.cs.t4:
-  Imports.include.t4 и ModelMetadataFunctions.cs.include.t4
+Документация по Bootstrap 4
+https://bootstrap-4.ru/docs/4.0/components/alerts/
