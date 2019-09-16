@@ -69,5 +69,21 @@ namespace Books.Properties {
                 return ResourceManager.GetString("CreateTableBook", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INSERT INTO Books (Id, Name, Author, Price, Year) VALUES 
+        /// (1, &apos;Война и мир&apos;, &apos;Л.Н. Толстой&apos;, 260, 1975);
+        ///INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
+        /// (2, &apos;Отцы и дети&apos;, &apos;И. Тургенев&apos;, 180, 1979);
+        ///INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
+        /// (3, &apos;Чайка&apos;, &apos;А. Чехов&apos;, 150, 1980);
+        ///INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
+        /// (4, &apos;Когда проснётся Марс&apos;, &apos;В. Огнева&apos;, 350, 2015);.
+        /// </summary>
+        public static string InsertToBooks {
+            get {
+                return ResourceManager.GetString("InsertToBooks", resourceCulture);
+            }
+        }
     }
 }

@@ -30,7 +30,18 @@ namespace Books
                     Connection = Connect,
                     CommandText = @"select count(Id) kzp from books"
                 };
-                var sqlReader = Command.ExecuteScalar();
+
+                SQLiteDataReader dtr = Command.ExecuteReader();
+                dtr.Read();
+                if (dtr.GetInt32(0) == 0) // Если в таблице нет записей -> Добавить
+                {
+                    Command = new SQLiteCommand
+                    {
+                        Connection = Connect,
+                        CommandText = Properties.Resources.InsertToBooks
+                    };
+                    Command.ExecuteNonQuery();
+                }
             }
             finally
             {
