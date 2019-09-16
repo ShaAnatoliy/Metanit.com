@@ -5,6 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLscripts", "SQLscripts", "{7FA869A5-9316-4842-8994-FB1CB9E8B552}"
 	ProjectSection(SolutionItems) = preProject
+		SQLscripts\SqLiteQuery-other.sql = SQLscripts\SqLiteQuery-other.sql
 		SQLscripts\SqLiteQuery1.sql = SQLscripts\SqLiteQuery1.sql
 	EndProjectSection
 EndProject
