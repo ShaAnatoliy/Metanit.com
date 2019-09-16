@@ -24,7 +24,7 @@ namespace Books.Models
         // [Range(typeof(decimal), "0.00", "49.99")]
         [Required(ErrorMessage = "Цена должна быть определена")]
         [Display(Name = "Цена")]
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         [Required]
         [Display(Name = "Год")]

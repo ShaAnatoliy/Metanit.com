@@ -1,8 +1,5 @@
--- for SQLite
+-- for SQLite Типы данных: NULL INTEGER REAL TEXT BLOB
 
 -- CreateTableBook
-CREATE TABLE IF NOT EXISTS Books ( 
-[id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
-[image] BLOB, 
-[image_format] VARCHAR(10), 
-[image_name] NVARCHAR(128), [file] BINARY, [file_format] VARCHAR(10), [file_name] NVARCHAR(128))
+CREATE TABLE IF NOT EXISTS Books ( [Id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+ [Name] TEXT, [Author] TEXT, [Price] REAL, [Year] INTEGER )

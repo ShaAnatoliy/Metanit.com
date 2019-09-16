@@ -61,7 +61,8 @@ namespace Books.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to CREATE TABLE IF NOT EXISTS Books ( [Id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+        /// [Name] TEXT, [Author] TEXT, [Price] REAL, [Year] INTEGER ).
         /// </summary>
         public static string CreateTableBook {
             get {

@@ -10,6 +10,7 @@ namespace Books.Controllers
     public class HomeController : Controller
     {
         private BookContext db = new BookContext();
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -21,7 +22,7 @@ namespace Books.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(db.Books.ToList());
         }
 
         public ActionResult About()

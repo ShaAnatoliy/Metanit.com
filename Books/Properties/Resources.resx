@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CreateTableBook" xml:space="preserve">
-    <value />
+    <value>CREATE TABLE IF NOT EXISTS Books ( [Id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+ [Name] TEXT, [Author] TEXT, [Price] REAL, [Year] INTEGER )</value>
   </data>
 </root>

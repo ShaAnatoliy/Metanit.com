@@ -13,10 +13,6 @@ namespace Books
         {
             // string path = AppDomain.CurrentDomain.GetData("DataDirectory").ToString();
 
-            // строка запроса, который надо будет выполнить на базе
-            string commandText = "CREATE TABLE IF NOT EXISTS Books ( [id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, [image] BLOB, [image_format] VARCHAR(10), " +
-                "[image_name] NVARCHAR(128), [file] BINARY, [file_format] VARCHAR(10), [file_name] NVARCHAR(128))"; // создать таблицу, если её нет
-
             bool result = false;
 
             BookContext db = new BookContext();
@@ -24,7 +20,7 @@ namespace Books
             
             try
             {
-                SQLiteCommand Command = new SQLiteCommand(commandText, Connect);
+                SQLiteCommand Command = new SQLiteCommand(Properties.Resources.CreateTableBook, Connect);
                 Connect.Open();
 
                 // string p = Connect.FileName;
