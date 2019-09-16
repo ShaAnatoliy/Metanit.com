@@ -22,11 +22,15 @@ namespace Books
             {
                 SQLiteCommand Command = new SQLiteCommand(Properties.Resources.CreateTableBook, Connect);
                 Connect.Open();
-
                 // string p = Connect.FileName;
+                result = Command.ExecuteNonQuery() == 0;
 
-                result = Command.ExecuteNonQuery() == 0; 
-
+                Command = new SQLiteCommand
+                {
+                    Connection = Connect,
+                    CommandText = @"select count(Id) kzp from books"
+                };
+                var sqlReader = Command.ExecuteScalar();
             }
             finally
             {
