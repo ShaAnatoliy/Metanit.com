@@ -71,14 +71,25 @@ namespace Books.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to INSERT INTO Books (Id, Name, Author, Price, Year) VALUES 
+        ///   Looks up a localized string similar to Db3FilePathName1.
+        /// </summary>
+        public static string Db3FilePathName1 {
+            get {
+                return ResourceManager.GetString("Db3FilePathName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES 
         /// (1, &apos;Война и мир&apos;, &apos;Л.Н. Толстой&apos;, 260, 1975);
-        ///INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
+        ///INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
         /// (2, &apos;Отцы и дети&apos;, &apos;И. Тургенев&apos;, 180, 1979);
-        ///INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
+        ///INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
         /// (3, &apos;Чайка&apos;, &apos;А. Чехов&apos;, 150, 1980);
-        ///INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
-        /// (4, &apos;Когда проснётся Марс&apos;, &apos;В. Огнева&apos;, 350, 2015);.
+        ///INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
+        /// (4, &apos;Когда проснётся Марс&apos;, &apos;В. Огнева&apos;, 350, 2015);
+        ///INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
+        /// (5, &apos;Крут [rest of string was truncated]&quot;;.
         /// </summary>
         public static string InsertToBooks {
             get {

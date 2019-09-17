@@ -121,14 +121,24 @@
     <value>CREATE TABLE IF NOT EXISTS Books ( [Id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
  [Name] TEXT, [Author] TEXT, [Price] REAL, [Year] INTEGER )</value>
   </data>
+  <data name="Db3FilePathName1" xml:space="preserve">
+    <value>Db3FilePathName1</value>
+    <comment>Имя пераметра: Полный путь к файлу Main БД SQLite</comment>
+  </data>
   <data name="InsertToBooks" xml:space="preserve">
-    <value>INSERT INTO Books (Id, Name, Author, Price, Year) VALUES 
+    <value>INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES 
  (1, 'Война и мир', 'Л.Н. Толстой', 260, 1975);
-INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
+INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
  (2, 'Отцы и дети', 'И. Тургенев', 180, 1979);
-INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
+INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
  (3, 'Чайка', 'А. Чехов', 150, 1980);
-INSERT INTO Books (Id, Name, Author, Price, Year) VALUES
- (4, 'Когда проснётся Марс', 'В. Огнева', 350, 2015);</value>
+INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
+ (4, 'Когда проснётся Марс', 'В. Огнева', 350, 2015);
+INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
+ (5, 'Крутые парни', 'Е. Сухов', 340.0, 2014)
+INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
+ (6, 'Крейцерова соната', 'Л.Н. Толстой',	330.0, 2013)
+INSERT INTO Books ([Id], Name, Author, Price, [Year]) VALUES
+ (7, 'Воскресенье', 'Л.Н. Толстой', 320.0, 2012)</value>
   </data>
 </root>

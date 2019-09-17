@@ -10,17 +10,7 @@ namespace Books.Controllers
 {
     public class HomeController : Controller
     {
-        BookContext db = null;
-        string _ConnectFileName;
-
-        public HomeController()
-        {
-            db = new BookContext();
-            SQLiteConnection Connect = db.Database.Connection as SQLiteConnection;
-            Connect.Open();
-            _ConnectFileName = Connect.FileName;
-            Connect.Close();
-        }
+        BookContext db = new BookContext();
 
         protected override void Dispose(bool disposing)
         {
@@ -33,8 +23,7 @@ namespace Books.Controllers
 
         public ActionResult Index()
         {
-
-            ViewBag.DB3Name = _ConnectFileName; // 
+            ViewBag.DB3Name = HttpContext.Application[Properties.Resources.Db3FilePathName1];
 
             return View(db.Books.ToList());
         }

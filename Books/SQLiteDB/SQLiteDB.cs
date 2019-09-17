@@ -9,11 +9,11 @@ namespace Books
 {
     public static class SQLiteDB
     {
-        public static bool CreateTables()
+        public static string CreateTables()
         {
             // string path = AppDomain.CurrentDomain.GetData("DataDirectory").ToString();
 
-            bool result = false;
+            string connectFileName = "";
 
             BookContext db = new BookContext();
             SQLiteConnection Connect = db.Database.Connection as SQLiteConnection;
@@ -22,8 +22,10 @@ namespace Books
             {
                 SQLiteCommand Command = new SQLiteCommand(Properties.Resources.CreateTableBook, Connect);
                 Connect.Open();
-                // string p = Connect.FileName;
-                result = Command.ExecuteNonQuery() == 0;
+
+                connectFileName = Connect.FileName; // Для глобального параметра: HttpContext.Current.Application[Properties.Resources.Db3FilePathName1]
+
+                Command.ExecuteNonQuery();
 
                 Command = new SQLiteCommand
                 {
@@ -49,7 +51,7 @@ namespace Books
                 db.Dispose();
             }
 
-            return result; // true - Таблица создана
+            return connectFileName; 
         }
     }
 
