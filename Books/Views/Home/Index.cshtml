@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Books.Models.Book>
+﻿@using Books.Models
+
+@model IEnumerable<Book>
 
 @{
     ViewBag.Title = "ListView";
@@ -14,14 +16,14 @@
     </p>
 </div>
 
-<p>@Html.ActionLink("Create New", "Create")</p>
+<p>@Html.ActionLink("Create New", "Create") <br> База данных: "@ViewBag.DB3Name"</p>
 
 <p>@Html.ActionLink("Выбрать по автору", "ChooseByAuthor")</p>
 
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Name )
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Author)

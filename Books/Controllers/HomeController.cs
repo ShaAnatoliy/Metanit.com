@@ -4,12 +4,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Books.Models;
+using System.Data.SQLite;
 
 namespace Books.Controllers
 {
     public class HomeController : Controller
     {
-        private BookContext db = new BookContext();
+        BookContext db = null;
+        string _ConnectFileName;
+
+        public HomeController()
+        {
+            db = new BookContext();
+            SQLiteConnection Connect = db.Database.Connection as SQLiteConnection;
+            Connect.Open();
+            _ConnectFileName = Connect.FileName;
+            Connect.Close();
+        }
 
         protected override void Dispose(bool disposing)
         {
@@ -22,6 +33,9 @@ namespace Books.Controllers
 
         public ActionResult Index()
         {
+
+            ViewBag.DB3Name = _ConnectFileName; // 
+
             return View(db.Books.ToList());
         }
 

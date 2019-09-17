@@ -18,7 +18,6 @@ namespace Books
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             SQLiteDB.CreateTables();
-
         }
     }
 }
