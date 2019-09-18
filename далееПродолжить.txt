@@ -1,4 +1,4 @@
-Проект BookStore
+Проект Books
 ТУТ:
 	https://metanit.com/sharp/mvc5/10.4.php
 
