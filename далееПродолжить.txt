@@ -8,3 +8,5 @@ https://bootstrap-4.ru/docs/
 Autofac контейнер ( inversion of control (IoC) )
 https://autofac.readthedocs.io/en/latest/index.html
 
+Проект HelloCoreApp
+  https://metanit.com/sharp/aspnet5/1.1.php
