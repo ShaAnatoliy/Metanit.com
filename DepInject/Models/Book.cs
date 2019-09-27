@@ -5,7 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
-namespace Books.Models
+namespace DepInject.Models
 { // var conn1 = db.Database.Connection;
     public class Book
     {

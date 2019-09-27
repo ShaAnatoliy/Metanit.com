@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.SQLite;
-using Books.Models;
+using DepInject.Models;
 
-namespace Books
+namespace DepInject
 {
     public static class SQLiteDB
     {
@@ -20,7 +20,7 @@ namespace Books
             
             try
             {
-                SQLiteCommand Command = new SQLiteCommand(Properties.Resources.CreateTableBook, Connect);
+                SQLiteCommand Command = new SQLiteCommand(DepInject.Properties.Resources.CreateTableBook, Connect);
                 Connect.Open();
 
                 connectFileName = Connect.FileName; // Для глобального параметра: HttpContext.Current.Application[Properties.Resources.Db3FilePathName1]
@@ -40,7 +40,7 @@ namespace Books
                     Command = new SQLiteCommand
                     {
                         Connection = Connect,
-                        CommandText = Properties.Resources.InsertToBooks
+                        CommandText = DepInject.Properties.Resources.InsertToBooks
                     };
                     Command.ExecuteNonQuery();
                 }

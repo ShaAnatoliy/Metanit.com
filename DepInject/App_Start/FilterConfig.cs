@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Books
+namespace DepInject
 {
     public class FilterConfig
     {

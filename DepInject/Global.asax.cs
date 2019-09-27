@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace Books
+namespace DepInject
 {
     public class MvcApplication : HttpApplication
     {
@@ -18,11 +18,7 @@ namespace Books
 
         protected void Application_Start()
         {
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-
-            // AreaRegistration.RegisterAllAreas();
-            // UnityConfig.RegisterComponents();
-
+            AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);

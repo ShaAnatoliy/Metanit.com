@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Books
+namespace DepInject
 {
     public class BundleConfig
     {

@@ -5,42 +5,21 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace Books.Controllers
+namespace DepInject.Controllers
 {
     using Models;
+    using System.Web.Mvc;
 
-    public class BookController : ApiController
+    public class BookController : Controller
     {
-        IBookRepository _repository;
-
-        public BookController(IBookRepository repository)
+        BookRepository repo;
+        public BookController()
         {
-            _repository = repository;
+            repo = new BookRepository();
         }
-
-        public IEnumerable<Book> Get()
+        public ActionResult Index()
         {
-            return _repository.GetAll();
-        }
-
-        public IHttpActionResult Get(int id)
-        {
-            var book = _repository.GetByID(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
-            return Ok(book);
-        }
-
-        public IHttpActionResult Post(Book book)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            _repository.Add(book);
-            return CreatedAtRoute("DefaultApi", new { id = book.Id }, book);
+            return View(repo.List());
         }
     }
 }
