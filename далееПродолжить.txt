@@ -2,6 +2,9 @@
 ТУТ:
 	https://metanit.com/sharp/mvc5/10.4.php
 
+Проект DepInject (Dependency Injection):
+    https://metanit.com/sharp/mvc5/21.1.php
+
 Документация по Bootstrap 4
 https://bootstrap-4.ru/docs/
 
