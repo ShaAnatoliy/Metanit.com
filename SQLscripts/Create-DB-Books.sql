@@ -1,0 +1,6 @@
+-- for SQLite Типы данных: NULL INTEGER REAL TEXT BLOB
+
+-- CreateTableBook
+CREATE TABLE IF NOT EXISTS BookLst ( [Id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+ [Name] TEXT, [Author] TEXT, [Price] REAL, [Year] INTEGER );
+ 
