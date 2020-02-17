@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:wbrow">
+
+    <Image x:Key="onsvr16" Source="/wbrow;component/Resources/onsvr16.png" />
+    <Image x:Key="offsvr16" Source="/wbrow;component/Resources/offsvr16.png"/>
+    <Image x:Key="onsvr32" Source="/wbrow;component/Resources/onsvr32.png"/>
+    <Image x:Key="offsvr32" Source="/wbrow;component/Resources/offsvr32.png"/>
+    <Image x:Key="updtGreen32" Source="/wbrow;component/Resources/updtGreen32.png"/>
+    <Image x:Key="updtRed32" Source="/wbrow;component/Resources/updtRed32.png"/>
+    <Image x:Key="view32" Source="/wbrow;component/Resources/View32.png"/>
+
+</ResourceDictionary>

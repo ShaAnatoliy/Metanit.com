@@ -1,0 +1,40 @@
+
+        <ListView x:Name="ttlist" DockPanel.Dock="Bottom" ItemsSource="{Binding DescriptForCheck}" >
+            <ListView.View>
+                <GridView>
+                    <!--<GridView.ColumnHeaderContainerStyle>
+                        <Style>
+                            <Setter Property="UIElement.Visibility" Value="Collapsed" />
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>-->
+                    <GridViewColumn Header="ÈÍÍ">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock MinWidth="70" Text="{Binding OrgINN}" TextWrapping="NoWrap" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="ÎÃÐÍ">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock MinWidth="150" Text="{Binding OrgOGRN}" TextWrapping="NoWrap" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Ðåã.¹">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock MinWidth="150" Text="{Binding OrgRN}" TextWrapping="NoWrap" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Íàèìåíîâàíèå">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock MinWidth="150" Text="{Binding OrgNAME}" TextWrapping="Wrap" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>

@@ -1,0 +1,117 @@
+{
+    "id": "71FB871A-F1FA-4DE4-B3D5-CBCCD62E6135",
+    "name": "iisStSt",
+    "friendlyName": "МГТС WFM: IIS reset sites",
+    "description": "Производит отстановку сайта на IIS перед деплоем и запуск после завершения деплоя",
+    "helpMarkDown": "[More Information](https://github.com/ShaAnatoliy/ExtForTfs)",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "ShelganovAE",
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 4,
+        "Revision": 17
+    },
+    "instanceNameFormat": "$(remoteHost)/$(nameWebSite)",
+    "minimumAgentVersion": "2.122.1",
+    "icons": {
+        "default": "icon.png"
+    },
+    "inputs": [
+        {
+            "name": "remoteHost",
+            "type": "string",
+            "label": "Наименование ПК",
+            "defaultValue": "beta-wfm02",
+            "required": true,
+            "helpMarkDown": "DNS имя целевого ПК"
+        },
+        {
+            "name": "Port",
+            "type": "string",
+            "label": "Порт",
+            "defaultValue": "8118",
+            "required": true,
+            "helpMarkDown": "Порт для связи с целевым ПК"
+        },
+        {
+            "name": "Proto",
+            "type": "radio",
+            "label": "Протокол",
+            "defaultValue": "1",
+            "required": true,
+            "helpMarkDown": "Протокол для связи с WinRM целевого ПК",
+            "options": {
+                "1": "HTTP",
+                "2": "HTTPS"
+            }
+        },
+        {
+            "name": "userAdmin",
+            "type": "string",
+            "label": "User Admin",
+            "defaultValue": "mgts\\ashelganov",
+            "required": true,
+            "helpMarkDown": "Логин администратора 'mgts\\UserID' "
+        },
+        {
+            "name": "pswAdmin",
+            "type": "secureFile",
+            "label": "Password Admin",
+            "defaultValue": "$(PSW)",
+            "required": true,
+            "helpMarkDown": "Пароль администратора "
+        }, 
+        {
+            "name": "typesOfAuthentication",
+            "type": "pickList",
+            "label": "Вид Аутентификации",
+            "defaultValue": "0",
+            "required": true,
+            "helpMarkDown": "Вид Аутентификации для связи c целевым ПК",
+            "options": {
+                "0": "Default",
+                "1": "Basic",
+                "2": "Negotiate",
+                "3": "NegotiateWithImplicitCredential",
+                "4": "Credssp",
+                "5": "Digest",
+                "6": "Kerberos"
+            }
+        },
+        {
+            "name": "nameWebSite",
+            "type": "string",
+            "label": "Веб-сайт",
+            "defaultValue": "aeShelganov",
+            "required": true,
+            "helpMarkDown": "Наименование Web сайта"
+        },
+        {
+            "name": "performAnAction",
+            "type": "pickList",
+            "label": "Выполнить действие",
+            "defaultValue": "StopSite",
+            "required": true,
+            "helpMarkDown": "StopSite - Остановить сайт на IIS сервере",
+            "options": {
+                "StopSite": "StopSite",
+                "StartSite": "StartSite"
+            }
+            
+        }
+    ],
+    "execution": {
+        "PowerShell3": {
+            "target": "runtask.ps1"
+        }
+    }
+}

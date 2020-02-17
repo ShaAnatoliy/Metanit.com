@@ -1,0 +1,11 @@
+/packages
+/.vs
+/MvcPattern/obj
+/BookStore2/bin
+/BookStore2/obj
+/MvcPattern/bin
+packages
+.vs
+bin
+obj
+node_modules

@@ -1,0 +1,15 @@
+Формируем закрытый ключ:
+ > openssl genrsa -out rootCA.key 2048
+сам сертификат:
+ > openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.pem
+
+Нужно будет ввести страну, город, компанию:
+
+Country Name (2 letter code) [AU]:RU
+State or Province Name (full name) [Some-State]:
+Locality Name (eg, city) []:Moscow
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Public JSC "Moscow City Telephone Network"
+Organizational Unit Name (eg, section) []:Technology&IT Block
+Common Name (e.g. server FQDN or YOUR name) []:PC-018026.mgts.corp.net
+Email Address []:a.e.shelganov@mgts.ru
+

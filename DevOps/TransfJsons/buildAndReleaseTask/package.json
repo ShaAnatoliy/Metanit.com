@@ -1,0 +1,45 @@
+{
+  "name": "buildandreleasetask",
+  "version": "1.0.0",
+  "description": "Replace tokens with variable values in JSON configuration files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShaAnatoliy/DevOps.git"
+  },
+  "keywords": [
+    "file transform",
+    "appsettings.json",
+    "json"
+  ],
+  "author": {
+    "name": "Anatoliy Sh.",
+    "email": "wrkwww@yandex.ru"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShaAnatoliy/DevOps/issues"
+  },
+  "homepage": "https://github.com/ShaAnatoliy/DevOps/tree/master/TransfJsons#readme",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.3",
+    "balanced-match": "^1.0.0",
+    "brace-expansion": "^1.1.11",
+    "concat-map": "0.0.1",
+    "minimatch": "^3.0.4",
+    "mockery": "^2.1.0",
+    "safer-buffer": "^2.1.2",
+    "semver": "^6.3.0",
+    "shelljs": "^0.8.3",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.6",
+    "@types/q": "^1.5.2",
+    "iconv-lite": "^0.5.0",
+    "jschardet": "^2.1.0"
+  }
+}

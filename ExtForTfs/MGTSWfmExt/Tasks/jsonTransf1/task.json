@@ -1,0 +1,51 @@
+{
+    "id": "7EAB02A8-5829-49BD-90DD-783D6823032B",
+    "name": "jsonTransf1",
+    "friendlyName": "МГТС WFM: Запись параметров деплоя в файл appsettings.json",
+    "description": "Производит запись параметров деплоя в файл настроек Web приложения",
+    "helpMarkDown": "[More Information](https://github.com/ShaAnatoliy/ExtForTfs)",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "ShelganovAE",
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 4,
+        "Revision": 8
+    },
+    "instanceNameFormat": "$(rootDirectory)/$(targetFiles)",
+    "minimumAgentVersion": "2.122.1",
+    "icons": {
+        "default": "icon.png"
+    },
+    "inputs": [
+        {
+            "name": "rootDirectory",
+            "type": "filePath",
+            "label": "Root directory",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Base directory for searching files. If not specified the default working directory will be used."
+        },
+        {
+            "name": "targetFiles",
+            "type": "string",
+            "label": "*.json",
+            "defaultValue": "appsettings.json",
+            "required": true,
+            "helpMarkDown": "Wildcards can be used.<br/>Eg: `**/*.json` for all config files in all sub folders."
+        }
+    ],
+    "execution": {
+        "PowerShell3": {
+            "target": "runtask.ps1"
+        }
+    }
+}

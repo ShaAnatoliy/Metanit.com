@@ -1,0 +1,4 @@
+{
+  "loc.input.label.rootDirectory": "Root directory",
+  "loc.input.help.rootDirectory": "Base directory for searching files. If not specified the default working directory will be used."
+}

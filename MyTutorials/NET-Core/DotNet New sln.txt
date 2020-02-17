@@ -1,0 +1,66 @@
+dotnet --list-sdks
+== SDK для VS2017
+ > dotnet new globaljson --sdk-version 2.2.109 --force
+
+
+== Новый WebApp проект
+ > dotnet new webapp -o aspnetcoreapp
+ > dotnet dev-certs https --trust  # Установите доверие к сертификату разработки HTTPS
+== Или так
+ > dotnet new webapp --auth Windows --no-https 
+--exclude-launch-settings — исключает файл launchSettings.json из создаваемого шаблона.
+
+=====================
+ > dotnet new sln
+dotnet new sln --name FooBar
+dotnet new console --name Foo --output Foo
+dotnet new console --name Bar --output Bar
+dotnet sln add .\Foo\Foo.csproj
+dotnet sln add .\Bar\Bar.csproj
+dotnet restore
+dotnet build FooBar.sln
+
+Примеры
+Добавление проекта C# в решение:
+dotnet sln todo.sln add todo-app/todo-app.csproj
+
+Удаление проекта C# из решения:
+dotnet sln todo.sln remove todo-app/todo-app.csproj
+
+Добавление нескольких проектов C# в решение:
+dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj
+
+Удаление нескольких проектов C# из решения:
+dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
+
+Добавление нескольких проектов C# в решение с помощью шаблона глобализации:
+dotnet sln todo.sln add **/*.csproj
+
+Удаление нескольких проектов C# из решения с помощью шаблона глобализации:
+dotnet sln todo.sln remove **/*.csproj
+
+dotnet publish -c $(BuildConfiguration) -o \\PC-018026\builds\$(Build.DefinitionName)\$(Build.BuildNumber) --no-build --no-restore
+***************************************
+
+«DeployOnBuild» сообщает msbuild, что этот веб-проект необходимо упаковать/развернуть как часть сборки.
+«WebPublishMethod» гарантирует, что будет создан пакет развертывания. 
+  Есть и другие варианты, такие как публикация в файловой системе или в другом месте с использованием MSDeploy.
+«PackageAsSingleFile» заархивирует вывод в один файл.
+«PackageLocation» - это место, где будет сохранен .zip файл
+
+dotnet build/publish
+-o $(build.artifactstagingdirectory)
+
+/p:DeployOnBuild=true
+/p:Configuration=$(BuildConfiguration)
+/p:DesktopBuildPackageLocation="$(build.artifactstagingdirectory)\WebApp.zip"
+/p:WebPublishMethod=Package
+/p:PackageAsSingleFile=true 
+/p:DeployIisAppPath=TestSite  
+/p:DeployDefaultTarget=WebPublish
+/p:DeployTarget=WebPublish
+/p:publishURL=$(build.artifactstagingdirectory)
+/p:PublishProfile=$(BuildConfiguration)
+/p:TransformConfigFile=true
+/p:AutoParameterizationWebConfigConnectionStrings=false
+

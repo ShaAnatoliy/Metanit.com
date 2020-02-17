@@ -1,0 +1,55 @@
+Что изменяет Application Insights в моем проекте?
+
+Детали зависят от типа проекта. Для веб-приложения:
+
+Добавляет эти файлы в ваш проект:
+
+ApplicationInsights.config.
+ai.js
+Устанавливает эти пакеты NuGet:
+
+API Application Insights - основной API
+API приложений для веб-приложений - используется для отправки телеметрии с сервера
+API приложений для приложений JavaScript - используется для отправки телеметрии с клиента
+Пакеты включают эти сборки:
+
+Microsoft.ApplicationInsights
+Microsoft.ApplicationInsights.Platform
+Вставляет элементы в:
+
+Web.config
+packages.config(только для новых проектов - если вы добавляете Application Insights в существующий проект, вам нужно сделать это вручную.) Вставки фрагменты кода клиента и сервера, чтобы инициализировать их с помощью Идентификатор ресурса приложения Insights. Например, в приложении MVC код вставлен в главную страницу Views/Shared/_Layout.cshtml
+Удалить вручную
+Чтобы удалить Insight Insight без NuGet, или, как и я, вы не доверяете ему и хотите знать, какие файлы удалены, я выполнил следующие шаги:
+
+Удалите информацию о приложениях из web.config, в разделе system.webserver.modules, найдите ApplicationInsightsWebTracking.
+
+Удалите все ссылки на Microsoft.AI(Application Insights) из ссылок на проекты.
+
+Удалите все пакеты Microsoft.ApplicationInsights из package.config.
+
+Удалить файл ApplicationInsights.config.
+
+Удалите script из _Layout.cshtml:
+
+
+
+var appInsights=window.appInsights||function(config){
+    function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+}({
+    instrumentationKey:"RemovedKey"
+});
+
+window.appInsights=appInsights;
+appInsights.trackPageView();
+
+
+Удалите ai.0.15.0-build58334.js и ai.0.15.0-build58334.min.js из каталога Scripts.
+
+Очистить и перестроить все.
+---------------------------------------------
+
+Я решил это, сначала удалив все пакеты Application Insight из (Tools → NuGet Package Manager → Управление пакетами NuGet для решения)
+Затем пробег
+Удаление пакета Microsoft.AspNet.TelemetryCorrelation -Version 1.0.0 -RemoveDependencies
+в консоли Nuget.

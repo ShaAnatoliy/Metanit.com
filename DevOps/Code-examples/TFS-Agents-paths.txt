@@ -1,0 +1,21 @@
+
+  Pipeline.Workspace :           c:\agent_work\1
+
+Build.ArtifactStagingDirectory : c:\agent_work\1\a
+Build.StagingDirectory :         c:\agent_work\1\a
+Build.BinariesDirectory :        c:\agent_work\1\b
+System.DefaultWorkingDirectory: 
+Build.Repository.LocalPath :     c:\agent_work\1\s
+Build.SourcesDirectory :         c:\agent_work\1\s
+
+=========================================================================
+Agent.HomeDirectory: C:\agent
+System.WorkFolder, Agent.RootDirectory, Agent.WorkFolder:
+  C:\agent\_work
+Build.ArtifactStagingDirectory, Build.StagingDirectory: c:\agent_work\1\a
+Build.BinariesDirectory : c:\agent_work\1\b
+Build.SourcesDirectory : c:\agent_work\1\s
+Build.DefinitionName И Build.DefinitionVersion: Название И версия конвейера сборки.
+Agent.BuildDirectory, Agent.ReleaseDirectory, System.DefaultWorkingDirectory, System.ArtifactsDirectory:
+  C:\agent\_work\r1\a
+=========================================================================

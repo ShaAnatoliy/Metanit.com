@@ -1,0 +1,67 @@
+mgts-tfs01.mgts.corp.net [10.226.174.85]
+
+test-wfm02.mgts.corp.net [10.226.150.23]
+0000wfmtest01.msk.mts.ru [10.73.5.228]
+
+Решение для MA2193409: Доступ по RDP предоставлен. 
+test-wfm02.mgts.corp.net [10.226.150.23]; 
+нет такого сервера 0000wfmtest01.msk.mts.ru [10.73.5.228] 
+
+в МТС Решение для MA2193411: Доступ к серверам: 
+MGTS-WFM05.msk.mts.ru [10.226.148.200]; 
+
+- добавлено 
+beta-WFM02.mgts.corp.net [10.226.150.97]; 
+
+- добавлено test-wfm02.mgts.corp.net [10.226.150.23] 
+- нет такого сервера 0000wfmtest01.msk.mts.ru [10.73.5.228] - добавлено 
+
+
+
+https://beeming.net/vsts-tfs/2017/4/setting-up-net-core-continuous-integration-build-with-vststfs
+https://beeming.net/vsts-tfs/2017/4/setting-up-a-standard-continuous-integration-build-with-vststfs
+
+.NET Core
+https://habr.com/ru/post/311520/
+
+************** IIS winrm *******
+Базовые операции с IIS на удаленном сервере
+
+Запускаем из Powershell:
+Для остановки IIS
+ PS> invoke-command -computername "TARGET-HOST" -scriptblock {iisreset /STOP}
+
+Для старта IIS
+ PS> invoke-command -computername "TARGET-HOST" -scriptblock {iisreset /START}
+
+Для перезапуска IIS
+ PS> invoke-command -computername "TARGET-HOST" -scriptblock {iisreset /RESTART}
+ 
+Если при выполнении команды вы получаете ошибку:
+  The WinRM client cannot process the request.
+то выполняем следующие команды:
+На машине с которой планируем выполнять команды, где TARGET-HOST меняем на IP сервера с IIS
+ PS> winrm set winrm/config/client '@{TrustedHosts="TARGET-HOST"}'
+ 
+На машине с IIS, где SOURCE-HOST меняем на IP сервера с которого планируется выполнять команды
+ PS> winrm set winrm/config/client '@{TrustedHosts="10.226.174.85"}'
+# для  mgts-tfs01.mgts.corp.net
+
+Важно! Данные команды не работают если машина с IIS в домене, а удаленная машина нет.
+
+**********************************************
+ > setx ASPNETCORE_ENVIRONMENT Development /M
+**********************************************
+
+Building using the below MSBuild parameters:
+/p:WebPublishMethod=package /p:DesktopBuildPackageLocation="$(build.artifactstagingdirectory)\publishedAPI\\" /p:DeployOnBuild=true
+
+/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true 
+
+/p:PackageLocation="$(build.artifactstagingdirectory)\\"
+
+/p:AppxBundlePlatforms="$(BuildPlatform)" /p:AppxPackageDir="$(Build.ArtifactStagingDirectory)\AppxPackages\\" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload
+
+Deploy using:
+"C:\Program Files\IIS\Microsoft Web Deploy V3\msDeploy.exe" -verb:sync -source:package="D:\DeployFiles\Alert.API\AlertAPI.zip" -dest:auto -setParamFile="D:\DeployFiles\Alert.API\AlertAPI.SetParameters.xml" -setParam:name="IIS Web Application Name",value="Default Web Site\AlertAPI" -enableRule:DoNotDeleteRule -enableRule:AppOffline -retryAttempts:3 -retryInterval:3000
+

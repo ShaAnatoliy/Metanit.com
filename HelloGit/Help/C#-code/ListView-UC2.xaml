@@ -1,0 +1,35 @@
+<ListView>
+		<ListView.View>
+				<GridView>
+						<GridViewColumn Header='ÈÍÍ' Width='60' >
+								<GridViewColumn.CellTemplate>
+										<DataTemplate>
+												<TextBlock MinWidth='60' Text='{Binding OrgINN}' TextWrapping='NoWrap' />
+										</DataTemplate>
+								</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<GridViewColumn Header='ÎÃÐÍ' Width='60' >
+								<GridViewColumn.CellTemplate>
+										<DataTemplate>
+												<TextBlock MinWidth='60' Text='{Binding OrgOGRN}' TextWrapping='NoWrap' />
+										</DataTemplate>
+								</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<GridViewColumn Header='Ðåã.¹' Width='60' >
+								<GridViewColumn.CellTemplate>
+										<DataTemplate>
+												<TextBlock MinWidth='60' Text='{Binding OrgRN}' TextWrapping='NoWrap' />
+										</DataTemplate>
+								</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<GridViewColumn Header='Íàèìåíîâàíèå' Width='200' >
+								<GridViewColumn.CellTemplate>
+										<DataTemplate>
+												<TextBlock MinWidth='200' Text='{Binding OrgNAME}' TextWrapping='Wrap' />
+										</DataTemplate>
+								</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+				</GridView>
+		</ListView.View>
+</ListView>
+

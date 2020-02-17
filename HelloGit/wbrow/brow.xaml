@@ -1,0 +1,100 @@
+﻿<Window x:Class="wbrow.wndbrow" x:Name="WinBrow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:wbrow"
+        RenderOptions.BitmapScalingMode="Fant" ShowInTaskbar="True"
+        WindowStartupLocation="CenterScreen" Icon="/wbrow;component/Resources/wbr.ico"
+        Title="WBrowser" Height="400" Width="800" SizeChanged="WinSizeChanged" Closing="Window_Closing">
+
+    <Window.Resources>
+        <ResourceDictionary Source="pack://application:,,,/wbrow;component/Styles.xaml" />
+    </Window.Resources>
+
+    <DockPanel LastChildFill="True" >
+
+        <Border x:Name="brdTop1" DockPanel.Dock="Top" BorderThickness="2" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Width="795" Height="2"
+                    BorderBrush="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" />
+
+        <ToolBarTray DockPanel.Dock="Top" Orientation="Horizontal">
+            <ToolBar x:Name="tbr" Width="790">
+                <Button ToolTip="Открыть/Создать БД" Command="{Binding OnOffSrvCmd}" >
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Content" Value="{StaticResource onsvr32}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding RunSrv}" Value="True">
+                                    <Setter Property="Content" Value="{StaticResource offsvr32}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button ToolTip="Добавить/Обновить файл в БД" Margin="5,0,0,0" 
+                        Command="{Binding UpdateFileCmd}"
+                        Visibility="{Binding OpenDB}">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Content" Value="{StaticResource updtGreen32}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding UpdateProcess}" Value="True">
+                                    <Setter Property="Content" Value="{StaticResource updtRed32}" />
+                                    <Setter Property="IsEnabled" Value="False" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button ToolTip="Просмотр последнего добавленного в БД файла" Margin="5,0,0,0" 
+                        Content="{StaticResource view32}"
+                        Command="{Binding ViewFileCmd}" Visibility="{Binding OpenDB}" />
+
+            </ToolBar>
+        </ToolBarTray>
+
+        <Border x:Name="brdTop2" DockPanel.Dock="Top" BorderThickness="2" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Width="795" Height="2"
+                    BorderBrush="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" />
+
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Content="Адрес):" />
+            <TextBox MinWidth="500" Text="{Binding AddrUrlDb, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" KeyUp="AddrBox_KeyUp"/>
+        </StackPanel>
+        <Border x:Name="brdTop3" DockPanel.Dock="Top" BorderThickness="2" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Width="795" Height="2"
+                    BorderBrush="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" />
+
+        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Visibility="{Binding UpdatePanel}">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Загружаемый/Обновляемый файл:" HorizontalContentAlignment="Right" Width="220"/>
+                <TextBlock MinWidth="500" Text="{Binding UpFile}" Background="#FFF7F7F7" />
+            </StackPanel>
+            <Border BorderThickness="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Ссылка на файл в БД (адрес):" HorizontalContentAlignment="Right" Width="220"/>
+                <TextBox MinWidth="500" Text="{Binding UpRefUrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <Border BorderThickness="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Описание файла в БД:" HorizontalContentAlignment="Right" Width="220"/>
+                <TextBox MinWidth="500" Text="{Binding UpDescriptFile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <Border BorderThickness="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="MIME тип файла:" HorizontalContentAlignment="Right" Width="220"/>
+                    <ComboBox IsEditable="True" ItemsSource="{Binding MimeList}" MinWidth="350"
+                          Text="{Binding UpMimeText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding UpMimeText}"
+                          ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled" />
+                </StackPanel>
+            </Border>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Записать/Обновить" Command="{Binding OkUpFileCmd}" Width="150" MinHeight="30" />
+                <Button Content="Отмена" Command="{Binding NoUpFileCmd}" Width="80" MinHeight="30" Margin="20,0" />
+            </StackPanel>
+        </StackPanel>
+
+        <WebBrowser x:Name="wb" Source="about:blank" Visibility="{Binding WBPanelVisi}" />
+
+    </DockPanel>
+</Window>

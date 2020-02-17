@@ -1,0 +1,47 @@
+GitHub.com: user>ShaAnatoliy psw> ***git 
+
+============================================================
+For SSH Key: Open Git Bash
+============================================================
+cd ~
+git config --global user.name "ShaAnatoliy"#"AShelganov"
+git config --global user.email wrkwww@yandex.ru
+git config --global http.sslVerify false
+git config --system http.sslCAPath /c/Users/AShelganov/.ssh
+ssh-keygen -t rsa -b 4096 -C "wrkwww@yandex.ru" # Save to: /c/Users/AShelganov/.ssh/id_rsa
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+clip < ~/.ssh/id_rsa.pub ## копировать key в буфер обмена
+
+git config --global http.proxy http://domen%5CAShelganov:***%40***@proxysg02.mgts.corp.net:8080
+git config --global https.proxy 
+git config --unset http.proxy
+
+-- перейти в каталог проекта
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://***
+git push -u origin master
+
+git pull origin master --allow-unrelated-histories # если ругается на историю
+
+#=========================================================
+Ниже приводится список и описание некоторых других файлов:
+azman.msc – диспетчер авторизации;
+certmgr.msc – сертификаты текущего пользователя;
+comexp.msc – службы компонентов;
+compmgmt.msc – управление компьютером;
+devmgmt.msc – диспетчер устройств;
+diskmgmt.msc— управление дисками;
+eventvwr.msc – просмотр событий;
+fsmgmt.msc – общие папки;
+gpedit.msc – редактор локальной групповой политики;
+lusrmgr.msc – локальные пользователи и группы;
+NAPCLCFG.MSC – конфигурация клиента NAPCLCFG.MSC;
+perfmon.msc – системный монитор;
+printmanagement.msc – управление печатью;
+secpol.msc – локальная политика безопасности;
+services.msc – службы;
+taskschd.msc – планировщик заданий;
+WF.msc – Windows Firewall в режиме повышенной безопасности. 

@@ -1,0 +1,80 @@
+{
+    "manifestVersion": 1,
+    "id": "MGTSWfmExt",
+    "name": "МГТС. Расширения для TFS",
+    "version": "1.0.4.17",
+    "publisher": "ShelganovAE",
+    "description": "MGTS WFM ext for TFS",
+    "targets": [
+        {
+            "id": "Microsoft.TeamFoundation.Server"
+        }
+    ],
+    "categories": [
+        "Build and release"
+    ],
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"
+    },
+	    "files": [
+        {
+            "path": "Tasks/iisStSt1"
+        },
+        {
+            "path": "Tasks/jsonTransf1"
+        }
+    ],
+    "contributions": [
+        {
+          "id": "iisStSt",
+          "type": "ms.vss-distributed-task.task",
+          "targets": [
+            "ms.vss-distributed-task.tasks"
+          ],
+          "properties": {
+            "name": "Tasks/iisStSt1"
+          }
+        },
+        {
+            "id": "jsonTransf",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+              "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+              "name": "Tasks/jsonTransf1"
+            }
+          }
+    ],
+   "repository": {
+        "type": "git",
+        "uri": "https://github.com/ShaAnatoliy/ExtForTfs"
+    },
+	"tags": [
+        "IIS stop site",
+        "IIS start site",
+        "JSON",
+        "Transform file"
+    ],
+	"screenshots": [
+        {
+            "path": "images/scsh1.png"
+        }
+    ],
+	 "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "License.txt"
+        }
+    },
+	"branding": {
+        "color": "rgb(0, 128, 192)",
+        "theme": "dark"
+    }
+}

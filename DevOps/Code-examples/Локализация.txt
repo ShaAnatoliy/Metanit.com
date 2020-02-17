@@ -1,0 +1,6 @@
+1. есть файл с именем task.loc.json, который содержит заполнители вместо переводимых фраз, 
+   например: "description": "ms-resource:loc.description"
+2. затем есть папка /Strings/resources.resjson, полная подпапок, по одной на конкретную культуру
+   каждая подпапка культуры содержит файл resources.resjson с переводами, привязанными к этим местозаполнителям, 
+   например: "loc.description": "Выполнение скрипта PowerShell в Windows, macOS или Linux."
+   

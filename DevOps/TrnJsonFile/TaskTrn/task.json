@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "id": "7256B35A-EAA1-46BB-8595-33E9211D0400",
+    "name": "TransfJsons",
+    "friendlyName": "JSON File transform",
+    "description": "Replace tokens with variable values in JSON configuration files",
+    "helpMarkDown": "[More Information](https://github.com//ShaAnatoliy/DevOps)",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "A.Shelganov",
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 4,
+        "Revision": 8
+    },
+    "instanceNameFormat": "$(rootDirectory)/$(targetFiles)",
+    "minimumAgentVersion": "2.122.1",
+    "icons": {
+        "default": "icon.png"
+    },
+    "inputs": [
+        {
+            "name": "rootDirectory",
+            "type": "filePath",
+            "label": "Root directory",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Base directory for searching files. If not specified the default working directory will be used."
+        },
+        {
+            "name": "targetFiles",
+            "type": "string",
+            "label": "*.json",
+            "defaultValue": "appsettings.json",
+            "required": true,
+            "helpMarkDown": "Wildcards can be used.<br/>Eg: `**/*.json` for all config files in all sub folders."
+        }
+    ],
+    "execution": {
+        "PowerShell3": {
+            "target": "runtask.ps1"
+        }
+    }
+}

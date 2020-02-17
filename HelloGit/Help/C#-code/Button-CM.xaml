@@ -1,0 +1,49 @@
+<Button x:Name="BTreports" VerticalAlignment="Center" HorizontalAlignment="Center" Click="BTreports_Click" >
+		<Button.Content>
+				<DockPanel HorizontalAlignment="Left">
+						<Image Height="18" Margin="1" Source="/Lanit.Img;component/resources/icon_excel.png" />
+						<TextBlock Margin="5,1" Text="Отчеты" />
+				</DockPanel>
+		</Button.Content>
+		<Button.ContextMenu>
+				<ContextMenu x:Name="CMreports">
+						<MenuItem Header="Информация о планируемой занятости сотрудников" 
+											Command="{Binding CmdReport}" CommandParameter="1" />
+						<MenuItem Header="P2: Планируемое распределение инспекционных ресурсов" 
+											Command="{Binding CmdReport}" CommandParameter="2" />
+						<MenuItem Header="Отчет о фактической занятости сотрудников" 
+											Command="{Binding CmdReport}" CommandParameter="3" /> <!--Command="{Binding Report3Command}"-->
+						<MenuItem Header="Информация о наличии временно свободных сотрудников"
+											Command="{Binding CmdReport}" CommandParameter="4" />
+				</ContextMenu>
+		</Button.ContextMenu>
+</Button>
+
+                        <xctk:SplitButton ToolTip="Формировать отчет в Excel" >
+                            <xctk:SplitButton.Content>
+                                <DockPanel HorizontalAlignment="Left">
+                                    <Image Height="18" Margin="1" Source="/Lanit.Img;component/resources/icon_excel.png" />
+                                    <TextBlock Margin="5,1" Text="Отчеты" />
+                                </DockPanel>
+                            </xctk:SplitButton.Content>
+                            <xctk:SplitButton.DropDownContent>
+                                <StackPanel HorizontalAlignment="Left">
+                                    <Button Style="{StaticResource FlatButton}" MinWidth="385"
+                                        HorizontalContentAlignment="Left" Padding="3" Margin="3"
+                                            Command="{Binding CmdReport}" CommandParameter="1" 
+                                        Content="P1: Информация о планируемой занятости сотрудников" />
+                                    <Button Style="{StaticResource FlatButton}" MinWidth="385"
+                                        HorizontalContentAlignment="Left"  Padding="3" Margin="3"
+                                            Command="{Binding CmdReport}" CommandParameter="2"
+                                        Content="P2: Планируемое распределение инспекционных ресурсов" />
+                                    <Button Style="{StaticResource FlatButton}" MinWidth="385"
+                                        HorizontalContentAlignment="Left"  Padding="3" Margin="3"
+                                            Command="{Binding Report3Command}"
+                                        Content="P3: Отчет о фактической занятости сотрудников" />
+                                    <Button Style="{StaticResource FlatButton}" MinWidth="385"
+                                        HorizontalContentAlignment="Left"  Padding="3" Margin="3"
+                                            Command="{Binding CmdReport}" CommandParameter="4"
+                                        Content="P4: Информация о наличии временно свободных сотрудников" />
+                                </StackPanel>
+                            </xctk:SplitButton.DropDownContent>
+                        </xctk:SplitButton>

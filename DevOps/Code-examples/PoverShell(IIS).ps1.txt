@@ -1,0 +1,24 @@
+Param (
+[string]$computer
+)
+
+Start-Process -FilePath C:\Windows\System32\iisreset.exe -ArgumentList /RESTART -RedirectStandardOutput .\iisreset.txt
+Get-Content .\iisreset.txt | Write-Log -Level Info
+
+## IIS Stop: (PC-018026)
+powershell invoke-command -computername "TARGET-HOST" -scriptblock {iisreset /STOP}
+## IIS Start:
+powershell invoke-command -computername "TARGET-HOST" -scriptblock {iisreset /START}
+
+##
+PSRemotingTransportException; AccessDenied
+Запустите Windows PowerShell в качестве администратора, щелкнув правой кнопкой мыши ярлык Windows PowerShell и выбрав "Запуск от имени администратора".
+
+Служба WinRM настроена для ручного запуска по умолчанию. Вы должны изменить тип запуска на "Автоматически" и запустить службу на каждом компьютере, с которым хотите работать. В приглашении PowerShell вы можете убедиться, что служба WinRM запущена с помощью следующей команды: get-service winrm. Значение свойства Status на выходе должно быть "Running".
+
+Чтобы настроить Windows PowerShell для удаленного доступа, введите следующую команду: Enable-PSRemoting -force
+
+Во многих случаях вы сможете работать с удаленными компьютерами в других доменах. Однако, если удаленный компьютер не находится в доверенном домене, удаленный компьютер не сможет аутентифицировать ваши учетные данные. Чтобы включить аутентификацию, вам необходимо добавить удаленный компьютер в список доверенных хостов для локального компьютера в WinRM. Для этого введите: winrm s winrm/config/client '@{TrustedHosts = "RemoteComputer"}' Здесь RemoteComputer должен быть именем удаленного компьютера, например: winrm s winrm/config/client '@{TrustedHosts = "CorpServer56"}"
+##
+
+

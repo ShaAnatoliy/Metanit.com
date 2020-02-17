@@ -1,0 +1,132 @@
+При импорте и экспорте шаблонов ARM в powershell, используя Convert-FromJson и Convert-ToJson, вводятся escape-последовательности Convert-ToJson.
+
+Пример кода (для ясности mutltiline):
+
+$armADF = Get-Content -Path $armFile -Raw | ConvertFrom-Json
+$armADFString = $armADF | ConvertTo-Json -Depth 50
+$armADFString | 
+    ForEach-Object { [System.Text.RegularExpressions.Regex]::Unescape($_) } | 
+    Out-File $outputFile
+
+Вот документ:
+ https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.unescape?view=netframework-4.8
+который я читал для Unescape
+
+Результаты в выходном файле идентичны, за исключением того, что все экземпляры литерала \n (которые были в исходном файле JSON) превращаются в фактические возвраты каретки. Что ломает шаблон ARM.
+
+Если я не включаю код Unescape, \n сохраняются, но также и символы Юникода, которые также нарушают шаблон ARM.
+
+Кажется, мне нужно предварительно выйти из \n поэтому, когда я вызываю Unescape, они превращаются в симпатичный маленький \n. Я пробовал пару вещей, таких как добавление этого перед вызовом unescape.
+
+$armADFString = $armADFString -replace("\\n","\u000A")
+Что не дает мне результатов, которые мне нужны.
+
+Кто-нибудь сталкивался с этим и решил? Есть ли опытные художники по побегу?
+
+Ответ:
+--------------------------
+
+Я перечитал документацию Unescape и заметил, что он также в основном удалит начальные символы \ поэтому я попробовал этот маловероятный фрагмент кода:
+
+$armADF = Get-Content -Path $armFile -Raw | ConvertFrom-Json
+$armADFString = $armADF | ConvertTo-Json -Depth 50
+$armADFString = $armADFString -replace("\\n","\\n")
+$armADFString | 
+    ForEach-Object { [System.Text.RegularExpressions.Regex]::Unescape($_) } | 
+    Out-File $outputFile
+Конечно, замена \\n на \\n имеет смысл: |
+ 
+Более чем рад, что кто-то может предложить более элегантное решение.
+
+РЕДАКТИРОВАТЬ: я развертываю шаблоны ADF ARM, которые сами основаны на JSON. Короче говоря, я также обнаружил, что мне нужно добавить это, чтобы избежать выхода из законно экранированных кавычек:
+
+$armADFString = $armADFString -replace('\\"','\\"')
+
+*******************************************************************************
+******
+Я пытаюсь манипулировать данными json файла в powershell и записывать их обратно в файл. Еще до манипуляции, когда я только что прочитал из файла, преобразуйте его в объект Json в powershell и запишите его обратно в файл, некоторые символы заменяются некоторыми кодами. Ниже приведен мой код:
+
+$jsonFileData = Get-Content $jsonFileLocation
+
+$jsonObject = $jsonFileData | ConvertFrom-Json
+
+... (Modify jsonObject) # Commented out this code to write back the same object
+
+$jsonFileDataToWrite = $jsonObject | ConvertTo-Json
+
+$jsonFileDataToWrite | Out-File $jsonFileLocation
+Некоторые символы заменяются их кодами. Например:
+
+< is replaced by \u003c
+> is replaced by \u003e. 
+' is replaced by \u0027
+Пример ввода:
+
+{
+    "$schema": "https://source.com/template.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "accountName": {
+            "type": "string",
+            "defaultValue": "<sampleAccountName>"
+        },
+        "accountType": {
+            "type": "string",
+            "defaultValue": "<sampleAccountType>"
+        },
+    },
+    "variables": {
+        "location": "sampleLocation",
+        "account": "[parameters('accountName')]",
+        "type": "[parameters('accountType')]",
+    }
+}
+Выход:
+
+{
+    "$schema": "https://source.com/template.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "accountName": {
+            "type": "string",
+            "defaultValue": "\u003csampleAccountName\u003e"
+        },
+        "accountType": {
+            "type": "string",
+            "defaultValue": "\u003csampleAccountType\u003e"
+        },
+    },
+    "variables": {
+        "location": "sampleLocation",
+        "account": "[parameters(\u0027accountName\u0027)]",
+        "type": "[parameters(\u0027accountType\u0027)]",
+    }
+}
+
+Так как ConvertTo-Json использует .NET JavaScriptSerializer под капотом, вопрос более или менее уже ответил здесь.
+
+Вот некоторая бесстыдная копия:
+
+Символы кодируются "правильно"! Используйте рабочий JSON библиотека для правильного доступа к данным JSON - это действительный JSONкодирование.
+
+Экранирование этих символов предотвращает инъекцию HTML через JSON - и делает JSON XML-friendly. То есть, даже если JSON излучается напрямую в JavaScript (как это делается довольно часто, поскольку JSON является допустимым2 подмножеством JavaScript), его нельзя использовать для раннего завершения элемента потому что соответствующие символы (например, <, > ) кодируются в JSON сам по себе.
+
+
+ 
+Если вам действительно нужно поменять коды символов на неэкранированные символы, самым простым способом, вероятно, является замена регулярного выражения для каждого символьного кода. Пример:
+
+$dReplacements = @{
+    "\\u003c" = "<"
+    "\\u003e" = ">"
+    "\\u0027" = "'"
+}
+
+$sInFile = "infile.json"
+$sOutFile = "outfile.json"
+
+$sRawJson = Get-Content -Path $sInFile | Out-String
+foreach ($oEnumerator in $dReplacements.GetEnumerator()) {
+    $sRawJson = $sRawJson -replace $oEnumerator.Key, $oEnumerator.Value
+}
+
+$sRawJson | Out-File -FilePath $sOutFile

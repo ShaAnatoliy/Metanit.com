@@ -1,0 +1,88 @@
+TFS Cache:
+  C:\Users\{user}\AppData\Local\Microsoft\Team Foundation\7.0\Cache
+  C:\Users\{user}\AppData\Local\Microsoft\Windows\INetCache
+http://localhost:8080/tfs/_apis/gallery/publishers/ShaAnatoliy/extensions/TransfJsons
+
+    Файл конфигурации
+  c:\Users\$USERNAME\.npmrc 
+1 registry=https://registry.npmjs.com/
+2 strict-ssl=false
+3 proxy=http://ashelganov:***@proxysg02.mgts.corp.net:8080
+4 https-proxy=http://ashelganov:***@proxysg02.mgts.corp.net:8080
+
+ > set DOTNET_CLI_TELEMETRY_OPTOUT=1 # отключить телеметрию
+ 
+ > cd \DEV\tools
+ > npm install -g tfx-cli
+ > npm install -g --save core-js@^3
+ 
+--------------------------------------------
+|- README.md 
+|- vss-extension.json 
+|- icon.png 
+|- buildtasks 
+    |- task.json 
+    |- powershell.ps1
+--------------------------------------------
+
+ PS> cd \DEV\tools\TestBuildTask
+ 
+ PS> npm init
+ PS> npm install util
+
+ PS> npm install azure-pipelines-task-lib --save
+ PS> npm install azure-devops-node-api --save
+ PS> npm install @types/node --save-dev
+
+ PS> echo node_modules > .gitignore
+ PS> tsc --init
+ 
+Откройте созданный файл TsConfig.JSON и обновите поле "Target" до «ES6».
+
+Далее нужно создать файл task.json заполнит все {{поля}}
+и генерировать для него унекальный {{taskguid}} https://www.guidgen.com/
+Шаблон-task.json
+
+Далее, создать файл index.ts
+
+Компиляция:
+ PS C:\DEV\tools\TestBuildTask\buildAndReleaseTask> tsc
+Создаётся файл index.js
+
+Далее, выполнить для проверки:
+ PS> node index.js
+Без входной строки выдаст ошибку..
+
+Выполнение с входной строкой
+ PS> $env:INPUT_SAMPLESTRING="Человек" # 'bad'
+ PS> node index.js
+ 
+ 
+Install test tools
+~~~~~~~~~~~~~~~~~~
+ PS> npm install mocha --save-dev -g
+ PS> npm install @types/mocha --save-dev
+ PS> npm install sync-request --save-dev -g
+ 
+ 
+Создайте папку тестов "tests", содержащую файл "_suite.ts"
+Создайте файл "success.ts" в тестовой директории "tests".
+Создайте файл "failure.ts" в тестовой директории "tests".
+
+Далее, компиляция и выполнение тестов:
+ PS> tsc
+ PS> $env:TASK_TEST_TRACE=1 # ДЛя подробной трассировке
+ PS> mocha tests/_suite.js
+
+Создайте файл манифеста расширения: ..\vss-extension.json
+
+Упаковка расширения в файл формата VSIX 2.0
+ PS> cd ..
+ PS> tfx extension create --manifest-globs vss-extension.json
+
+Публикация:
+  PS> tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
+  
+
+****************
+npm install minimist -g

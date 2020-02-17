@@ -1,0 +1,63 @@
+{
+    "manifestVersion": 1,
+    "id": "TransfJsons",
+    "name": "JSON File transform",
+    "version": "1.0.1",
+    "publisher": "ShaAnatoliy",
+    "description": "Replace tokens with variable values in JSON configuration files",
+    "targets": [
+        {
+            "id": "Microsoft.TeamFoundation.Server"
+        }
+    ],
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+	    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        }
+    ],
+
+    "contributions": [
+        {
+            "id": "TransfJsons-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ],
+   "repository": {
+        "type": "git",
+        "uri": "https://github.com/ShaAnatoliy/DevOps/tree/master/TransfJsons"
+    },
+	"tags": [
+        "file transform",
+        "appsettings.json",
+        "json"
+    ],
+	"screenshots": [
+        {
+            "path": "images/scsh1.png"
+        }
+    ],
+	 "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "License.txt"
+        }
+    },
+	"branding": {
+        "color": "rgb(0, 128, 192)",
+        "theme": "dark"
+    }
+}
