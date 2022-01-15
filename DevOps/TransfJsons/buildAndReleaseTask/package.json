@@ -33,7 +33,7 @@
     "mockery": "^2.1.0",
     "safer-buffer": "^2.1.2",
     "semver": "^6.3.0",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
